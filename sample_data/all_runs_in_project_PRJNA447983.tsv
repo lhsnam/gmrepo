@@ -1,0 +1,141 @@
+project ID	run ID	experiment type	instrument model	nr. reads sequenced	host age	sex	BMI	country	longitude	lattitude	associated phenotype	QC status
+PRJNA447983	SRR6915091	Metagenomics	Illumina HiSeq 2500		77	Male	23	Italy			D015179	1
+PRJNA447983	SRR6915092	Metagenomics	Illumina HiSeq 2500		60	Female	20	Italy			D006262	1
+PRJNA447983	SRR6915093	Metagenomics	Illumina HiSeq 2500		69	Male	27	Italy			D015179	1
+PRJNA447983	SRR6915094	Metagenomics	Illumina HiSeq 2500		82	Male	28	Italy			D015179	1
+PRJNA447983	SRR6915095	Metagenomics	Illumina HiSeq 2500		84	Male	22	Italy			D015179	1
+PRJNA447983	SRR6915096	Metagenomics	Illumina HiSeq 2500		60	Male	24	Italy			D000236	1
+PRJNA447983	SRR6915097	Metagenomics	Illumina HiSeq 2500		80	Female	32	Italy			D006262	1
+PRJNA447983	SRR6915098	Metagenomics	Illumina HiSeq 2500		74	Male	23	Italy			D015179	1
+PRJNA447983	SRR6915099	Metagenomics	Illumina HiSeq 2500		63	Male	25	Italy			D015179	1
+PRJNA447983	SRR6915100	Metagenomics	Illumina HiSeq 2500		80	Male	24	Italy			D006262	1
+PRJNA447983	SRR6915101	Metagenomics	Illumina HiSeq 2500		84	Female	23	Italy			D015179	1
+PRJNA447983	SRR6915102	Metagenomics	Illumina HiSeq 2500		61	Male	23	Italy			D015179	1
+PRJNA447983	SRR6915103	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915104	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915105	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915106	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915107	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915108	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915109	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915110	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915111	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915112	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915113	Metagenomics	Illumina HiSeq 2500		77	Female		Italy			D006262	1
+PRJNA447983	SRR6915114	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915115	Metagenomics	Illumina HiSeq 2500		83	Female	19	Italy			D015179	1
+PRJNA447983	SRR6915116	Metagenomics	Illumina HiSeq 2500		70	Female	25	Italy			D006262	1
+PRJNA447983	SRR6915117	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915118	Metagenomics	Illumina HiSeq 2500		67	Male	26	Italy			D000236	1
+PRJNA447983	SRR6915119	Metagenomics	Illumina HiSeq 2500		66	Male	24	Italy			D015179	1
+PRJNA447983	SRR6915120	Metagenomics	Illumina HiSeq 2500		64	Male	23	Italy			D015179	1
+PRJNA447983	SRR6915121	Metagenomics	Illumina HiSeq 2500		66	Male	34	Italy			D006262	1
+PRJNA447983	SRR6915122	Metagenomics	Illumina HiSeq 2500		64	Male	26	Italy			D006262	1
+PRJNA447983	SRR6915123	Metagenomics	Illumina HiSeq 2500		78	Male	26	Italy			D015179	1
+PRJNA447983	SRR6915124	Metagenomics	Illumina HiSeq 2500		77	Male	36	Italy			D000236	1
+PRJNA447983	SRR6915125	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915126	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915127	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915128	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915129	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915130	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915131	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915132	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915133	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915134	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915135	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915136	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915137	Metagenomics	Illumina HiSeq 2500		69	Female	29	Italy			D015179	1
+PRJNA447983	SRR6915138	Metagenomics	Illumina HiSeq 2500		58	Female	25	Italy			D000236	1
+PRJNA447983	SRR6915139	Metagenomics	Illumina HiSeq 2500		58	Male	23	Italy			D000236	1
+PRJNA447983	SRR6915140	Metagenomics	Illumina HiSeq 2500		77	Male	24	Italy			D000236	1
+PRJNA447983	SRR6915141	Metagenomics	Illumina HiSeq 2500		58	Male	26	Italy			D000236	1
+PRJNA447983	SRR6915142	Metagenomics	Illumina HiSeq 2500		63	Female	21	Italy			D000236	1
+PRJNA447983	SRR6915143	Metagenomics	Illumina HiSeq 2500		79	Male	22	Italy			D000236	1
+PRJNA447983	SRR6915144	Metagenomics	Illumina HiSeq 2500		68	Female	22	Italy			D006262	1
+PRJNA447983	SRR6915145	Metagenomics	Illumina HiSeq 2500		60	Male	22	Italy			D006262	1
+PRJNA447983	SRR6915146	Metagenomics	Illumina HiSeq 2500		53	Female	23	Italy			D000236	1
+PRJNA447983	SRR6915147	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915148	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915149	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915150	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915151	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915152	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915153	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915154	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915155	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915156	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915157	Metagenomics	Illumina HiSeq 2500		70	Male	28	Italy			D000236	1
+PRJNA447983	SRR6915158	Metagenomics	Illumina HiSeq 2500		71	Female	30	Italy			D015179	1
+PRJNA447983	SRR6915159	Metagenomics	Illumina HiSeq 2500		58	Male	25	Italy			D015179	1
+PRJNA447983	SRR6915160	Metagenomics	Illumina HiSeq 2500		67	Female	21	Italy			D015179	1
+PRJNA447983	SRR6915161	Metagenomics	Illumina HiSeq 2500		61	Male	29	Italy			D000236	1
+PRJNA447983	SRR6915162	Metagenomics	Illumina HiSeq 2500		49	Male	21	Italy			D000236	1
+PRJNA447983	SRR6915163	Metagenomics	Illumina HiSeq 2500		57	Male	29	Italy			D000236	1
+PRJNA447983	SRR6915164	Metagenomics	Illumina HiSeq 2500		58	Male	24	Italy			D006262	1
+PRJNA447983	SRR6915165	Metagenomics	Illumina HiSeq 2500		61	Female		Italy			D006262	1
+PRJNA447983	SRR6915166	Metagenomics	Illumina HiSeq 2500		70	Male	24	Italy			D015179	1
+PRJNA447983	SRR6915167	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915168	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915169	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915170	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915171	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915172	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915173	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915174	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915175	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915176	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915177	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915178	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915179	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915180	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915181	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915182	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915183	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915184	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915185	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915186	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915187	Metagenomics	Illumina HiSeq 2500		64	Male	25	Italy			D006262	1
+PRJNA447983	SRR6915188	Metagenomics	Illumina HiSeq 2500		60	Male	22	Italy			D015179	1
+PRJNA447983	SRR6915189	Metagenomics	Illumina HiSeq 2500		81	Female	28	Italy			D006262	1
+PRJNA447983	SRR6915190	Metagenomics	Illumina HiSeq 2500		78	Male	24	Italy			D015179	1
+PRJNA447983	SRR6915191	Metagenomics	Illumina HiSeq 2500		69	Male	24	Italy			D006262	1
+PRJNA447983	SRR6915192	Metagenomics	Illumina HiSeq 2500		64	Male	27	Italy			D006262	1
+PRJNA447983	SRR6915193	Metagenomics	Illumina HiSeq 2500		69	Male	30	Italy			D006262	1
+PRJNA447983	SRR6915194	Metagenomics	Illumina HiSeq 2500		71	Male	24	Italy			D006262	1
+PRJNA447983	SRR6915195	Metagenomics	Illumina HiSeq 2500					Italy			D015179	1
+PRJNA447983	SRR6915196	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915197	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915198	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915199	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915200	Metagenomics	Illumina HiSeq 2500					Italy			D006262	1
+PRJNA447983	SRR6915201	Metagenomics	Illumina HiSeq 2500		83	Female	24	Italy			D015179	1
+PRJNA447983	SRR6915202	Metagenomics	Illumina HiSeq 2500		61	Male	22	Italy			D006262	1
+PRJNA447983	SRR6915203	Metagenomics	Illumina HiSeq 2500		67	Male		Italy			D000236	1
+PRJNA447983	SRR6915204	Metagenomics	Illumina HiSeq 2500		53	Female	21	Italy			D000236	1
+PRJNA447983	SRR6915205	Metagenomics	Illumina HiSeq 2500		56	Female	30	Italy			D000236	1
+PRJNA447983	SRR6915206	Metagenomics	Illumina HiSeq 2500		59	Male	26	Italy			D006262	1
+PRJNA447983	SRR6915207	Metagenomics	Illumina HiSeq 2500		63	Female	28	Italy			D006262	1
+PRJNA447983	SRR6915208	Metagenomics	Illumina HiSeq 2500		76	Male	26	Italy			D015179	1
+PRJNA447983	SRR6915209	Metagenomics	Illumina HiSeq 2500		57	Male	30	Italy			D015179	1
+PRJNA447983	SRR6915210	Metagenomics	Illumina HiSeq 2500		74	Male	25	Italy			D015179	1
+PRJNA447983	SRR6915211	Metagenomics	Illumina HiSeq 2500		64	Male	30	Italy			D015179	1
+PRJNA447983	SRR6915212	Metagenomics	Illumina HiSeq 2500		64	Female	25	Italy			D000236	1
+PRJNA447983	SRR6915213	Metagenomics	Illumina HiSeq 2500		78	Male	30	Italy			D015179	1
+PRJNA447983	SRR6915214	Metagenomics	Illumina HiSeq 2500		50	Male	26	Italy			D000236	1
+PRJNA447983	SRR6915215	Metagenomics	Illumina HiSeq 2500		57	Male	29	Italy			D000236	1
+PRJNA447983	SRR6915216	Metagenomics	Illumina HiSeq 2500		59	Male	22	Italy			D000236	1
+PRJNA447983	SRR6915217	Metagenomics	Illumina HiSeq 2500		67	Female	24	Italy			D006262	1
+PRJNA447983	SRR6915218	Metagenomics	Illumina HiSeq 2500		63	Male	37	Italy			D015179	1
+PRJNA447983	SRR6915219	Metagenomics	Illumina HiSeq 2500		77	Male	22	Italy			D015179	1
+PRJNA447983	SRR6915220	Metagenomics	Illumina HiSeq 2500		67	Male	35	Italy			D015179	1
+PRJNA447983	SRR6915221	Metagenomics	Illumina HiSeq 2500		70	Female	21	Italy			D000236	1
+PRJNA447983	SRR6915222	Metagenomics	Illumina HiSeq 2500		70	Female	20	Italy			D006262	1
+PRJNA447983	SRR6915223	Metagenomics	Illumina HiSeq 2500		75	Male		Italy			D015179	1
+PRJNA447983	SRR6915224	Metagenomics	Illumina HiSeq 2500		77	Female	20	Italy			D000236	1
+PRJNA447983	SRR6915225	Metagenomics	Illumina HiSeq 2500		77	Female	25	Italy			D006262	1
+PRJNA447983	SRR6915226	Metagenomics	Illumina HiSeq 2500		68	Female	30	Italy			D000236	1
+PRJNA447983	SRR6915227	Metagenomics	Illumina HiSeq 2500		71	Male	25	Italy			D006262	1
+PRJNA447983	SRR6915228	Metagenomics	Illumina HiSeq 2500		73	Female	31	Italy			D000236	1
+PRJNA447983	SRR6915229	Metagenomics	Illumina HiSeq 2500		62	Female	29	Italy			D000236	1
+PRJNA447983	SRR6915230	Metagenomics	Illumina HiSeq 2500		55	Male	19	Italy			D000236	1

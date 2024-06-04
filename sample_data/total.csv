@@ -1,0 +1,2295 @@
+project ID,run ID,experiment type,instrument model,host age,sex,BMI,country,associated phenotype,QC status
+PRJEB6070,ERR478958,Metagenomics,Illumina,72,,25,France,D006262,1
+PRJEB6070,ERR478959,Metagenomics,Illumina,72,,25,France,D006262,1
+PRJEB6070,ERR478960,Metagenomics,Illumina,72,,25,France,D006262,1
+PRJEB6070,ERR478961,Metagenomics,Illumina,72,,25,France,D006262,1
+PRJEB6070,ERR478962,Metagenomics,Illumina,53,,32,France,D006262,1
+PRJEB6070,ERR478963,Metagenomics,Illumina,53,,32,France,D006262,1
+PRJEB6070,ERR478964,Metagenomics,Illumina,35,,23,France,D006262,1
+PRJEB6070,ERR478965,Metagenomics,Illumina,35,,23,France,D006262,1
+PRJEB6070,ERR478966,Metagenomics,Illumina,35,,23,France,D006262,1
+PRJEB6070,ERR478967,Metagenomics,Illumina,35,,23,France,D006262,1
+PRJEB6070,ERR478968,Metagenomics,Illumina,67,,28,France,D015179,1
+PRJEB6070,ERR478969,Metagenomics,Illumina,67,,28,France,D015179,1
+PRJEB6070,ERR478970,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR478971,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR478972,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR478973,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR478974,Metagenomics,Illumina,29,,24,France,D006262,1
+PRJEB6070,ERR478975,Metagenomics,Illumina,29,,24,France,D006262,1
+PRJEB6070,ERR478976,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR478977,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR478978,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR478979,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR478980,Metagenomics,Illumina,65,,24,France,D006262,1
+PRJEB6070,ERR478981,Metagenomics,Illumina,65,,24,France,D006262,1
+PRJEB6070,ERR478982,Metagenomics,Illumina,65,,24,France,D006262,1
+PRJEB6070,ERR478983,Metagenomics,Illumina,65,,24,France,D006262,1
+PRJEB6070,ERR478984,Metagenomics,Illumina,58,,24,France,D015179,1
+PRJEB6070,ERR478985,Metagenomics,Illumina,58,,24,France,D015179,1
+PRJEB6070,ERR478986,Metagenomics,Illumina,63,,0,France,D006262,1
+PRJEB6070,ERR478987,Metagenomics,Illumina,63,,0,France,D006262,1
+PRJEB6070,ERR478988,Metagenomics,Illumina,63,,0,France,D006262,1
+PRJEB6070,ERR478989,Metagenomics,Illumina,63,,0,France,D006262,1
+PRJEB6070,ERR478990,Metagenomics,Illumina,77,,22,France,D006262,1
+PRJEB6070,ERR478991,Metagenomics,Illumina,77,,22,France,D006262,1
+PRJEB6070,ERR478992,Metagenomics,Illumina,77,,22,France,D006262,1
+PRJEB6070,ERR478993,Metagenomics,Illumina,77,,22,France,D006262,1
+PRJEB6070,ERR478994,Metagenomics,Illumina,62,,21,France,D006262,1
+PRJEB6070,ERR478995,Metagenomics,Illumina,62,,21,France,D006262,1
+PRJEB6070,ERR478996,Metagenomics,Illumina,62,,21,France,D006262,1
+PRJEB6070,ERR478997,Metagenomics,Illumina,62,,21,France,D006262,1
+PRJEB6070,ERR478998,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR478999,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR479000,Metagenomics,Illumina,67,,21,France,D006262,1
+PRJEB6070,ERR479001,Metagenomics,Illumina,67,,21,France,D006262,1
+PRJEB6070,ERR479002,Metagenomics,Illumina,67,,21,France,D006262,1
+PRJEB6070,ERR479003,Metagenomics,Illumina,67,,21,France,D006262,1
+PRJEB6070,ERR479004,Metagenomics,Illumina,25,,24,France,D006262,1
+PRJEB6070,ERR479005,Metagenomics,Illumina,25,,24,France,D006262,1
+PRJEB6070,ERR479006,Metagenomics,Illumina,64,,26,France,D000236,1
+PRJEB6070,ERR479007,Metagenomics,Illumina,64,,26,France,D000236,1
+PRJEB6070,ERR479008,Metagenomics,Illumina,64,,26,France,D000236,1
+PRJEB6070,ERR479009,Metagenomics,Illumina,64,,26,France,D000236,1
+PRJEB6070,ERR479010,Metagenomics,Illumina,62,,26,France,D015179,1
+PRJEB6070,ERR479011,Metagenomics,Illumina,62,,26,France,D015179,1
+PRJEB6070,ERR479012,Metagenomics,Illumina,58,,22,France,D000236,1
+PRJEB6070,ERR479013,Metagenomics,Illumina,58,,22,France,D000236,1
+PRJEB6070,ERR479014,Metagenomics,Illumina,67,,27,France,D006262,1
+PRJEB6070,ERR479015,Metagenomics,Illumina,67,,27,France,D006262,1
+PRJEB6070,ERR479016,Metagenomics,Illumina,67,,27,France,D006262,1
+PRJEB6070,ERR479017,Metagenomics,Illumina,67,,27,France,D006262,1
+PRJEB6070,ERR479018,Metagenomics,Illumina,44,,26,France,D006262,1
+PRJEB6070,ERR479019,Metagenomics,Illumina,44,,26,France,D006262,1
+PRJEB6070,ERR479020,Metagenomics,Illumina,44,,26,France,D006262,1
+PRJEB6070,ERR479021,Metagenomics,Illumina,44,,26,France,D006262,1
+PRJEB6070,ERR479022,Metagenomics,Illumina,56,,0,France,D006262,1
+PRJEB6070,ERR479023,Metagenomics,Illumina,56,,0,France,D006262,1
+PRJEB6070,ERR479024,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR479025,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR479026,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR479027,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR479028,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR479029,Metagenomics,Illumina,51,,30,France,D015179,1
+PRJEB6070,ERR479030,Metagenomics,Illumina,51,,30,France,D015179,1
+PRJEB6070,ERR479031,Metagenomics,Illumina,51,,30,France,D015179,1
+PRJEB6070,ERR479032,Metagenomics,Illumina,51,,30,France,D015179,1
+PRJEB6070,ERR479033,Metagenomics,Illumina,70,,22,France,D006262,1
+PRJEB6070,ERR479034,Metagenomics,Illumina,70,,22,France,D006262,1
+PRJEB6070,ERR479035,Metagenomics,Illumina,70,,22,France,D006262,1
+PRJEB6070,ERR479036,Metagenomics,Illumina,70,,22,France,D006262,1
+PRJEB6070,ERR479037,Metagenomics,Illumina,59,,20,France,D015179,1
+PRJEB6070,ERR479038,Metagenomics,Illumina,59,,20,France,D015179,1
+PRJEB6070,ERR479039,Metagenomics,Illumina,56,,0,France,D015179,1
+PRJEB6070,ERR479040,Metagenomics,Illumina,56,,0,France,D015179,1
+PRJEB6070,ERR479041,Metagenomics,Illumina,37,,18,France,D006262,1
+PRJEB6070,ERR479042,Metagenomics,Illumina,37,,18,France,D006262,1
+PRJEB6070,ERR479043,Metagenomics,Illumina,46,,29,France,D006262,1
+PRJEB6070,ERR479044,Metagenomics,Illumina,46,,29,France,D006262,1
+PRJEB6070,ERR479045,Metagenomics,Illumina,61,,24,France,D006262,1
+PRJEB6070,ERR479046,Metagenomics,Illumina,61,,24,France,D006262,1
+PRJEB6070,ERR479047,Metagenomics,Illumina,61,,24,France,D006262,1
+PRJEB6070,ERR479048,Metagenomics,Illumina,61,,24,France,D006262,1
+PRJEB6070,ERR479049,Metagenomics,Illumina,54,,26,France,D006262,1
+PRJEB6070,ERR479050,Metagenomics,Illumina,54,,26,France,D006262,1
+PRJEB6070,ERR479051,Metagenomics,Illumina,54,,26,France,D006262,1
+PRJEB6070,ERR479052,Metagenomics,Illumina,54,,26,France,D006262,1
+PRJEB6070,ERR479053,Metagenomics,Illumina,72,,37,France,D015179,1
+PRJEB6070,ERR479054,Metagenomics,Illumina,72,,37,France,D015179,1
+PRJEB6070,ERR479055,Metagenomics,Illumina,72,,37,France,D015179,1
+PRJEB6070,ERR479056,Metagenomics,Illumina,72,,37,France,D015179,1
+PRJEB6070,ERR479057,Metagenomics,Illumina,68,,23,France,D000236,1
+PRJEB6070,ERR479058,Metagenomics,Illumina,68,,23,France,D000236,1
+PRJEB6070,ERR479059,Metagenomics,Illumina,71,,23,France,D006262,1
+PRJEB6070,ERR479060,Metagenomics,Illumina,71,,23,France,D006262,1
+PRJEB6070,ERR479061,Metagenomics,Illumina,71,,23,France,D006262,1
+PRJEB6070,ERR479062,Metagenomics,Illumina,71,,23,France,D006262,1
+PRJEB6070,ERR479063,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR479064,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR479065,Metagenomics,Illumina,63,,25,France,D015179,1
+PRJEB6070,ERR479066,Metagenomics,Illumina,63,,25,France,D015179,1
+PRJEB6070,ERR479067,Metagenomics,Illumina,62,,29,France,D000236,1
+PRJEB6070,ERR479068,Metagenomics,Illumina,62,,29,France,D000236,1
+PRJEB6070,ERR479069,Metagenomics,Illumina,62,,29,France,D000236,1
+PRJEB6070,ERR479070,Metagenomics,Illumina,62,,29,France,D000236,1
+PRJEB6070,ERR479071,Metagenomics,Illumina,82,,24,France,D015179,1
+PRJEB6070,ERR479072,Metagenomics,Illumina,82,,24,France,D015179,1
+PRJEB6070,ERR479073,Metagenomics,Illumina,82,,24,France,D015179,1
+PRJEB6070,ERR479074,Metagenomics,Illumina,82,,24,France,D015179,1
+PRJEB6070,ERR479075,Metagenomics,Illumina,77,,23,France,D000236,1
+PRJEB6070,ERR479076,Metagenomics,Illumina,77,,23,France,D000236,1
+PRJEB6070,ERR479077,Metagenomics,Illumina,60,,26,France,D015179,1
+PRJEB6070,ERR479078,Metagenomics,Illumina,60,,26,France,D015179,1
+PRJEB6070,ERR479079,Metagenomics,Illumina,62,,23,France,D006262,1
+PRJEB6070,ERR479080,Metagenomics,Illumina,62,,23,France,D006262,1
+PRJEB6070,ERR479081,Metagenomics,Illumina,62,,23,France,D006262,1
+PRJEB6070,ERR479082,Metagenomics,Illumina,62,,23,France,D006262,1
+PRJEB6070,ERR479083,Metagenomics,Illumina,69,,24,France,D015179,1
+PRJEB6070,ERR479084,Metagenomics,Illumina,69,,24,France,D015179,1
+PRJEB6070,ERR479085,Metagenomics,Illumina,59,,31,France,D000236,1
+PRJEB6070,ERR479086,Metagenomics,Illumina,59,,31,France,D000236,1
+PRJEB6070,ERR479087,Metagenomics,Illumina,59,,31,France,D000236,1
+PRJEB6070,ERR479088,Metagenomics,Illumina,60,,27,France,D000236,1
+PRJEB6070,ERR479089,Metagenomics,Illumina,60,,27,France,D000236,1
+PRJEB6070,ERR479090,Metagenomics,Illumina,60,,27,France,D000236,1
+PRJEB6070,ERR479091,Metagenomics,Illumina,52,,20,France,D006262,1
+PRJEB6070,ERR479092,Metagenomics,Illumina,52,,20,France,D006262,1
+PRJEB6070,ERR479093,Metagenomics,Illumina,72,,24,France,D006262,1
+PRJEB6070,ERR479094,Metagenomics,Illumina,72,,24,France,D006262,1
+PRJEB6070,ERR479095,Metagenomics,Illumina,72,,24,France,D006262,1
+PRJEB6070,ERR479096,Metagenomics,Illumina,72,,24,France,D006262,1
+PRJEB6070,ERR479097,Metagenomics,Illumina,89,,24,France,D000236,1
+PRJEB6070,ERR479098,Metagenomics,Illumina,89,,24,France,D000236,1
+PRJEB6070,ERR479099,Metagenomics,Illumina,64,,27,France,D006262,1
+PRJEB6070,ERR479100,Metagenomics,Illumina,64,,27,France,D006262,1
+PRJEB6070,ERR479101,Metagenomics,Illumina,50,,25,France,D006262,1
+PRJEB6070,ERR479102,Metagenomics,Illumina,50,,25,France,D006262,1
+PRJEB6070,ERR479103,Metagenomics,Illumina,66,,24,France,D000236,1
+PRJEB6070,ERR479104,Metagenomics,Illumina,66,,24,France,D000236,1
+PRJEB6070,ERR479105,Metagenomics,Illumina,53,,30,France,D000236,1
+PRJEB6070,ERR479106,Metagenomics,Illumina,53,,30,France,D000236,1
+PRJEB6070,ERR479107,Metagenomics,Illumina,68,,26,France,D006262,1
+PRJEB6070,ERR479108,Metagenomics,Illumina,68,,26,France,D006262,1
+PRJEB6070,ERR479109,Metagenomics,Illumina,68,,26,France,D006262,1
+PRJEB6070,ERR479110,Metagenomics,Illumina,68,,26,France,D006262,1
+PRJEB6070,ERR479111,Metagenomics,Illumina,64,,21,France,D015179,1
+PRJEB6070,ERR479112,Metagenomics,Illumina,64,,21,France,D015179,1
+PRJEB6070,ERR479113,Metagenomics,Illumina,64,,21,France,D015179,1
+PRJEB6070,ERR479114,Metagenomics,Illumina,64,,21,France,D015179,1
+PRJEB6070,ERR479115,Metagenomics,Illumina,80,,29,France,D015179,1
+PRJEB6070,ERR479116,Metagenomics,Illumina,80,,29,France,D015179,1
+PRJEB6070,ERR479117,Metagenomics,Illumina,80,,29,France,D015179,1
+PRJEB6070,ERR479118,Metagenomics,Illumina,63,,27,France,D006262,1
+PRJEB6070,ERR479119,Metagenomics,Illumina,63,,27,France,D006262,1
+PRJEB6070,ERR479120,Metagenomics,Illumina,63,,27,France,D006262,1
+PRJEB6070,ERR479121,Metagenomics,Illumina,63,,27,France,D006262,1
+PRJEB6070,ERR479122,Metagenomics,Illumina,62,,21,France,D000236,1
+PRJEB6070,ERR479123,Metagenomics,Illumina,62,,21,France,D000236,1
+PRJEB6070,ERR479124,Metagenomics,Illumina,73,,40,France,D015179,1
+PRJEB6070,ERR479125,Metagenomics,Illumina,73,,40,France,D015179,1
+PRJEB6070,ERR479126,Metagenomics,Illumina,73,,40,France,D015179,1
+PRJEB6070,ERR479127,Metagenomics,Illumina,73,,40,France,D015179,1
+PRJEB6070,ERR479128,Metagenomics,Illumina,68,,25,France,D006262,1
+PRJEB6070,ERR479129,Metagenomics,Illumina,68,,25,France,D006262,1
+PRJEB6070,ERR479130,Metagenomics,Illumina,68,,25,France,D006262,1
+PRJEB6070,ERR479131,Metagenomics,Illumina,68,,25,France,D006262,1
+PRJEB6070,ERR479132,Metagenomics,Illumina,63,,25,France,D006262,1
+PRJEB6070,ERR479133,Metagenomics,Illumina,63,,25,France,D006262,1
+PRJEB6070,ERR479134,Metagenomics,Illumina,63,,25,France,D006262,1
+PRJEB6070,ERR479135,Metagenomics,Illumina,63,,25,France,D006262,1
+PRJEB6070,ERR479136,Metagenomics,Illumina,59,,21,France,D000236,1
+PRJEB6070,ERR479137,Metagenomics,Illumina,59,,21,France,D000236,1
+PRJEB6070,ERR479138,Metagenomics,Illumina,79,,22,France,D015179,1
+PRJEB6070,ERR479139,Metagenomics,Illumina,79,,22,France,D015179,1
+PRJEB6070,ERR479140,Metagenomics,Illumina,87,,32,France,D015179,1
+PRJEB6070,ERR479141,Metagenomics,Illumina,87,,32,France,D015179,1
+PRJEB6070,ERR479142,Metagenomics,Illumina,73,,24,France,D015179,1
+PRJEB6070,ERR479143,Metagenomics,Illumina,73,,24,France,D015179,1
+PRJEB6070,ERR479144,Metagenomics,Illumina,73,,24,France,D015179,1
+PRJEB6070,ERR479145,Metagenomics,Illumina,73,,24,France,D015179,1
+PRJEB6070,ERR479146,Metagenomics,Illumina,74,,19,France,D015179,1
+PRJEB6070,ERR479147,Metagenomics,Illumina,74,,19,France,D015179,1
+PRJEB6070,ERR479148,Metagenomics,Illumina,78,,19,France,D015179,1
+PRJEB6070,ERR479149,Metagenomics,Illumina,78,,19,France,D015179,1
+PRJEB6070,ERR479150,Metagenomics,Illumina,67,,28,France,D006262,1
+PRJEB6070,ERR479151,Metagenomics,Illumina,67,,28,France,D006262,1
+PRJEB6070,ERR479152,Metagenomics,Illumina,67,,28,France,D006262,1
+PRJEB6070,ERR479153,Metagenomics,Illumina,67,,28,France,D006262,1
+PRJEB6070,ERR479154,Metagenomics,Illumina,59,,0,France,D000236,1
+PRJEB6070,ERR479155,Metagenomics,Illumina,59,,0,France,D000236,1
+PRJEB6070,ERR479156,Metagenomics,Illumina,59,,0,France,D000236,1
+PRJEB6070,ERR479157,Metagenomics,Illumina,62,,20,France,D006262,1
+PRJEB6070,ERR479158,Metagenomics,Illumina,62,,20,France,D006262,1
+PRJEB6070,ERR479159,Metagenomics,Illumina,62,,20,France,D006262,1
+PRJEB6070,ERR479160,Metagenomics,Illumina,62,,20,France,D006262,1
+PRJEB6070,ERR479161,Metagenomics,Illumina,48,,21,France,D000236,1
+PRJEB6070,ERR479162,Metagenomics,Illumina,66,,22,France,D000236,1
+PRJEB6070,ERR479163,Metagenomics,Illumina,66,,22,France,D000236,1
+PRJEB6070,ERR479164,Metagenomics,Illumina,66,,22,France,D000236,1
+PRJEB6070,ERR479165,Metagenomics,Illumina,75,,37,France,D015179,1
+PRJEB6070,ERR479166,Metagenomics,Illumina,75,,37,France,D015179,1
+PRJEB6070,ERR479167,Metagenomics,Illumina,55,,20,France,D006262,1
+PRJEB6070,ERR479168,Metagenomics,Illumina,55,,20,France,D006262,1
+PRJEB6070,ERR479169,Metagenomics,Illumina,67,,25,France,D006262,1
+PRJEB6070,ERR479170,Metagenomics,Illumina,67,,25,France,D006262,1
+PRJEB6070,ERR479171,Metagenomics,Illumina,67,,25,France,D006262,1
+PRJEB6070,ERR479172,Metagenomics,Illumina,67,,25,France,D006262,1
+PRJEB6070,ERR479173,Metagenomics,Illumina,65,,24,France,D015179,1
+PRJEB6070,ERR479174,Metagenomics,Illumina,65,,24,France,D015179,1
+PRJEB6070,ERR479175,Metagenomics,Illumina,54,,22,France,D015179,1
+PRJEB6070,ERR479176,Metagenomics,Illumina,54,,22,France,D015179,1
+PRJEB6070,ERR479177,Metagenomics,Illumina,67,,25,France,D015179,1
+PRJEB6070,ERR479178,Metagenomics,Illumina,67,,25,France,D015179,1
+PRJEB6070,ERR479179,Metagenomics,Illumina,67,,25,France,D015179,1
+PRJEB6070,ERR479180,Metagenomics,Illumina,67,,25,France,D015179,1
+PRJEB6070,ERR479181,Metagenomics,Illumina,63,,27,France,D000236,1
+PRJEB6070,ERR479182,Metagenomics,Illumina,63,,27,France,D000236,1
+PRJEB6070,ERR479183,Metagenomics,Illumina,66,,25,France,D006262,1
+PRJEB6070,ERR479184,Metagenomics,Illumina,66,,25,France,D006262,1
+PRJEB6070,ERR479185,Metagenomics,Illumina,66,,25,France,D006262,1
+PRJEB6070,ERR479186,Metagenomics,Illumina,66,,25,France,D006262,1
+PRJEB6070,ERR479187,Metagenomics,Illumina,72,,32,France,D000236,1
+PRJEB6070,ERR479188,Metagenomics,Illumina,72,,32,France,D000236,1
+PRJEB6070,ERR479189,Metagenomics,Illumina,72,,32,France,D000236,1
+PRJEB6070,ERR479190,Metagenomics,Illumina,52,,23,France,D000236,1
+PRJEB6070,ERR479191,Metagenomics,Illumina,52,,23,France,D000236,1
+PRJEB6070,ERR479192,Metagenomics,Illumina,52,,23,France,D000236,1
+PRJEB6070,ERR479193,Metagenomics,Illumina,62,,21,France,D015179,1
+PRJEB6070,ERR479194,Metagenomics,Illumina,62,,21,France,D015179,1
+PRJEB6070,ERR479195,Metagenomics,Illumina,66,,28,France,D006262,1
+PRJEB6070,ERR479196,Metagenomics,Illumina,66,,28,France,D006262,1
+PRJEB6070,ERR479197,Metagenomics,Illumina,66,,28,France,D006262,1
+PRJEB6070,ERR479198,Metagenomics,Illumina,66,,28,France,D006262,1
+PRJEB6070,ERR479199,Metagenomics,Illumina,87,,15,France,D015179,1
+PRJEB6070,ERR479200,Metagenomics,Illumina,87,,15,France,D015179,1
+PRJEB6070,ERR479201,Metagenomics,Illumina,53,,33,France,D000236,1
+PRJEB6070,ERR479202,Metagenomics,Illumina,53,,33,France,D000236,1
+PRJEB6070,ERR479203,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR479204,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR479205,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR479206,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR479207,Metagenomics,Illumina,60,,26,France,D000236,1
+PRJEB6070,ERR479208,Metagenomics,Illumina,60,,26,France,D000236,1
+PRJEB6070,ERR479209,Metagenomics,Illumina,63,,22,France,D006262,1
+PRJEB6070,ERR479210,Metagenomics,Illumina,63,,22,France,D006262,1
+PRJEB6070,ERR479211,Metagenomics,Illumina,63,,22,France,D006262,1
+PRJEB6070,ERR479212,Metagenomics,Illumina,63,,22,France,D006262,1
+PRJEB6070,ERR479213,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR479214,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR479215,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR479216,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR479217,Metagenomics,Illumina,64,,28,France,D000236,1
+PRJEB6070,ERR479218,Metagenomics,Illumina,64,,28,France,D000236,1
+PRJEB6070,ERR479219,Metagenomics,Illumina,53,,25,France,D015179,1
+PRJEB6070,ERR479220,Metagenomics,Illumina,53,,25,France,D015179,1
+PRJEB6070,ERR479221,Metagenomics,Illumina,53,,25,France,D015179,1
+PRJEB6070,ERR479222,Metagenomics,Illumina,53,,25,France,D015179,1
+PRJEB6070,ERR479223,Metagenomics,Illumina,72,,22,France,D015179,1
+PRJEB6070,ERR479224,Metagenomics,Illumina,72,,22,France,D015179,1
+PRJEB6070,ERR479225,Metagenomics,Illumina,76,,0,France,D015179,1
+PRJEB6070,ERR479226,Metagenomics,Illumina,76,,0,France,D015179,1
+PRJEB6070,ERR479227,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR479228,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR479229,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR479230,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR479231,Metagenomics,Illumina,52,,33,France,D000236,1
+PRJEB6070,ERR479232,Metagenomics,Illumina,52,,33,France,D000236,1
+PRJEB6070,ERR479233,Metagenomics,Illumina,52,,33,France,D000236,1
+PRJEB6070,ERR479234,Metagenomics,Illumina,52,,33,France,D000236,1
+PRJEB6070,ERR479235,Metagenomics,Illumina,64,,30,France,D015179,1
+PRJEB6070,ERR479236,Metagenomics,Illumina,64,,30,France,D015179,1
+PRJEB6070,ERR479237,Metagenomics,Illumina,64,,30,France,D015179,1
+PRJEB6070,ERR479238,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR479239,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR479240,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR479241,Metagenomics,Illumina,68,,21,France,D000236,1
+PRJEB6070,ERR479242,Metagenomics,Illumina,68,,21,France,D000236,1
+PRJEB6070,ERR479243,Metagenomics,Illumina,70,,26,France,D015179,1
+PRJEB6070,ERR479244,Metagenomics,Illumina,70,,26,France,D015179,1
+PRJEB6070,ERR479245,Metagenomics,Illumina,80,,23,France,D015179,1
+PRJEB6070,ERR479246,Metagenomics,Illumina,80,,23,France,D015179,1
+PRJEB6070,ERR479247,Metagenomics,Illumina,80,,23,France,D015179,1
+PRJEB6070,ERR479248,Metagenomics,Illumina,80,,23,France,D015179,1
+PRJEB6070,ERR479249,Metagenomics,Illumina,76,,34,France,D000236,1
+PRJEB6070,ERR479250,Metagenomics,Illumina,76,,34,France,D000236,1
+PRJEB6070,ERR479251,Metagenomics,Illumina,76,,25,France,D015179,1
+PRJEB6070,ERR479252,Metagenomics,Illumina,76,,25,France,D015179,1
+PRJEB6070,ERR479253,Metagenomics,Illumina,76,,25,France,D015179,1
+PRJEB6070,ERR479254,Metagenomics,Illumina,56,,23,France,D015179,1
+PRJEB6070,ERR479255,Metagenomics,Illumina,68,,23,France,D015179,1
+PRJEB6070,ERR479256,Metagenomics,Illumina,68,,23,France,D015179,1
+PRJEB6070,ERR479257,Metagenomics,Illumina,68,,23,France,D015179,1
+PRJEB6070,ERR479258,Metagenomics,Illumina,68,,23,France,D015179,1
+PRJEB6070,ERR479259,Metagenomics,Illumina,61,,34,France,D006262,1
+PRJEB6070,ERR479260,Metagenomics,Illumina,61,,34,France,D006262,1
+PRJEB6070,ERR479261,Metagenomics,Illumina,61,,34,France,D006262,1
+PRJEB6070,ERR479262,Metagenomics,Illumina,61,,34,France,D006262,1
+PRJEB6070,ERR479263,Metagenomics,Illumina,69,,25,France,D006262,1
+PRJEB6070,ERR479264,Metagenomics,Illumina,69,,25,France,D006262,1
+PRJEB6070,ERR479265,Metagenomics,Illumina,69,,25,France,D006262,1
+PRJEB6070,ERR479266,Metagenomics,Illumina,69,,25,France,D006262,1
+PRJEB6070,ERR479267,Metagenomics,Illumina,49,,23,France,D006262,1
+PRJEB6070,ERR479268,Metagenomics,Illumina,49,,23,France,D006262,1
+PRJEB6070,ERR479269,Metagenomics,Illumina,49,,23,France,D006262,1
+PRJEB6070,ERR479270,Metagenomics,Illumina,63,,23,France,D006262,1
+PRJEB6070,ERR479271,Metagenomics,Illumina,63,,23,France,D006262,1
+PRJEB6070,ERR479272,Metagenomics,Illumina,63,,23,France,D006262,1
+PRJEB6070,ERR479273,Metagenomics,Illumina,63,,23,France,D006262,1
+PRJEB6070,ERR479274,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR479275,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR479276,Metagenomics,Illumina,69,,25,France,D015179,1
+PRJEB6070,ERR479277,Metagenomics,Illumina,69,,25,France,D015179,1
+PRJEB6070,ERR479278,Metagenomics,Illumina,69,,25,France,D015179,1
+PRJEB6070,ERR479279,Metagenomics,Illumina,69,,25,France,D015179,1
+PRJEB6070,ERR479280,Metagenomics,Illumina,55,,24,France,D000236,1
+PRJEB6070,ERR479281,Metagenomics,Illumina,55,,24,France,D000236,1
+PRJEB6070,ERR479282,Metagenomics,Illumina,55,,24,France,D000236,1
+PRJEB6070,ERR479283,Metagenomics,Illumina,55,,24,France,D000236,1
+PRJEB6070,ERR479284,Metagenomics,Illumina,50,,24,France,D015179,1
+PRJEB6070,ERR479285,Metagenomics,Illumina,50,,24,France,D015179,1
+PRJEB6070,ERR479286,Metagenomics,Illumina,70,,25,France,D006262,1
+PRJEB6070,ERR479287,Metagenomics,Illumina,70,,25,France,D006262,1
+PRJEB6070,ERR479288,Metagenomics,Illumina,70,,25,France,D006262,1
+PRJEB6070,ERR479289,Metagenomics,Illumina,70,,25,France,D006262,1
+PRJEB6070,ERR479290,Metagenomics,Illumina,74,,26,France,D015179,1
+PRJEB6070,ERR479291,Metagenomics,Illumina,74,,26,France,D015179,1
+PRJEB6070,ERR479292,Metagenomics,Illumina,74,,26,France,D015179,1
+PRJEB6070,ERR479293,Metagenomics,Illumina,74,,26,France,D015179,1
+PRJEB6070,ERR479294,Metagenomics,Illumina,62,,24,France,D006262,1
+PRJEB6070,ERR479295,Metagenomics,Illumina,62,,24,France,D006262,1
+PRJEB6070,ERR479296,Metagenomics,Illumina,62,,24,France,D006262,1
+PRJEB6070,ERR479297,Metagenomics,Illumina,62,,24,France,D006262,1
+PRJEB6070,ERR479298,Metagenomics,Illumina,66,,24,France,D000236,1
+PRJEB6070,ERR479299,Metagenomics,Illumina,68,,36,France,D000236,1
+PRJEB6070,ERR479300,Metagenomics,Illumina,68,,36,France,D000236,1
+PRJEB6070,ERR479301,Metagenomics,Illumina,68,,36,France,D000236,1
+PRJEB6070,ERR479302,Metagenomics,Illumina,44,,20,France,D015179,1
+PRJEB6070,ERR479303,Metagenomics,Illumina,44,,20,France,D015179,1
+PRJEB6070,ERR479304,Metagenomics,Illumina,73,,26,France,D000236,1
+PRJEB6070,ERR479305,Metagenomics,Illumina,73,,26,France,D000236,1
+PRJEB6070,ERR479306,Metagenomics,Illumina,73,,26,France,D000236,1
+PRJEB6070,ERR479307,Metagenomics,Illumina,73,,26,France,D000236,1
+PRJEB6070,ERR479308,Metagenomics,Illumina,65,,26,France,D015179,1
+PRJEB6070,ERR479309,Metagenomics,Illumina,65,,26,France,D015179,1
+PRJEB6070,ERR479310,Metagenomics,Illumina,65,,26,France,D015179,1
+PRJEB6070,ERR479311,Metagenomics,Illumina,65,,26,France,D015179,1
+PRJEB6070,ERR479312,Metagenomics,Illumina,64,,30,France,D006262,1
+PRJEB6070,ERR479313,Metagenomics,Illumina,64,,30,France,D006262,1
+PRJEB6070,ERR479314,Metagenomics,Illumina,64,,30,France,D006262,1
+PRJEB6070,ERR479315,Metagenomics,Illumina,64,,30,France,D006262,1
+PRJEB6070,ERR479316,Metagenomics,Illumina,69,,30,France,D015179,1
+PRJEB6070,ERR479317,Metagenomics,Illumina,69,,30,France,D015179,1
+PRJEB6070,ERR479318,Metagenomics,Illumina,69,,30,France,D015179,1
+PRJEB6070,ERR479319,Metagenomics,Illumina,65,,30,France,D006262,1
+PRJEB6070,ERR479320,Metagenomics,Illumina,65,,30,France,D006262,1
+PRJEB6070,ERR479321,Metagenomics,Illumina,60,,28,France,D006262,1
+PRJEB6070,ERR479322,Metagenomics,Illumina,60,,28,France,D006262,1
+PRJEB6070,ERR479323,Metagenomics,Illumina,60,,28,France,D006262,1
+PRJEB6070,ERR479324,Metagenomics,Illumina,60,,28,France,D006262,1
+PRJEB6070,ERR479325,Metagenomics,Illumina,64,,20,France,D006262,1
+PRJEB6070,ERR479326,Metagenomics,Illumina,64,,20,France,D006262,1
+PRJEB6070,ERR479327,Metagenomics,Illumina,49,,20,France,D000236,1
+PRJEB6070,ERR479328,Metagenomics,Illumina,49,,20,France,D000236,1
+PRJEB6070,ERR479329,Metagenomics,Illumina,68,,26,France,D000236,1
+PRJEB6070,ERR479330,Metagenomics,Illumina,68,,26,France,D000236,1
+PRJEB6070,ERR479331,Metagenomics,Illumina,59,,27,France,D015179,1
+PRJEB6070,ERR479332,Metagenomics,Illumina,59,,27,France,D015179,1
+PRJEB6070,ERR479333,Metagenomics,Illumina,59,,27,France,D015179,1
+PRJEB6070,ERR479334,Metagenomics,Illumina,59,,27,France,D015179,1
+PRJEB6070,ERR479335,Metagenomics,Illumina,51,,24,France,D015179,1
+PRJEB6070,ERR479336,Metagenomics,Illumina,51,,24,France,D015179,1
+PRJEB6070,ERR479337,Metagenomics,Illumina,51,,24,France,D015179,1
+PRJEB6070,ERR479338,Metagenomics,Illumina,51,,24,France,D015179,1
+PRJEB6070,ERR479339,Metagenomics,Illumina,57,,24,France,D006262,1
+PRJEB6070,ERR479340,Metagenomics,Illumina,57,,24,France,D006262,1
+PRJEB6070,ERR479341,Metagenomics,Illumina,38,,22,France,D006262,1
+PRJEB6070,ERR479342,Metagenomics,Illumina,38,,22,France,D006262,1
+PRJEB6070,ERR479343,Metagenomics,Illumina,66,,29,France,D000236,1
+PRJEB6070,ERR479344,Metagenomics,Illumina,66,,29,France,D000236,1
+PRJEB6070,ERR479345,Metagenomics,Illumina,66,,29,France,D000236,1
+PRJEB6070,ERR479346,Metagenomics,Illumina,60,,24,France,D000236,1
+PRJEB6070,ERR479347,Metagenomics,Illumina,60,,24,France,D000236,1
+PRJEB6070,ERR479348,Metagenomics,Illumina,48,,24,France,D015179,1
+PRJEB6070,ERR479349,Metagenomics,Illumina,48,,24,France,D015179,1
+PRJEB6070,ERR479350,Metagenomics,Illumina,48,,24,France,D015179,1
+PRJEB6070,ERR479351,Metagenomics,Illumina,45,,28,France,D015179,1
+PRJEB6070,ERR479352,Metagenomics,Illumina,45,,28,France,D015179,1
+PRJEB6070,ERR479353,Metagenomics,Illumina,63,,22,France,D015179,1
+PRJEB6070,ERR479354,Metagenomics,Illumina,63,,22,France,D015179,1
+PRJEB6070,ERR479355,Metagenomics,Illumina,85,,20,France,D015179,1
+PRJEB6070,ERR479356,Metagenomics,Illumina,85,,20,France,D015179,1
+PRJEB6070,ERR479357,Metagenomics,Illumina,79,,30,France,D015179,1
+PRJEB6070,ERR479358,Metagenomics,Illumina,79,,30,France,D015179,1
+PRJEB6070,ERR479359,Metagenomics,Illumina,73,,17,France,D015179,1
+PRJEB6070,ERR479360,Metagenomics,Illumina,73,,17,France,D015179,1
+PRJEB6070,ERR479361,Metagenomics,Illumina,73,,17,France,D015179,1
+PRJEB6070,ERR479362,Metagenomics,Illumina,71,,29,France,D000236,1
+PRJEB6070,ERR479363,Metagenomics,Illumina,71,,29,France,D000236,1
+PRJEB6070,ERR479364,Metagenomics,Illumina,71,,29,France,D000236,1
+PRJEB6070,ERR479365,Metagenomics,Illumina,71,,29,France,D000236,1
+PRJEB6070,ERR479366,Metagenomics,Illumina,73,,26,France,D015179,1
+PRJEB6070,ERR479367,Metagenomics,Illumina,73,,26,France,D015179,1
+PRJEB6070,ERR479368,Metagenomics,Illumina,73,,26,France,D015179,1
+PRJEB6070,ERR479369,Metagenomics,Illumina,73,,26,France,D015179,1
+PRJEB6070,ERR479370,Metagenomics,Illumina,67,,23,France,D006262,1
+PRJEB6070,ERR479371,Metagenomics,Illumina,67,,23,France,D006262,1
+PRJEB6070,ERR479372,Metagenomics,Illumina,67,,23,France,D006262,1
+PRJEB6070,ERR479373,Metagenomics,Illumina,67,,23,France,D006262,1
+PRJEB6070,ERR479374,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR479375,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR479376,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR479377,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR479378,Metagenomics,Illumina,84,,23,France,D006262,1
+PRJEB6070,ERR479379,Metagenomics,Illumina,84,,23,France,D006262,1
+PRJEB6070,ERR479380,Metagenomics,Illumina,84,,23,France,D006262,1
+PRJEB6070,ERR479381,Metagenomics,Illumina,84,,23,France,D006262,1
+PRJEB6070,ERR479382,Metagenomics,Illumina,78,,23,France,D000236,1
+PRJEB6070,ERR479383,Metagenomics,Illumina,78,,23,France,D000236,1
+PRJEB6070,ERR479384,Metagenomics,Illumina,63,,30,France,D000236,1
+PRJEB6070,ERR479385,Metagenomics,Illumina,63,,30,France,D000236,1
+PRJEB6070,ERR479386,Metagenomics,Illumina,63,,30,France,D000236,1
+PRJEB6070,ERR479387,Metagenomics,Illumina,71,,22,France,D000236,1
+PRJEB6070,ERR479388,Metagenomics,Illumina,71,,22,France,D000236,1
+PRJEB6070,ERR479389,Metagenomics,Illumina,63,,31,France,D015179,1
+PRJEB6070,ERR479390,Metagenomics,Illumina,63,,31,France,D015179,1
+PRJEB6070,ERR479391,Metagenomics,Illumina,65,,30,France,D006262,1
+PRJEB6070,ERR479392,Metagenomics,Illumina,65,,30,France,D006262,1
+PRJEB6070,ERR479393,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR479394,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR479395,Metagenomics,Illumina,64,,28,France,D000236,1
+PRJEB6070,ERR479396,Metagenomics,Illumina,64,,28,France,D000236,1
+PRJEB6070,ERR479397,Metagenomics,Illumina,80,,21,France,D006262,1
+PRJEB6070,ERR479398,Metagenomics,Illumina,80,,21,France,D006262,1
+PRJEB6070,ERR479399,Metagenomics,Illumina,80,,21,France,D006262,1
+PRJEB6070,ERR479400,Metagenomics,Illumina,80,,21,France,D006262,1
+PRJEB6070,ERR479401,Metagenomics,Illumina,52,,24,France,D006262,1
+PRJEB6070,ERR479402,Metagenomics,Illumina,52,,24,France,D006262,1
+PRJEB6070,ERR479403,Metagenomics,Illumina,52,,24,France,D006262,1
+PRJEB6070,ERR479404,Metagenomics,Illumina,52,,24,France,D006262,1
+PRJEB6070,ERR479405,Metagenomics,Illumina,63,,21,France,D006262,1
+PRJEB6070,ERR479406,Metagenomics,Illumina,63,,21,France,D006262,1
+PRJEB6070,ERR479407,Metagenomics,Illumina,63,,21,France,D006262,1
+PRJEB6070,ERR479408,Metagenomics,Illumina,63,,21,France,D006262,1
+PRJEB6070,ERR479409,Metagenomics,Illumina,66,,20,France,D000236,1
+PRJEB6070,ERR479410,Metagenomics,Illumina,66,,20,France,D000236,1
+PRJEB6070,ERR479411,Metagenomics,Illumina,66,,20,France,D000236,1
+PRJEB6070,ERR479412,Metagenomics,Illumina,66,,20,France,D000236,1
+PRJEB6070,ERR479413,Metagenomics,Illumina,53,,30,France,D006262,1
+PRJEB6070,ERR479414,Metagenomics,Illumina,53,,30,France,D006262,1
+PRJEB6070,ERR479415,Metagenomics,Illumina,63,,29,France,D015179,1
+PRJEB6070,ERR479416,Metagenomics,Illumina,63,,29,France,D015179,1
+PRJEB6070,ERR479417,Metagenomics,Illumina,55,,25,France,D015179,1
+PRJEB6070,ERR479418,Metagenomics,Illumina,55,,25,France,D015179,1
+PRJEB6070,ERR479419,Metagenomics,Illumina,42,,35,Germany,D015179,1
+PRJEB6070,ERR479420,Metagenomics,Illumina,42,,35,Germany,D015179,1
+PRJEB6070,ERR479421,Metagenomics,Illumina,42,,35,Germany,D015179,1
+PRJEB6070,ERR479422,Metagenomics,Illumina,42,,35,Germany,D015179,1
+PRJEB6070,ERR479423,Metagenomics,Illumina,75,,28,Germany,D015179,0
+PRJEB6070,ERR479424,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR479425,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR479426,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR479427,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR479428,Metagenomics,Illumina,66,,23,Germany,D015179,1
+PRJEB6070,ERR479429,Metagenomics,Illumina,66,,23,Germany,D015179,1
+PRJEB6070,ERR479430,Metagenomics,Illumina,66,,23,Germany,D015179,1
+PRJEB6070,ERR479431,Metagenomics,Illumina,66,,23,Germany,D015179,1
+PRJEB6070,ERR479432,Metagenomics,Illumina,56,,27,Germany,D015179,1
+PRJEB6070,ERR479433,Metagenomics,Illumina,56,,27,Germany,D015179,1
+PRJEB6070,ERR479434,Metagenomics,Illumina,56,,27,Germany,D015179,1
+PRJEB6070,ERR479435,Metagenomics,Illumina,56,,27,Germany,D015179,1
+PRJEB6070,ERR479436,Metagenomics,Illumina,74,,26,Germany,D015179,1
+PRJEB6070,ERR479437,Metagenomics,Illumina,74,,26,Germany,D015179,1
+PRJEB6070,ERR479438,Metagenomics,Illumina,74,,26,Germany,D015179,1
+PRJEB6070,ERR479439,Metagenomics,Illumina,74,,26,Germany,D015179,1
+PRJEB6070,ERR479440,Metagenomics,Illumina,63,,25,Germany,D015179,1
+PRJEB6070,ERR479441,Metagenomics,Illumina,63,,25,Germany,D015179,1
+PRJEB6070,ERR479442,Metagenomics,Illumina,63,,25,Germany,D015179,1
+PRJEB6070,ERR479443,Metagenomics,Illumina,63,,25,Germany,D015179,1
+PRJEB6070,ERR479444,Metagenomics,Illumina,53,,32,Germany,D015179,1
+PRJEB6070,ERR479445,Metagenomics,Illumina,53,,32,Germany,D015179,1
+PRJEB6070,ERR479446,Metagenomics,Illumina,53,,32,Germany,D015179,1
+PRJEB6070,ERR479447,Metagenomics,Illumina,53,,32,Germany,D015179,1
+PRJEB6070,ERR479448,Metagenomics,Illumina,69,,28,Germany,D015179,1
+PRJEB6070,ERR479449,Metagenomics,Illumina,69,,28,Germany,D015179,1
+PRJEB6070,ERR479450,Metagenomics,Illumina,69,,28,Germany,D015179,1
+PRJEB6070,ERR479451,Metagenomics,Illumina,69,,28,Germany,D015179,1
+PRJEB6070,ERR479452,Metagenomics,Illumina,72,,24,Germany,D015179,1
+PRJEB6070,ERR479453,Metagenomics,Illumina,72,,24,Germany,D015179,1
+PRJEB6070,ERR479454,Metagenomics,Illumina,72,,24,Germany,D015179,1
+PRJEB6070,ERR479455,Metagenomics,Illumina,72,,24,Germany,D015179,1
+PRJEB6070,ERR479456,Metagenomics,Illumina,62,,22,Germany,D015179,1
+PRJEB6070,ERR479457,Metagenomics,Illumina,62,,22,Germany,D015179,1
+PRJEB6070,ERR479458,Metagenomics,Illumina,62,,22,Germany,D015179,1
+PRJEB6070,ERR479459,Metagenomics,Illumina,62,,22,Germany,D015179,1
+PRJEB6070,ERR479460,Metagenomics,Illumina,66,,26,Germany,D015179,1
+PRJEB6070,ERR479461,Metagenomics,Illumina,66,,26,Germany,D015179,1
+PRJEB6070,ERR479462,Metagenomics,Illumina,66,,26,Germany,D015179,1
+PRJEB6070,ERR479463,Metagenomics,Illumina,66,,26,Germany,D015179,1
+PRJEB6070,ERR479464,Metagenomics,Illumina,42,,27,Germany,D015179,1
+PRJEB6070,ERR479465,Metagenomics,Illumina,42,,27,Germany,D015179,1
+PRJEB6070,ERR479466,Metagenomics,Illumina,42,,27,Germany,D015179,1
+PRJEB6070,ERR479467,Metagenomics,Illumina,42,,27,Germany,D015179,1
+PRJEB6070,ERR479468,Metagenomics,Illumina,41,,22,Germany,D015179,1
+PRJEB6070,ERR479469,Metagenomics,Illumina,41,,22,Germany,D015179,1
+PRJEB6070,ERR479470,Metagenomics,Illumina,41,,22,Germany,D015179,1
+PRJEB6070,ERR479471,Metagenomics,Illumina,41,,22,Germany,D015179,1
+PRJEB6070,ERR479472,Metagenomics,Illumina,71,,30,Germany,D015179,1
+PRJEB6070,ERR479473,Metagenomics,Illumina,71,,30,Germany,D015179,1
+PRJEB6070,ERR479474,Metagenomics,Illumina,71,,30,Germany,D015179,1
+PRJEB6070,ERR479475,Metagenomics,Illumina,71,,30,Germany,D015179,1
+PRJEB6070,ERR479476,Metagenomics,Illumina,65,,28,Germany,D015179,1
+PRJEB6070,ERR479477,Metagenomics,Illumina,65,,28,Germany,D015179,1
+PRJEB6070,ERR479478,Metagenomics,Illumina,65,,28,Germany,D015179,1
+PRJEB6070,ERR479479,Metagenomics,Illumina,65,,28,Germany,D015179,1
+PRJEB6070,ERR479480,Metagenomics,Illumina,87,,22,Germany,D015179,1
+PRJEB6070,ERR479481,Metagenomics,Illumina,87,,22,Germany,D015179,1
+PRJEB6070,ERR479482,Metagenomics,Illumina,87,,22,Germany,D015179,1
+PRJEB6070,ERR479483,Metagenomics,Illumina,87,,22,Germany,D015179,1
+PRJEB6070,ERR479484,Metagenomics,Illumina,62,,27,Germany,D015179,1
+PRJEB6070,ERR479485,Metagenomics,Illumina,62,,27,Germany,D015179,1
+PRJEB6070,ERR479486,Metagenomics,Illumina,62,,27,Germany,D015179,1
+PRJEB6070,ERR479487,Metagenomics,Illumina,62,,27,Germany,D015179,1
+PRJEB6070,ERR479488,Metagenomics,Illumina,59,,24,Germany,D015179,1
+PRJEB6070,ERR479489,Metagenomics,Illumina,59,,24,Germany,D015179,1
+PRJEB6070,ERR479490,Metagenomics,Illumina,59,,24,Germany,D015179,1
+PRJEB6070,ERR479491,Metagenomics,Illumina,59,,24,Germany,D015179,1
+PRJEB6070,ERR479492,Metagenomics,Illumina,69,,24,Germany,D015179,1
+PRJEB6070,ERR479493,Metagenomics,Illumina,69,,24,Germany,D015179,1
+PRJEB6070,ERR479494,Metagenomics,Illumina,69,,24,Germany,D015179,1
+PRJEB6070,ERR479495,Metagenomics,Illumina,69,,24,Germany,D015179,1
+PRJEB6070,ERR479496,Metagenomics,Illumina,58,,32,Germany,D015179,1
+PRJEB6070,ERR479497,Metagenomics,Illumina,58,,32,Germany,D015179,1
+PRJEB6070,ERR479498,Metagenomics,Illumina,58,,32,Germany,D015179,1
+PRJEB6070,ERR479499,Metagenomics,Illumina,58,,32,Germany,D015179,1
+PRJEB6070,ERR479500,Metagenomics,Illumina,35,,22,Germany,D015179,1
+PRJEB6070,ERR479501,Metagenomics,Illumina,35,,22,Germany,D015179,1
+PRJEB6070,ERR479502,Metagenomics,Illumina,35,,22,Germany,D015179,1
+PRJEB6070,ERR479503,Metagenomics,Illumina,35,,22,Germany,D015179,1
+PRJEB6070,ERR479504,Metagenomics,Illumina,58,,25,Germany,D015179,1
+PRJEB6070,ERR479505,Metagenomics,Illumina,58,,25,Germany,D015179,1
+PRJEB6070,ERR479506,Metagenomics,Illumina,58,,25,Germany,D015179,1
+PRJEB6070,ERR479507,Metagenomics,Illumina,58,,25,Germany,D015179,1
+PRJEB6070,ERR479508,Metagenomics,Illumina,73,,22,Germany,D015179,1
+PRJEB6070,ERR479509,Metagenomics,Illumina,73,,22,Germany,D015179,1
+PRJEB6070,ERR479510,Metagenomics,Illumina,73,,22,Germany,D015179,1
+PRJEB6070,ERR479511,Metagenomics,Illumina,73,,22,Germany,D015179,1
+PRJEB6070,ERR479512,Metagenomics,Illumina,51,,28,Germany,D015179,1
+PRJEB6070,ERR479513,Metagenomics,Illumina,51,,28,Germany,D015179,1
+PRJEB6070,ERR479514,Metagenomics,Illumina,51,,28,Germany,D015179,1
+PRJEB6070,ERR479515,Metagenomics,Illumina,51,,28,Germany,D015179,1
+PRJEB6070,ERR479516,Metagenomics,Illumina,66,,31,Germany,D015179,1
+PRJEB6070,ERR479517,Metagenomics,Illumina,66,,31,Germany,D015179,1
+PRJEB6070,ERR479518,Metagenomics,Illumina,66,,31,Germany,D015179,1
+PRJEB6070,ERR479519,Metagenomics,Illumina,66,,31,Germany,D015179,1
+PRJEB6070,ERR479520,Metagenomics,Illumina,79,,26,Germany,D015179,1
+PRJEB6070,ERR479521,Metagenomics,Illumina,79,,26,Germany,D015179,1
+PRJEB6070,ERR479522,Metagenomics,Illumina,79,,26,Germany,D015179,1
+PRJEB6070,ERR479523,Metagenomics,Illumina,79,,26,Germany,D015179,1
+PRJEB6070,ERR479524,Metagenomics,Illumina,34,,27,Germany,D015179,1
+PRJEB6070,ERR479525,Metagenomics,Illumina,34,,27,Germany,D015179,1
+PRJEB6070,ERR479526,Metagenomics,Illumina,34,,27,Germany,D015179,1
+PRJEB6070,ERR479527,Metagenomics,Illumina,34,,27,Germany,D015179,1
+PRJEB6070,ERR479528,Metagenomics,Illumina,67,,30,Germany,D015179,1
+PRJEB6070,ERR479529,Metagenomics,Illumina,67,,30,Germany,D015179,1
+PRJEB6070,ERR479530,Metagenomics,Illumina,67,,30,Germany,D015179,1
+PRJEB6070,ERR479531,Metagenomics,Illumina,67,,30,Germany,D015179,1
+PRJEB6070,ERR479532,Metagenomics,Illumina,70,,25,Germany,D015179,1
+PRJEB6070,ERR479533,Metagenomics,Illumina,70,,25,Germany,D015179,1
+PRJEB6070,ERR479534,Metagenomics,Illumina,77,,26,Germany,D015179,1
+PRJEB6070,ERR479535,Metagenomics,Illumina,77,,26,Germany,D015179,1
+PRJEB6070,ERR479536,Metagenomics,Illumina,77,,26,Germany,D015179,1
+PRJEB6070,ERR479537,Metagenomics,Illumina,77,,26,Germany,D015179,1
+PRJEB6070,ERR479538,Metagenomics,Illumina,68,,23,Germany,D015179,1
+PRJEB6070,ERR479539,Metagenomics,Illumina,68,,23,Germany,D015179,1
+PRJEB6070,ERR479540,Metagenomics,Illumina,68,,23,Germany,D015179,1
+PRJEB6070,ERR479541,Metagenomics,Illumina,68,,23,Germany,D015179,1
+PRJEB6070,ERR479542,Metagenomics,Illumina,53,,31,Germany,D015179,1
+PRJEB6070,ERR479543,Metagenomics,Illumina,53,,31,Germany,D015179,1
+PRJEB6070,ERR479544,Metagenomics,Illumina,53,,31,Germany,D015179,1
+PRJEB6070,ERR479545,Metagenomics,Illumina,53,,31,Germany,D015179,1
+PRJEB6070,ERR479546,Metagenomics,Illumina,55,,28,Germany,D015179,1
+PRJEB6070,ERR479547,Metagenomics,Illumina,55,,28,Germany,D015179,1
+PRJEB6070,ERR479548,Metagenomics,Illumina,55,,28,Germany,D015179,1
+PRJEB6070,ERR479549,Metagenomics,Illumina,55,,28,Germany,D015179,1
+PRJEB6070,ERR479550,Metagenomics,Illumina,72,,28,Germany,D015179,1
+PRJEB6070,ERR479551,Metagenomics,Illumina,72,,28,Germany,D015179,1
+PRJEB6070,ERR479552,Metagenomics,Illumina,72,,28,Germany,D015179,1
+PRJEB6070,ERR479553,Metagenomics,Illumina,72,,28,Germany,D015179,1
+PRJEB6070,ERR479554,Metagenomics,Illumina,43,,22,Germany,D015179,1
+PRJEB6070,ERR479555,Metagenomics,Illumina,43,,22,Germany,D015179,1
+PRJEB6070,ERR479556,Metagenomics,Illumina,43,,22,Germany,D015179,1
+PRJEB6070,ERR479557,Metagenomics,Illumina,43,,22,Germany,D015179,1
+PRJEB6070,ERR479558,Metagenomics,Illumina,51,,30,Germany,D015179,1
+PRJEB6070,ERR479559,Metagenomics,Illumina,51,,30,Germany,D015179,1
+PRJEB6070,ERR479560,Metagenomics,Illumina,51,,30,Germany,D015179,1
+PRJEB6070,ERR479561,Metagenomics,Illumina,51,,30,Germany,D015179,1
+PRJEB6070,ERR479562,Metagenomics,Illumina,49,,30,Germany,D015179,1
+PRJEB6070,ERR479563,Metagenomics,Illumina,49,,30,Germany,D015179,1
+PRJEB6070,ERR479564,Metagenomics,Illumina,49,,30,Germany,D015179,1
+PRJEB6070,ERR479565,Metagenomics,Illumina,49,,30,Germany,D015179,1
+PRJEB6070,ERR479566,Metagenomics,Illumina,90,,28,Germany,D015179,1
+PRJEB6070,ERR479567,Metagenomics,Illumina,90,,28,Germany,D015179,1
+PRJEB6070,ERR479568,Metagenomics,Illumina,90,,28,Germany,D015179,1
+PRJEB6070,ERR479569,Metagenomics,Illumina,90,,28,Germany,D015179,1
+PRJEB6070,ERR479570,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR479571,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR479572,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR479573,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR479574,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR479575,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR479576,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR479577,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR479578,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR479579,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR479580,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR479581,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR479582,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR479583,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR479584,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR479585,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR479586,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR479587,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR479588,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR479589,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR479590,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR479591,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR479592,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR479593,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR479594,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR479595,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR479596,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR479597,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR479598,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR479599,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR479600,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR479601,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR479602,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR480454,Metagenomics,Illumina,72,,25,France,D006262,1
+PRJEB6070,ERR480455,Metagenomics,Illumina,72,,25,France,D006262,1
+PRJEB6070,ERR480456,Metagenomics,Illumina,72,,25,France,D006262,1
+PRJEB6070,ERR480457,Metagenomics,Illumina,72,,25,France,D006262,1
+PRJEB6070,ERR480458,Metagenomics,Illumina,53,,32,France,D006262,1
+PRJEB6070,ERR480459,Metagenomics,Illumina,53,,32,France,D006262,1
+PRJEB6070,ERR480460,Metagenomics,Illumina,35,,23,France,D006262,1
+PRJEB6070,ERR480461,Metagenomics,Illumina,35,,23,France,D006262,1
+PRJEB6070,ERR480462,Metagenomics,Illumina,35,,23,France,D006262,1
+PRJEB6070,ERR480463,Metagenomics,Illumina,35,,23,France,D006262,1
+PRJEB6070,ERR480464,Metagenomics,Illumina,67,,28,France,D015179,1
+PRJEB6070,ERR480465,Metagenomics,Illumina,67,,28,France,D015179,1
+PRJEB6070,ERR480466,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR480467,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR480468,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR480469,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR480470,Metagenomics,Illumina,29,,24,France,D006262,1
+PRJEB6070,ERR480471,Metagenomics,Illumina,29,,24,France,D006262,1
+PRJEB6070,ERR480472,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR480473,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR480474,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR480475,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR480476,Metagenomics,Illumina,65,,24,France,D006262,1
+PRJEB6070,ERR480477,Metagenomics,Illumina,65,,24,France,D006262,1
+PRJEB6070,ERR480478,Metagenomics,Illumina,65,,24,France,D006262,1
+PRJEB6070,ERR480479,Metagenomics,Illumina,65,,24,France,D006262,1
+PRJEB6070,ERR480480,Metagenomics,Illumina,58,,24,France,D015179,1
+PRJEB6070,ERR480481,Metagenomics,Illumina,58,,24,France,D015179,1
+PRJEB6070,ERR480482,Metagenomics,Illumina,63,,0,France,D006262,1
+PRJEB6070,ERR480483,Metagenomics,Illumina,63,,0,France,D006262,1
+PRJEB6070,ERR480484,Metagenomics,Illumina,63,,0,France,D006262,1
+PRJEB6070,ERR480485,Metagenomics,Illumina,63,,0,France,D006262,1
+PRJEB6070,ERR480486,Metagenomics,Illumina,77,,22,France,D006262,1
+PRJEB6070,ERR480487,Metagenomics,Illumina,77,,22,France,D006262,1
+PRJEB6070,ERR480488,Metagenomics,Illumina,77,,22,France,D006262,1
+PRJEB6070,ERR480489,Metagenomics,Illumina,77,,22,France,D006262,1
+PRJEB6070,ERR480490,Metagenomics,Illumina,62,,21,France,D006262,1
+PRJEB6070,ERR480491,Metagenomics,Illumina,62,,21,France,D006262,1
+PRJEB6070,ERR480492,Metagenomics,Illumina,62,,21,France,D006262,1
+PRJEB6070,ERR480493,Metagenomics,Illumina,62,,21,France,D006262,1
+PRJEB6070,ERR480494,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR480495,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR480496,Metagenomics,Illumina,67,,21,France,D006262,1
+PRJEB6070,ERR480497,Metagenomics,Illumina,67,,21,France,D006262,1
+PRJEB6070,ERR480498,Metagenomics,Illumina,67,,21,France,D006262,1
+PRJEB6070,ERR480499,Metagenomics,Illumina,67,,21,France,D006262,1
+PRJEB6070,ERR480500,Metagenomics,Illumina,25,,24,France,D006262,1
+PRJEB6070,ERR480501,Metagenomics,Illumina,25,,24,France,D006262,1
+PRJEB6070,ERR480502,Metagenomics,Illumina,64,,26,France,D000236,1
+PRJEB6070,ERR480503,Metagenomics,Illumina,64,,26,France,D000236,1
+PRJEB6070,ERR480504,Metagenomics,Illumina,64,,26,France,D000236,1
+PRJEB6070,ERR480505,Metagenomics,Illumina,64,,26,France,D000236,1
+PRJEB6070,ERR480506,Metagenomics,Illumina,62,,26,France,D015179,1
+PRJEB6070,ERR480507,Metagenomics,Illumina,62,,26,France,D015179,1
+PRJEB6070,ERR480508,Metagenomics,Illumina,58,,22,France,D000236,1
+PRJEB6070,ERR480509,Metagenomics,Illumina,58,,22,France,D000236,1
+PRJEB6070,ERR480510,Metagenomics,Illumina,67,,27,France,D006262,1
+PRJEB6070,ERR480511,Metagenomics,Illumina,67,,27,France,D006262,1
+PRJEB6070,ERR480512,Metagenomics,Illumina,67,,27,France,D006262,1
+PRJEB6070,ERR480513,Metagenomics,Illumina,67,,27,France,D006262,1
+PRJEB6070,ERR480514,Metagenomics,Illumina,44,,26,France,D006262,1
+PRJEB6070,ERR480515,Metagenomics,Illumina,44,,26,France,D006262,1
+PRJEB6070,ERR480516,Metagenomics,Illumina,44,,26,France,D006262,1
+PRJEB6070,ERR480517,Metagenomics,Illumina,44,,26,France,D006262,1
+PRJEB6070,ERR480518,Metagenomics,Illumina,56,,0,France,D006262,1
+PRJEB6070,ERR480519,Metagenomics,Illumina,56,,0,France,D006262,1
+PRJEB6070,ERR480520,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR480521,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR480522,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR480523,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR480524,Metagenomics,Illumina,81,,39,France,D015179,1
+PRJEB6070,ERR480525,Metagenomics,Illumina,51,,30,France,D015179,1
+PRJEB6070,ERR480526,Metagenomics,Illumina,51,,30,France,D015179,1
+PRJEB6070,ERR480527,Metagenomics,Illumina,51,,30,France,D015179,1
+PRJEB6070,ERR480528,Metagenomics,Illumina,51,,30,France,D015179,1
+PRJEB6070,ERR480529,Metagenomics,Illumina,70,,22,France,D006262,1
+PRJEB6070,ERR480530,Metagenomics,Illumina,70,,22,France,D006262,1
+PRJEB6070,ERR480531,Metagenomics,Illumina,70,,22,France,D006262,1
+PRJEB6070,ERR480532,Metagenomics,Illumina,70,,22,France,D006262,1
+PRJEB6070,ERR480533,Metagenomics,Illumina,59,,20,France,D015179,1
+PRJEB6070,ERR480534,Metagenomics,Illumina,59,,20,France,D015179,1
+PRJEB6070,ERR480535,Metagenomics,Illumina,56,,0,France,D015179,1
+PRJEB6070,ERR480536,Metagenomics,Illumina,56,,0,France,D015179,1
+PRJEB6070,ERR480537,Metagenomics,Illumina,37,,18,France,D006262,1
+PRJEB6070,ERR480538,Metagenomics,Illumina,37,,18,France,D006262,1
+PRJEB6070,ERR480539,Metagenomics,Illumina,46,,29,France,D006262,1
+PRJEB6070,ERR480540,Metagenomics,Illumina,46,,29,France,D006262,1
+PRJEB6070,ERR480541,Metagenomics,Illumina,61,,24,France,D006262,1
+PRJEB6070,ERR480542,Metagenomics,Illumina,61,,24,France,D006262,1
+PRJEB6070,ERR480543,Metagenomics,Illumina,61,,24,France,D006262,1
+PRJEB6070,ERR480544,Metagenomics,Illumina,61,,24,France,D006262,1
+PRJEB6070,ERR480545,Metagenomics,Illumina,54,,26,France,D006262,1
+PRJEB6070,ERR480546,Metagenomics,Illumina,54,,26,France,D006262,1
+PRJEB6070,ERR480547,Metagenomics,Illumina,54,,26,France,D006262,1
+PRJEB6070,ERR480548,Metagenomics,Illumina,54,,26,France,D006262,1
+PRJEB6070,ERR480549,Metagenomics,Illumina,72,,37,France,D015179,1
+PRJEB6070,ERR480550,Metagenomics,Illumina,72,,37,France,D015179,1
+PRJEB6070,ERR480551,Metagenomics,Illumina,72,,37,France,D015179,1
+PRJEB6070,ERR480552,Metagenomics,Illumina,72,,37,France,D015179,1
+PRJEB6070,ERR480553,Metagenomics,Illumina,68,,23,France,D000236,1
+PRJEB6070,ERR480554,Metagenomics,Illumina,68,,23,France,D000236,1
+PRJEB6070,ERR480555,Metagenomics,Illumina,71,,23,France,D006262,1
+PRJEB6070,ERR480556,Metagenomics,Illumina,71,,23,France,D006262,1
+PRJEB6070,ERR480557,Metagenomics,Illumina,71,,23,France,D006262,1
+PRJEB6070,ERR480558,Metagenomics,Illumina,71,,23,France,D006262,1
+PRJEB6070,ERR480559,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR480560,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR480561,Metagenomics,Illumina,63,,25,France,D015179,1
+PRJEB6070,ERR480562,Metagenomics,Illumina,63,,25,France,D015179,1
+PRJEB6070,ERR480563,Metagenomics,Illumina,62,,29,France,D000236,1
+PRJEB6070,ERR480564,Metagenomics,Illumina,62,,29,France,D000236,1
+PRJEB6070,ERR480565,Metagenomics,Illumina,62,,29,France,D000236,1
+PRJEB6070,ERR480566,Metagenomics,Illumina,62,,29,France,D000236,1
+PRJEB6070,ERR480567,Metagenomics,Illumina,82,,24,France,D015179,1
+PRJEB6070,ERR480568,Metagenomics,Illumina,82,,24,France,D015179,1
+PRJEB6070,ERR480569,Metagenomics,Illumina,82,,24,France,D015179,1
+PRJEB6070,ERR480570,Metagenomics,Illumina,82,,24,France,D015179,1
+PRJEB6070,ERR480571,Metagenomics,Illumina,77,,23,France,D000236,1
+PRJEB6070,ERR480572,Metagenomics,Illumina,77,,23,France,D000236,1
+PRJEB6070,ERR480573,Metagenomics,Illumina,60,,26,France,D015179,1
+PRJEB6070,ERR480574,Metagenomics,Illumina,60,,26,France,D015179,1
+PRJEB6070,ERR480575,Metagenomics,Illumina,62,,23,France,D006262,1
+PRJEB6070,ERR480576,Metagenomics,Illumina,62,,23,France,D006262,1
+PRJEB6070,ERR480577,Metagenomics,Illumina,62,,23,France,D006262,1
+PRJEB6070,ERR480578,Metagenomics,Illumina,62,,23,France,D006262,1
+PRJEB6070,ERR480579,Metagenomics,Illumina,69,,24,France,D015179,1
+PRJEB6070,ERR480580,Metagenomics,Illumina,69,,24,France,D015179,1
+PRJEB6070,ERR480581,Metagenomics,Illumina,59,,31,France,D000236,1
+PRJEB6070,ERR480582,Metagenomics,Illumina,59,,31,France,D000236,1
+PRJEB6070,ERR480583,Metagenomics,Illumina,59,,31,France,D000236,1
+PRJEB6070,ERR480584,Metagenomics,Illumina,60,,27,France,D000236,1
+PRJEB6070,ERR480585,Metagenomics,Illumina,60,,27,France,D000236,1
+PRJEB6070,ERR480586,Metagenomics,Illumina,60,,27,France,D000236,1
+PRJEB6070,ERR480587,Metagenomics,Illumina,52,,20,France,D006262,1
+PRJEB6070,ERR480588,Metagenomics,Illumina,52,,20,France,D006262,1
+PRJEB6070,ERR480589,Metagenomics,Illumina,72,,24,France,D006262,1
+PRJEB6070,ERR480590,Metagenomics,Illumina,72,,24,France,D006262,1
+PRJEB6070,ERR480591,Metagenomics,Illumina,72,,24,France,D006262,1
+PRJEB6070,ERR480592,Metagenomics,Illumina,72,,24,France,D006262,1
+PRJEB6070,ERR480593,Metagenomics,Illumina,89,,24,France,D000236,1
+PRJEB6070,ERR480594,Metagenomics,Illumina,89,,24,France,D000236,1
+PRJEB6070,ERR480595,Metagenomics,Illumina,64,,27,France,D006262,1
+PRJEB6070,ERR480596,Metagenomics,Illumina,64,,27,France,D006262,1
+PRJEB6070,ERR480597,Metagenomics,Illumina,50,,25,France,D006262,1
+PRJEB6070,ERR480598,Metagenomics,Illumina,50,,25,France,D006262,1
+PRJEB6070,ERR480599,Metagenomics,Illumina,66,,24,France,D000236,1
+PRJEB6070,ERR480600,Metagenomics,Illumina,66,,24,France,D000236,1
+PRJEB6070,ERR480601,Metagenomics,Illumina,53,,30,France,D000236,1
+PRJEB6070,ERR480602,Metagenomics,Illumina,53,,30,France,D000236,1
+PRJEB6070,ERR480603,Metagenomics,Illumina,68,,26,France,D006262,1
+PRJEB6070,ERR480604,Metagenomics,Illumina,68,,26,France,D006262,1
+PRJEB6070,ERR480605,Metagenomics,Illumina,68,,26,France,D006262,1
+PRJEB6070,ERR480606,Metagenomics,Illumina,68,,26,France,D006262,1
+PRJEB6070,ERR480607,Metagenomics,Illumina,64,,21,France,D015179,1
+PRJEB6070,ERR480608,Metagenomics,Illumina,64,,21,France,D015179,1
+PRJEB6070,ERR480609,Metagenomics,Illumina,64,,21,France,D015179,1
+PRJEB6070,ERR480610,Metagenomics,Illumina,64,,21,France,D015179,1
+PRJEB6070,ERR480611,Metagenomics,Illumina,80,,29,France,D015179,1
+PRJEB6070,ERR480612,Metagenomics,Illumina,80,,29,France,D015179,1
+PRJEB6070,ERR480613,Metagenomics,Illumina,80,,29,France,D015179,1
+PRJEB6070,ERR480614,Metagenomics,Illumina,63,,27,France,D006262,1
+PRJEB6070,ERR480615,Metagenomics,Illumina,63,,27,France,D006262,1
+PRJEB6070,ERR480616,Metagenomics,Illumina,63,,27,France,D006262,1
+PRJEB6070,ERR480617,Metagenomics,Illumina,63,,27,France,D006262,1
+PRJEB6070,ERR480618,Metagenomics,Illumina,62,,21,France,D000236,1
+PRJEB6070,ERR480619,Metagenomics,Illumina,62,,21,France,D000236,1
+PRJEB6070,ERR480620,Metagenomics,Illumina,73,,40,France,D015179,1
+PRJEB6070,ERR480621,Metagenomics,Illumina,73,,40,France,D015179,1
+PRJEB6070,ERR480622,Metagenomics,Illumina,73,,40,France,D015179,1
+PRJEB6070,ERR480623,Metagenomics,Illumina,73,,40,France,D015179,1
+PRJEB6070,ERR480624,Metagenomics,Illumina,68,,25,France,D006262,1
+PRJEB6070,ERR480625,Metagenomics,Illumina,68,,25,France,D006262,1
+PRJEB6070,ERR480626,Metagenomics,Illumina,68,,25,France,D006262,1
+PRJEB6070,ERR480627,Metagenomics,Illumina,68,,25,France,D006262,1
+PRJEB6070,ERR480628,Metagenomics,Illumina,63,,25,France,D006262,1
+PRJEB6070,ERR480629,Metagenomics,Illumina,63,,25,France,D006262,1
+PRJEB6070,ERR480630,Metagenomics,Illumina,63,,25,France,D006262,1
+PRJEB6070,ERR480631,Metagenomics,Illumina,63,,25,France,D006262,1
+PRJEB6070,ERR480632,Metagenomics,Illumina,59,,21,France,D000236,1
+PRJEB6070,ERR480633,Metagenomics,Illumina,59,,21,France,D000236,1
+PRJEB6070,ERR480634,Metagenomics,Illumina,79,,22,France,D015179,1
+PRJEB6070,ERR480635,Metagenomics,Illumina,79,,22,France,D015179,1
+PRJEB6070,ERR480636,Metagenomics,Illumina,87,,32,France,D015179,1
+PRJEB6070,ERR480637,Metagenomics,Illumina,87,,32,France,D015179,1
+PRJEB6070,ERR480638,Metagenomics,Illumina,73,,24,France,D015179,1
+PRJEB6070,ERR480639,Metagenomics,Illumina,73,,24,France,D015179,1
+PRJEB6070,ERR480640,Metagenomics,Illumina,73,,24,France,D015179,1
+PRJEB6070,ERR480641,Metagenomics,Illumina,73,,24,France,D015179,1
+PRJEB6070,ERR480642,Metagenomics,Illumina,74,,19,France,D015179,1
+PRJEB6070,ERR480643,Metagenomics,Illumina,74,,19,France,D015179,1
+PRJEB6070,ERR480644,Metagenomics,Illumina,78,,19,France,D015179,1
+PRJEB6070,ERR480645,Metagenomics,Illumina,78,,19,France,D015179,1
+PRJEB6070,ERR480646,Metagenomics,Illumina,67,,28,France,D006262,1
+PRJEB6070,ERR480647,Metagenomics,Illumina,67,,28,France,D006262,1
+PRJEB6070,ERR480648,Metagenomics,Illumina,67,,28,France,D006262,1
+PRJEB6070,ERR480649,Metagenomics,Illumina,67,,28,France,D006262,1
+PRJEB6070,ERR480650,Metagenomics,Illumina,59,,0,France,D000236,1
+PRJEB6070,ERR480651,Metagenomics,Illumina,59,,0,France,D000236,1
+PRJEB6070,ERR480652,Metagenomics,Illumina,59,,0,France,D000236,1
+PRJEB6070,ERR480653,Metagenomics,Illumina,62,,20,France,D006262,1
+PRJEB6070,ERR480654,Metagenomics,Illumina,62,,20,France,D006262,1
+PRJEB6070,ERR480655,Metagenomics,Illumina,62,,20,France,D006262,1
+PRJEB6070,ERR480656,Metagenomics,Illumina,62,,20,France,D006262,1
+PRJEB6070,ERR480657,Metagenomics,Illumina,48,,21,France,D000236,1
+PRJEB6070,ERR480658,Metagenomics,Illumina,66,,22,France,D000236,1
+PRJEB6070,ERR480659,Metagenomics,Illumina,66,,22,France,D000236,1
+PRJEB6070,ERR480660,Metagenomics,Illumina,66,,22,France,D000236,1
+PRJEB6070,ERR480661,Metagenomics,Illumina,75,,37,France,D015179,1
+PRJEB6070,ERR480662,Metagenomics,Illumina,75,,37,France,D015179,1
+PRJEB6070,ERR480663,Metagenomics,Illumina,55,,20,France,D006262,1
+PRJEB6070,ERR480664,Metagenomics,Illumina,55,,20,France,D006262,1
+PRJEB6070,ERR480665,Metagenomics,Illumina,67,,25,France,D006262,1
+PRJEB6070,ERR480666,Metagenomics,Illumina,67,,25,France,D006262,1
+PRJEB6070,ERR480667,Metagenomics,Illumina,67,,25,France,D006262,1
+PRJEB6070,ERR480668,Metagenomics,Illumina,67,,25,France,D006262,1
+PRJEB6070,ERR480669,Metagenomics,Illumina,65,,24,France,D015179,1
+PRJEB6070,ERR480670,Metagenomics,Illumina,65,,24,France,D015179,1
+PRJEB6070,ERR480671,Metagenomics,Illumina,54,,22,France,D015179,1
+PRJEB6070,ERR480672,Metagenomics,Illumina,54,,22,France,D015179,1
+PRJEB6070,ERR480673,Metagenomics,Illumina,67,,25,France,D015179,1
+PRJEB6070,ERR480674,Metagenomics,Illumina,67,,25,France,D015179,1
+PRJEB6070,ERR480675,Metagenomics,Illumina,67,,25,France,D015179,1
+PRJEB6070,ERR480676,Metagenomics,Illumina,67,,25,France,D015179,1
+PRJEB6070,ERR480677,Metagenomics,Illumina,63,,27,France,D000236,1
+PRJEB6070,ERR480678,Metagenomics,Illumina,63,,27,France,D000236,1
+PRJEB6070,ERR480679,Metagenomics,Illumina,66,,25,France,D006262,1
+PRJEB6070,ERR480680,Metagenomics,Illumina,66,,25,France,D006262,1
+PRJEB6070,ERR480681,Metagenomics,Illumina,66,,25,France,D006262,1
+PRJEB6070,ERR480682,Metagenomics,Illumina,66,,25,France,D006262,1
+PRJEB6070,ERR480683,Metagenomics,Illumina,72,,32,France,D000236,1
+PRJEB6070,ERR480684,Metagenomics,Illumina,72,,32,France,D000236,1
+PRJEB6070,ERR480685,Metagenomics,Illumina,72,,32,France,D000236,1
+PRJEB6070,ERR480686,Metagenomics,Illumina,52,,23,France,D000236,1
+PRJEB6070,ERR480687,Metagenomics,Illumina,52,,23,France,D000236,1
+PRJEB6070,ERR480688,Metagenomics,Illumina,52,,23,France,D000236,1
+PRJEB6070,ERR480689,Metagenomics,Illumina,62,,21,France,D015179,1
+PRJEB6070,ERR480690,Metagenomics,Illumina,62,,21,France,D015179,1
+PRJEB6070,ERR480691,Metagenomics,Illumina,66,,28,France,D006262,1
+PRJEB6070,ERR480692,Metagenomics,Illumina,66,,28,France,D006262,1
+PRJEB6070,ERR480693,Metagenomics,Illumina,66,,28,France,D006262,1
+PRJEB6070,ERR480694,Metagenomics,Illumina,66,,28,France,D006262,1
+PRJEB6070,ERR480695,Metagenomics,Illumina,87,,15,France,D015179,1
+PRJEB6070,ERR480696,Metagenomics,Illumina,87,,15,France,D015179,1
+PRJEB6070,ERR480697,Metagenomics,Illumina,53,,33,France,D000236,1
+PRJEB6070,ERR480698,Metagenomics,Illumina,53,,33,France,D000236,1
+PRJEB6070,ERR480699,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR480700,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR480701,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR480702,Metagenomics,Illumina,61,,23,France,D006262,1
+PRJEB6070,ERR480703,Metagenomics,Illumina,60,,26,France,D000236,1
+PRJEB6070,ERR480704,Metagenomics,Illumina,60,,26,France,D000236,1
+PRJEB6070,ERR480705,Metagenomics,Illumina,63,,22,France,D006262,1
+PRJEB6070,ERR480706,Metagenomics,Illumina,63,,22,France,D006262,1
+PRJEB6070,ERR480707,Metagenomics,Illumina,63,,22,France,D006262,1
+PRJEB6070,ERR480708,Metagenomics,Illumina,63,,22,France,D006262,1
+PRJEB6070,ERR480709,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR480710,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR480711,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR480712,Metagenomics,Illumina,63,,26,France,D000236,1
+PRJEB6070,ERR480713,Metagenomics,Illumina,64,,28,France,D000236,1
+PRJEB6070,ERR480714,Metagenomics,Illumina,64,,28,France,D000236,1
+PRJEB6070,ERR480715,Metagenomics,Illumina,53,,25,France,D015179,1
+PRJEB6070,ERR480716,Metagenomics,Illumina,53,,25,France,D015179,1
+PRJEB6070,ERR480717,Metagenomics,Illumina,53,,25,France,D015179,1
+PRJEB6070,ERR480718,Metagenomics,Illumina,53,,25,France,D015179,1
+PRJEB6070,ERR480719,Metagenomics,Illumina,72,,22,France,D015179,1
+PRJEB6070,ERR480720,Metagenomics,Illumina,72,,22,France,D015179,1
+PRJEB6070,ERR480721,Metagenomics,Illumina,76,,0,France,D015179,1
+PRJEB6070,ERR480722,Metagenomics,Illumina,76,,0,France,D015179,1
+PRJEB6070,ERR480723,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR480724,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR480725,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR480726,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR480727,Metagenomics,Illumina,52,,33,France,D000236,1
+PRJEB6070,ERR480728,Metagenomics,Illumina,52,,33,France,D000236,1
+PRJEB6070,ERR480729,Metagenomics,Illumina,52,,33,France,D000236,1
+PRJEB6070,ERR480730,Metagenomics,Illumina,52,,33,France,D000236,1
+PRJEB6070,ERR480731,Metagenomics,Illumina,64,,30,France,D015179,1
+PRJEB6070,ERR480732,Metagenomics,Illumina,64,,30,France,D015179,1
+PRJEB6070,ERR480733,Metagenomics,Illumina,64,,30,France,D015179,1
+PRJEB6070,ERR480734,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR480735,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR480736,Metagenomics,Illumina,45,,24,France,D000236,1
+PRJEB6070,ERR480737,Metagenomics,Illumina,68,,21,France,D000236,1
+PRJEB6070,ERR480738,Metagenomics,Illumina,68,,21,France,D000236,1
+PRJEB6070,ERR480739,Metagenomics,Illumina,70,,26,France,D015179,1
+PRJEB6070,ERR480740,Metagenomics,Illumina,70,,26,France,D015179,1
+PRJEB6070,ERR480741,Metagenomics,Illumina,80,,23,France,D015179,1
+PRJEB6070,ERR480742,Metagenomics,Illumina,80,,23,France,D015179,1
+PRJEB6070,ERR480743,Metagenomics,Illumina,80,,23,France,D015179,1
+PRJEB6070,ERR480744,Metagenomics,Illumina,80,,23,France,D015179,1
+PRJEB6070,ERR480745,Metagenomics,Illumina,76,,34,France,D000236,1
+PRJEB6070,ERR480746,Metagenomics,Illumina,76,,34,France,D000236,1
+PRJEB6070,ERR480747,Metagenomics,Illumina,76,,25,France,D015179,1
+PRJEB6070,ERR480748,Metagenomics,Illumina,76,,25,France,D015179,1
+PRJEB6070,ERR480749,Metagenomics,Illumina,76,,25,France,D015179,1
+PRJEB6070,ERR480750,Metagenomics,Illumina,56,,23,France,D015179,1
+PRJEB6070,ERR480751,Metagenomics,Illumina,68,,23,France,D015179,1
+PRJEB6070,ERR480752,Metagenomics,Illumina,68,,23,France,D015179,1
+PRJEB6070,ERR480753,Metagenomics,Illumina,68,,23,France,D015179,1
+PRJEB6070,ERR480754,Metagenomics,Illumina,68,,23,France,D015179,1
+PRJEB6070,ERR480755,Metagenomics,Illumina,61,,34,France,D006262,1
+PRJEB6070,ERR480756,Metagenomics,Illumina,61,,34,France,D006262,1
+PRJEB6070,ERR480757,Metagenomics,Illumina,61,,34,France,D006262,1
+PRJEB6070,ERR480758,Metagenomics,Illumina,61,,34,France,D006262,1
+PRJEB6070,ERR480759,Metagenomics,Illumina,69,,25,France,D006262,1
+PRJEB6070,ERR480760,Metagenomics,Illumina,69,,25,France,D006262,1
+PRJEB6070,ERR480761,Metagenomics,Illumina,69,,25,France,D006262,1
+PRJEB6070,ERR480762,Metagenomics,Illumina,69,,25,France,D006262,1
+PRJEB6070,ERR480763,Metagenomics,Illumina,49,,23,France,D006262,1
+PRJEB6070,ERR480764,Metagenomics,Illumina,49,,23,France,D006262,1
+PRJEB6070,ERR480765,Metagenomics,Illumina,49,,23,France,D006262,1
+PRJEB6070,ERR480766,Metagenomics,Illumina,63,,23,France,D006262,1
+PRJEB6070,ERR480767,Metagenomics,Illumina,63,,23,France,D006262,1
+PRJEB6070,ERR480768,Metagenomics,Illumina,63,,23,France,D006262,1
+PRJEB6070,ERR480769,Metagenomics,Illumina,63,,23,France,D006262,1
+PRJEB6070,ERR480770,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR480771,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR480772,Metagenomics,Illumina,69,,25,France,D015179,1
+PRJEB6070,ERR480773,Metagenomics,Illumina,69,,25,France,D015179,1
+PRJEB6070,ERR480774,Metagenomics,Illumina,69,,25,France,D015179,1
+PRJEB6070,ERR480775,Metagenomics,Illumina,69,,25,France,D015179,1
+PRJEB6070,ERR480776,Metagenomics,Illumina,55,,24,France,D000236,1
+PRJEB6070,ERR480777,Metagenomics,Illumina,55,,24,France,D000236,1
+PRJEB6070,ERR480778,Metagenomics,Illumina,55,,24,France,D000236,1
+PRJEB6070,ERR480779,Metagenomics,Illumina,55,,24,France,D000236,1
+PRJEB6070,ERR480780,Metagenomics,Illumina,50,,24,France,D015179,1
+PRJEB6070,ERR480781,Metagenomics,Illumina,50,,24,France,D015179,1
+PRJEB6070,ERR480782,Metagenomics,Illumina,70,,25,France,D006262,1
+PRJEB6070,ERR480783,Metagenomics,Illumina,70,,25,France,D006262,1
+PRJEB6070,ERR480784,Metagenomics,Illumina,70,,25,France,D006262,1
+PRJEB6070,ERR480785,Metagenomics,Illumina,70,,25,France,D006262,1
+PRJEB6070,ERR480786,Metagenomics,Illumina,74,,26,France,D015179,1
+PRJEB6070,ERR480787,Metagenomics,Illumina,74,,26,France,D015179,1
+PRJEB6070,ERR480788,Metagenomics,Illumina,74,,26,France,D015179,1
+PRJEB6070,ERR480789,Metagenomics,Illumina,74,,26,France,D015179,1
+PRJEB6070,ERR480790,Metagenomics,Illumina,62,,24,France,D006262,1
+PRJEB6070,ERR480791,Metagenomics,Illumina,62,,24,France,D006262,1
+PRJEB6070,ERR480792,Metagenomics,Illumina,62,,24,France,D006262,1
+PRJEB6070,ERR480793,Metagenomics,Illumina,62,,24,France,D006262,1
+PRJEB6070,ERR480794,Metagenomics,Illumina,66,,24,France,D000236,1
+PRJEB6070,ERR480795,Metagenomics,Illumina,68,,36,France,D000236,1
+PRJEB6070,ERR480796,Metagenomics,Illumina,68,,36,France,D000236,1
+PRJEB6070,ERR480797,Metagenomics,Illumina,68,,36,France,D000236,1
+PRJEB6070,ERR480798,Metagenomics,Illumina,44,,20,France,D015179,1
+PRJEB6070,ERR480799,Metagenomics,Illumina,44,,20,France,D015179,1
+PRJEB6070,ERR480800,Metagenomics,Illumina,73,,26,France,D000236,1
+PRJEB6070,ERR480801,Metagenomics,Illumina,73,,26,France,D000236,1
+PRJEB6070,ERR480802,Metagenomics,Illumina,73,,26,France,D000236,1
+PRJEB6070,ERR480803,Metagenomics,Illumina,73,,26,France,D000236,1
+PRJEB6070,ERR480804,Metagenomics,Illumina,65,,26,France,D015179,1
+PRJEB6070,ERR480805,Metagenomics,Illumina,65,,26,France,D015179,1
+PRJEB6070,ERR480806,Metagenomics,Illumina,65,,26,France,D015179,1
+PRJEB6070,ERR480807,Metagenomics,Illumina,65,,26,France,D015179,1
+PRJEB6070,ERR480808,Metagenomics,Illumina,64,,30,France,D006262,1
+PRJEB6070,ERR480809,Metagenomics,Illumina,64,,30,France,D006262,1
+PRJEB6070,ERR480810,Metagenomics,Illumina,64,,30,France,D006262,1
+PRJEB6070,ERR480811,Metagenomics,Illumina,64,,30,France,D006262,1
+PRJEB6070,ERR480812,Metagenomics,Illumina,69,,30,France,D015179,1
+PRJEB6070,ERR480813,Metagenomics,Illumina,69,,30,France,D015179,1
+PRJEB6070,ERR480814,Metagenomics,Illumina,69,,30,France,D015179,1
+PRJEB6070,ERR480815,Metagenomics,Illumina,65,,30,France,D006262,1
+PRJEB6070,ERR480816,Metagenomics,Illumina,65,,30,France,D006262,1
+PRJEB6070,ERR480817,Metagenomics,Illumina,60,,28,France,D006262,1
+PRJEB6070,ERR480818,Metagenomics,Illumina,60,,28,France,D006262,1
+PRJEB6070,ERR480819,Metagenomics,Illumina,60,,28,France,D006262,1
+PRJEB6070,ERR480820,Metagenomics,Illumina,60,,28,France,D006262,1
+PRJEB6070,ERR480821,Metagenomics,Illumina,64,,20,France,D006262,1
+PRJEB6070,ERR480822,Metagenomics,Illumina,64,,20,France,D006262,1
+PRJEB6070,ERR480823,Metagenomics,Illumina,49,,20,France,D000236,1
+PRJEB6070,ERR480824,Metagenomics,Illumina,49,,20,France,D000236,1
+PRJEB6070,ERR480825,Metagenomics,Illumina,68,,26,France,D000236,1
+PRJEB6070,ERR480826,Metagenomics,Illumina,68,,26,France,D000236,1
+PRJEB6070,ERR480827,Metagenomics,Illumina,59,,27,France,D015179,1
+PRJEB6070,ERR480828,Metagenomics,Illumina,59,,27,France,D015179,1
+PRJEB6070,ERR480829,Metagenomics,Illumina,59,,27,France,D015179,1
+PRJEB6070,ERR480830,Metagenomics,Illumina,59,,27,France,D015179,1
+PRJEB6070,ERR480831,Metagenomics,Illumina,51,,24,France,D015179,1
+PRJEB6070,ERR480832,Metagenomics,Illumina,51,,24,France,D015179,1
+PRJEB6070,ERR480833,Metagenomics,Illumina,51,,24,France,D015179,1
+PRJEB6070,ERR480834,Metagenomics,Illumina,51,,24,France,D015179,1
+PRJEB6070,ERR480835,Metagenomics,Illumina,57,,24,France,D006262,1
+PRJEB6070,ERR480836,Metagenomics,Illumina,57,,24,France,D006262,1
+PRJEB6070,ERR480837,Metagenomics,Illumina,38,,22,France,D006262,1
+PRJEB6070,ERR480838,Metagenomics,Illumina,38,,22,France,D006262,1
+PRJEB6070,ERR480839,Metagenomics,Illumina,66,,29,France,D000236,1
+PRJEB6070,ERR480840,Metagenomics,Illumina,66,,29,France,D000236,1
+PRJEB6070,ERR480841,Metagenomics,Illumina,66,,29,France,D000236,1
+PRJEB6070,ERR480842,Metagenomics,Illumina,60,,24,France,D000236,1
+PRJEB6070,ERR480843,Metagenomics,Illumina,60,,24,France,D000236,1
+PRJEB6070,ERR480844,Metagenomics,Illumina,48,,24,France,D015179,1
+PRJEB6070,ERR480845,Metagenomics,Illumina,48,,24,France,D015179,1
+PRJEB6070,ERR480846,Metagenomics,Illumina,48,,24,France,D015179,1
+PRJEB6070,ERR480847,Metagenomics,Illumina,45,,28,France,D015179,1
+PRJEB6070,ERR480848,Metagenomics,Illumina,45,,28,France,D015179,1
+PRJEB6070,ERR480849,Metagenomics,Illumina,63,,22,France,D015179,1
+PRJEB6070,ERR480850,Metagenomics,Illumina,63,,22,France,D015179,1
+PRJEB6070,ERR480851,Metagenomics,Illumina,85,,20,France,D015179,1
+PRJEB6070,ERR480852,Metagenomics,Illumina,85,,20,France,D015179,1
+PRJEB6070,ERR480853,Metagenomics,Illumina,79,,30,France,D015179,1
+PRJEB6070,ERR480854,Metagenomics,Illumina,79,,30,France,D015179,1
+PRJEB6070,ERR480855,Metagenomics,Illumina,73,,17,France,D015179,1
+PRJEB6070,ERR480856,Metagenomics,Illumina,73,,17,France,D015179,1
+PRJEB6070,ERR480857,Metagenomics,Illumina,73,,17,France,D015179,1
+PRJEB6070,ERR480858,Metagenomics,Illumina,71,,29,France,D000236,1
+PRJEB6070,ERR480859,Metagenomics,Illumina,71,,29,France,D000236,1
+PRJEB6070,ERR480860,Metagenomics,Illumina,71,,29,France,D000236,1
+PRJEB6070,ERR480861,Metagenomics,Illumina,71,,29,France,D000236,1
+PRJEB6070,ERR480862,Metagenomics,Illumina,73,,26,France,D015179,1
+PRJEB6070,ERR480863,Metagenomics,Illumina,73,,26,France,D015179,1
+PRJEB6070,ERR480864,Metagenomics,Illumina,73,,26,France,D015179,1
+PRJEB6070,ERR480865,Metagenomics,Illumina,73,,26,France,D015179,1
+PRJEB6070,ERR480866,Metagenomics,Illumina,67,,23,France,D006262,1
+PRJEB6070,ERR480867,Metagenomics,Illumina,67,,23,France,D006262,1
+PRJEB6070,ERR480868,Metagenomics,Illumina,67,,23,France,D006262,1
+PRJEB6070,ERR480869,Metagenomics,Illumina,67,,23,France,D006262,1
+PRJEB6070,ERR480870,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR480871,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR480872,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR480873,Metagenomics,Illumina,74,,27,France,D006262,1
+PRJEB6070,ERR480874,Metagenomics,Illumina,84,,23,France,D006262,1
+PRJEB6070,ERR480875,Metagenomics,Illumina,84,,23,France,D006262,1
+PRJEB6070,ERR480876,Metagenomics,Illumina,84,,23,France,D006262,1
+PRJEB6070,ERR480877,Metagenomics,Illumina,84,,23,France,D006262,1
+PRJEB6070,ERR480878,Metagenomics,Illumina,78,,23,France,D000236,1
+PRJEB6070,ERR480879,Metagenomics,Illumina,78,,23,France,D000236,1
+PRJEB6070,ERR480880,Metagenomics,Illumina,63,,30,France,D000236,1
+PRJEB6070,ERR480881,Metagenomics,Illumina,63,,30,France,D000236,1
+PRJEB6070,ERR480882,Metagenomics,Illumina,63,,30,France,D000236,1
+PRJEB6070,ERR480883,Metagenomics,Illumina,71,,22,France,D000236,1
+PRJEB6070,ERR480884,Metagenomics,Illumina,71,,22,France,D000236,1
+PRJEB6070,ERR480885,Metagenomics,Illumina,63,,31,France,D015179,1
+PRJEB6070,ERR480886,Metagenomics,Illumina,63,,31,France,D015179,1
+PRJEB6070,ERR480887,Metagenomics,Illumina,65,,30,France,D006262,1
+PRJEB6070,ERR480888,Metagenomics,Illumina,65,,30,France,D006262,1
+PRJEB6070,ERR480889,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR480890,Metagenomics,Illumina,59,,25,France,D006262,1
+PRJEB6070,ERR480891,Metagenomics,Illumina,64,,28,France,D000236,1
+PRJEB6070,ERR480892,Metagenomics,Illumina,64,,28,France,D000236,1
+PRJEB6070,ERR480893,Metagenomics,Illumina,80,,21,France,D006262,1
+PRJEB6070,ERR480894,Metagenomics,Illumina,80,,21,France,D006262,1
+PRJEB6070,ERR480895,Metagenomics,Illumina,80,,21,France,D006262,1
+PRJEB6070,ERR480896,Metagenomics,Illumina,80,,21,France,D006262,1
+PRJEB6070,ERR480897,Metagenomics,Illumina,52,,24,France,D006262,1
+PRJEB6070,ERR480898,Metagenomics,Illumina,52,,24,France,D006262,1
+PRJEB6070,ERR480899,Metagenomics,Illumina,52,,24,France,D006262,1
+PRJEB6070,ERR480900,Metagenomics,Illumina,52,,24,France,D006262,1
+PRJEB6070,ERR480901,Metagenomics,Illumina,63,,21,France,D006262,1
+PRJEB6070,ERR480902,Metagenomics,Illumina,63,,21,France,D006262,1
+PRJEB6070,ERR480903,Metagenomics,Illumina,63,,21,France,D006262,1
+PRJEB6070,ERR480904,Metagenomics,Illumina,63,,21,France,D006262,1
+PRJEB6070,ERR480905,Metagenomics,Illumina,66,,20,France,D000236,1
+PRJEB6070,ERR480906,Metagenomics,Illumina,66,,20,France,D000236,1
+PRJEB6070,ERR480907,Metagenomics,Illumina,66,,20,France,D000236,1
+PRJEB6070,ERR480908,Metagenomics,Illumina,66,,20,France,D000236,1
+PRJEB6070,ERR480909,Metagenomics,Illumina,53,,30,France,D006262,1
+PRJEB6070,ERR480910,Metagenomics,Illumina,53,,30,France,D006262,1
+PRJEB6070,ERR480911,Metagenomics,Illumina,63,,29,France,D015179,1
+PRJEB6070,ERR480912,Metagenomics,Illumina,63,,29,France,D015179,1
+PRJEB6070,ERR480913,Metagenomics,Illumina,55,,25,France,D015179,1
+PRJEB6070,ERR480914,Metagenomics,Illumina,55,,25,France,D015179,1
+PRJEB6070,ERR480915,Metagenomics,Illumina,42,,35,Germany,D015179,1
+PRJEB6070,ERR480916,Metagenomics,Illumina,42,,35,Germany,D015179,1
+PRJEB6070,ERR480917,Metagenomics,Illumina,42,,35,Germany,D015179,1
+PRJEB6070,ERR480918,Metagenomics,Illumina,42,,35,Germany,D015179,1
+PRJEB6070,ERR480919,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR480920,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR480921,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR480922,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR480923,Metagenomics,Illumina,75,,28,Germany,D015179,1
+PRJEB6070,ERR480924,Metagenomics,Illumina,66,,23,Germany,D015179,1
+PRJEB6070,ERR480925,Metagenomics,Illumina,66,,23,Germany,D015179,1
+PRJEB6070,ERR480926,Metagenomics,Illumina,66,,23,Germany,D015179,1
+PRJEB6070,ERR480927,Metagenomics,Illumina,66,,23,Germany,D015179,1
+PRJEB6070,ERR480928,Metagenomics,Illumina,56,,27,Germany,D015179,1
+PRJEB6070,ERR480929,Metagenomics,Illumina,56,,27,Germany,D015179,1
+PRJEB6070,ERR480930,Metagenomics,Illumina,56,,27,Germany,D015179,1
+PRJEB6070,ERR480931,Metagenomics,Illumina,56,,27,Germany,D015179,1
+PRJEB6070,ERR480932,Metagenomics,Illumina,74,,26,Germany,D015179,1
+PRJEB6070,ERR480933,Metagenomics,Illumina,74,,26,Germany,D015179,1
+PRJEB6070,ERR480934,Metagenomics,Illumina,74,,26,Germany,D015179,1
+PRJEB6070,ERR480935,Metagenomics,Illumina,74,,26,Germany,D015179,1
+PRJEB6070,ERR480936,Metagenomics,Illumina,63,,25,Germany,D015179,1
+PRJEB6070,ERR480937,Metagenomics,Illumina,63,,25,Germany,D015179,1
+PRJEB6070,ERR480938,Metagenomics,Illumina,63,,25,Germany,D015179,1
+PRJEB6070,ERR480939,Metagenomics,Illumina,63,,25,Germany,D015179,1
+PRJEB6070,ERR480940,Metagenomics,Illumina,53,,32,Germany,D015179,1
+PRJEB6070,ERR480941,Metagenomics,Illumina,53,,32,Germany,D015179,1
+PRJEB6070,ERR480942,Metagenomics,Illumina,53,,32,Germany,D015179,1
+PRJEB6070,ERR480943,Metagenomics,Illumina,53,,32,Germany,D015179,1
+PRJEB6070,ERR480944,Metagenomics,Illumina,69,,28,Germany,D015179,1
+PRJEB6070,ERR480945,Metagenomics,Illumina,69,,28,Germany,D015179,1
+PRJEB6070,ERR480946,Metagenomics,Illumina,69,,28,Germany,D015179,1
+PRJEB6070,ERR480947,Metagenomics,Illumina,69,,28,Germany,D015179,1
+PRJEB6070,ERR480948,Metagenomics,Illumina,72,,24,Germany,D015179,1
+PRJEB6070,ERR480949,Metagenomics,Illumina,72,,24,Germany,D015179,1
+PRJEB6070,ERR480950,Metagenomics,Illumina,72,,24,Germany,D015179,1
+PRJEB6070,ERR480951,Metagenomics,Illumina,72,,24,Germany,D015179,1
+PRJEB6070,ERR480952,Metagenomics,Illumina,62,,22,Germany,D015179,1
+PRJEB6070,ERR480953,Metagenomics,Illumina,62,,22,Germany,D015179,1
+PRJEB6070,ERR480954,Metagenomics,Illumina,62,,22,Germany,D015179,1
+PRJEB6070,ERR480955,Metagenomics,Illumina,62,,22,Germany,D015179,1
+PRJEB6070,ERR480956,Metagenomics,Illumina,66,,26,Germany,D015179,1
+PRJEB6070,ERR480957,Metagenomics,Illumina,66,,26,Germany,D015179,1
+PRJEB6070,ERR480958,Metagenomics,Illumina,66,,26,Germany,D015179,1
+PRJEB6070,ERR480959,Metagenomics,Illumina,66,,26,Germany,D015179,1
+PRJEB6070,ERR480960,Metagenomics,Illumina,42,,27,Germany,D015179,1
+PRJEB6070,ERR480961,Metagenomics,Illumina,42,,27,Germany,D015179,1
+PRJEB6070,ERR480962,Metagenomics,Illumina,42,,27,Germany,D015179,1
+PRJEB6070,ERR480963,Metagenomics,Illumina,42,,27,Germany,D015179,1
+PRJEB6070,ERR480964,Metagenomics,Illumina,41,,22,Germany,D015179,1
+PRJEB6070,ERR480965,Metagenomics,Illumina,41,,22,Germany,D015179,1
+PRJEB6070,ERR480966,Metagenomics,Illumina,41,,22,Germany,D015179,1
+PRJEB6070,ERR480967,Metagenomics,Illumina,41,,22,Germany,D015179,1
+PRJEB6070,ERR480968,Metagenomics,Illumina,71,,30,Germany,D015179,1
+PRJEB6070,ERR480969,Metagenomics,Illumina,71,,30,Germany,D015179,1
+PRJEB6070,ERR480970,Metagenomics,Illumina,71,,30,Germany,D015179,1
+PRJEB6070,ERR480971,Metagenomics,Illumina,71,,30,Germany,D015179,1
+PRJEB6070,ERR480972,Metagenomics,Illumina,65,,28,Germany,D015179,1
+PRJEB6070,ERR480973,Metagenomics,Illumina,65,,28,Germany,D015179,1
+PRJEB6070,ERR480974,Metagenomics,Illumina,65,,28,Germany,D015179,1
+PRJEB6070,ERR480975,Metagenomics,Illumina,65,,28,Germany,D015179,1
+PRJEB6070,ERR480976,Metagenomics,Illumina,87,,22,Germany,D015179,1
+PRJEB6070,ERR480977,Metagenomics,Illumina,87,,22,Germany,D015179,1
+PRJEB6070,ERR480978,Metagenomics,Illumina,87,,22,Germany,D015179,1
+PRJEB6070,ERR480979,Metagenomics,Illumina,87,,22,Germany,D015179,1
+PRJEB6070,ERR480980,Metagenomics,Illumina,62,,27,Germany,D015179,1
+PRJEB6070,ERR480981,Metagenomics,Illumina,62,,27,Germany,D015179,1
+PRJEB6070,ERR480982,Metagenomics,Illumina,62,,27,Germany,D015179,1
+PRJEB6070,ERR480983,Metagenomics,Illumina,62,,27,Germany,D015179,1
+PRJEB6070,ERR480984,Metagenomics,Illumina,59,,24,Germany,D015179,1
+PRJEB6070,ERR480985,Metagenomics,Illumina,59,,24,Germany,D015179,1
+PRJEB6070,ERR480986,Metagenomics,Illumina,59,,24,Germany,D015179,1
+PRJEB6070,ERR480987,Metagenomics,Illumina,59,,24,Germany,D015179,1
+PRJEB6070,ERR480988,Metagenomics,Illumina,69,,24,Germany,D015179,1
+PRJEB6070,ERR480989,Metagenomics,Illumina,69,,24,Germany,D015179,1
+PRJEB6070,ERR480990,Metagenomics,Illumina,69,,24,Germany,D015179,1
+PRJEB6070,ERR480991,Metagenomics,Illumina,69,,24,Germany,D015179,1
+PRJEB6070,ERR480992,Metagenomics,Illumina,58,,32,Germany,D015179,1
+PRJEB6070,ERR480993,Metagenomics,Illumina,58,,32,Germany,D015179,1
+PRJEB6070,ERR480994,Metagenomics,Illumina,58,,32,Germany,D015179,1
+PRJEB6070,ERR480995,Metagenomics,Illumina,58,,32,Germany,D015179,1
+PRJEB6070,ERR480996,Metagenomics,Illumina,35,,22,Germany,D015179,1
+PRJEB6070,ERR480997,Metagenomics,Illumina,35,,22,Germany,D015179,1
+PRJEB6070,ERR480998,Metagenomics,Illumina,35,,22,Germany,D015179,1
+PRJEB6070,ERR480999,Metagenomics,Illumina,35,,22,Germany,D015179,1
+PRJEB6070,ERR481000,Metagenomics,Illumina,58,,25,Germany,D015179,1
+PRJEB6070,ERR481001,Metagenomics,Illumina,58,,25,Germany,D015179,1
+PRJEB6070,ERR481002,Metagenomics,Illumina,58,,25,Germany,D015179,1
+PRJEB6070,ERR481003,Metagenomics,Illumina,58,,25,Germany,D015179,1
+PRJEB6070,ERR481004,Metagenomics,Illumina,73,,22,Germany,D015179,1
+PRJEB6070,ERR481005,Metagenomics,Illumina,73,,22,Germany,D015179,1
+PRJEB6070,ERR481006,Metagenomics,Illumina,73,,22,Germany,D015179,1
+PRJEB6070,ERR481007,Metagenomics,Illumina,73,,22,Germany,D015179,1
+PRJEB6070,ERR481008,Metagenomics,Illumina,51,,28,Germany,D015179,1
+PRJEB6070,ERR481009,Metagenomics,Illumina,51,,28,Germany,D015179,1
+PRJEB6070,ERR481010,Metagenomics,Illumina,51,,28,Germany,D015179,1
+PRJEB6070,ERR481011,Metagenomics,Illumina,51,,28,Germany,D015179,1
+PRJEB6070,ERR481012,Metagenomics,Illumina,66,,31,Germany,D015179,1
+PRJEB6070,ERR481013,Metagenomics,Illumina,66,,31,Germany,D015179,1
+PRJEB6070,ERR481014,Metagenomics,Illumina,66,,31,Germany,D015179,1
+PRJEB6070,ERR481015,Metagenomics,Illumina,66,,31,Germany,D015179,1
+PRJEB6070,ERR481016,Metagenomics,Illumina,79,,26,Germany,D015179,1
+PRJEB6070,ERR481017,Metagenomics,Illumina,79,,26,Germany,D015179,1
+PRJEB6070,ERR481018,Metagenomics,Illumina,79,,26,Germany,D015179,1
+PRJEB6070,ERR481019,Metagenomics,Illumina,79,,26,Germany,D015179,1
+PRJEB6070,ERR481020,Metagenomics,Illumina,34,,27,Germany,D015179,1
+PRJEB6070,ERR481021,Metagenomics,Illumina,34,,27,Germany,D015179,1
+PRJEB6070,ERR481022,Metagenomics,Illumina,34,,27,Germany,D015179,1
+PRJEB6070,ERR481023,Metagenomics,Illumina,34,,27,Germany,D015179,1
+PRJEB6070,ERR481024,Metagenomics,Illumina,67,,30,Germany,D015179,1
+PRJEB6070,ERR481025,Metagenomics,Illumina,67,,30,Germany,D015179,1
+PRJEB6070,ERR481026,Metagenomics,Illumina,67,,30,Germany,D015179,1
+PRJEB6070,ERR481027,Metagenomics,Illumina,67,,30,Germany,D015179,1
+PRJEB6070,ERR481028,Metagenomics,Illumina,70,,25,Germany,D015179,1
+PRJEB6070,ERR481029,Metagenomics,Illumina,70,,25,Germany,D015179,1
+PRJEB6070,ERR481030,Metagenomics,Illumina,77,,26,Germany,D015179,1
+PRJEB6070,ERR481031,Metagenomics,Illumina,77,,26,Germany,D015179,1
+PRJEB6070,ERR481032,Metagenomics,Illumina,77,,26,Germany,D015179,1
+PRJEB6070,ERR481033,Metagenomics,Illumina,77,,26,Germany,D015179,1
+PRJEB6070,ERR481034,Metagenomics,Illumina,68,,23,Germany,D015179,1
+PRJEB6070,ERR481035,Metagenomics,Illumina,68,,23,Germany,D015179,1
+PRJEB6070,ERR481036,Metagenomics,Illumina,68,,23,Germany,D015179,1
+PRJEB6070,ERR481037,Metagenomics,Illumina,68,,23,Germany,D015179,1
+PRJEB6070,ERR481038,Metagenomics,Illumina,53,,31,Germany,D015179,1
+PRJEB6070,ERR481039,Metagenomics,Illumina,53,,31,Germany,D015179,1
+PRJEB6070,ERR481040,Metagenomics,Illumina,53,,31,Germany,D015179,1
+PRJEB6070,ERR481041,Metagenomics,Illumina,53,,31,Germany,D015179,1
+PRJEB6070,ERR481042,Metagenomics,Illumina,55,,28,Germany,D015179,1
+PRJEB6070,ERR481043,Metagenomics,Illumina,55,,28,Germany,D015179,1
+PRJEB6070,ERR481044,Metagenomics,Illumina,55,,28,Germany,D015179,1
+PRJEB6070,ERR481045,Metagenomics,Illumina,55,,28,Germany,D015179,1
+PRJEB6070,ERR481046,Metagenomics,Illumina,72,,28,Germany,D015179,1
+PRJEB6070,ERR481047,Metagenomics,Illumina,72,,28,Germany,D015179,1
+PRJEB6070,ERR481048,Metagenomics,Illumina,72,,28,Germany,D015179,1
+PRJEB6070,ERR481049,Metagenomics,Illumina,72,,28,Germany,D015179,1
+PRJEB6070,ERR481050,Metagenomics,Illumina,43,,22,Germany,D015179,1
+PRJEB6070,ERR481051,Metagenomics,Illumina,43,,22,Germany,D015179,1
+PRJEB6070,ERR481052,Metagenomics,Illumina,43,,22,Germany,D015179,1
+PRJEB6070,ERR481053,Metagenomics,Illumina,43,,22,Germany,D015179,1
+PRJEB6070,ERR481054,Metagenomics,Illumina,51,,30,Germany,D015179,1
+PRJEB6070,ERR481055,Metagenomics,Illumina,51,,30,Germany,D015179,1
+PRJEB6070,ERR481056,Metagenomics,Illumina,51,,30,Germany,D015179,1
+PRJEB6070,ERR481057,Metagenomics,Illumina,51,,30,Germany,D015179,1
+PRJEB6070,ERR481058,Metagenomics,Illumina,49,,30,Germany,D015179,1
+PRJEB6070,ERR481059,Metagenomics,Illumina,49,,30,Germany,D015179,1
+PRJEB6070,ERR481060,Metagenomics,Illumina,49,,30,Germany,D015179,1
+PRJEB6070,ERR481061,Metagenomics,Illumina,49,,30,Germany,D015179,1
+PRJEB6070,ERR481062,Metagenomics,Illumina,90,,28,Germany,D015179,1
+PRJEB6070,ERR481063,Metagenomics,Illumina,90,,28,Germany,D015179,1
+PRJEB6070,ERR481064,Metagenomics,Illumina,90,,28,Germany,D015179,1
+PRJEB6070,ERR481065,Metagenomics,Illumina,90,,28,Germany,D015179,1
+PRJEB6070,ERR481066,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR481067,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR481068,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR481069,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR481070,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR481071,Metagenomics,Illumina,34,,23,Germany,D006262,1
+PRJEB6070,ERR481072,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR481073,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR481074,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR481075,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR481076,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR481077,Metagenomics,Illumina,30,,31,Germany,D006262,1
+PRJEB6070,ERR481078,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR481079,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR481080,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR481081,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR481082,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR481083,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR481084,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR481085,Metagenomics,Illumina,34,,21,Germany,D006262,1
+PRJEB6070,ERR481086,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR481087,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR481088,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR481089,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR481090,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR481091,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR481092,Metagenomics,Illumina,37,,25,Germany,D006262,1
+PRJEB6070,ERR481093,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR481094,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR481095,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR481096,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR481097,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB6070,ERR481098,Metagenomics,Illumina,49,,26,Germany,D006262,1
+PRJEB27928,ERR2726404,Metagenomics,Illumina HiSeq,45,Male,30.7,Germany,D006262,1
+PRJEB27928,ERR2726405,Metagenomics,Illumina HiSeq,62,Female,28.5,Germany,D006262,1
+PRJEB27928,ERR2726406,Metagenomics,Illumina HiSeq,74,Male,22.9,Germany,D006262,1
+PRJEB27928,ERR2726407,Metagenomics,Illumina HiSeq,59,Female,22.5,Germany,D006262,1
+PRJEB27928,ERR2726408,Metagenomics,Illumina HiSeq,59,Female,22.7,Germany,D006262,1
+PRJEB27928,ERR2726409,Metagenomics,Illumina HiSeq,62,Female,27,Germany,D006262,1
+PRJEB27928,ERR2726410,Metagenomics,Illumina HiSeq,63,Female,25.8,Germany,D015179,1
+PRJEB27928,ERR2726411,Metagenomics,Illumina HiSeq,85,Female,19.7,Germany,D015179,1
+PRJEB27928,ERR2726412,Metagenomics,Illumina HiSeq,85,Female,19.7,Germany,D015179,1
+PRJEB27928,ERR2726413,Metagenomics,Illumina HiSeq,85,Female,19.7,Germany,D015179,1
+PRJEB27928,ERR2726414,Metagenomics,Illumina HiSeq,85,Female,19.7,Germany,D015179,1
+PRJEB27928,ERR2726415,Metagenomics,Illumina HiSeq,80,Male,28.4,Germany,D015179,1
+PRJEB27928,ERR2726416,Metagenomics,Illumina HiSeq,80,Male,28.4,Germany,D015179,1
+PRJEB27928,ERR2726417,Metagenomics,Illumina HiSeq,80,Male,28.4,Germany,D015179,1
+PRJEB27928,ERR2726418,Metagenomics,Illumina HiSeq,80,Male,28.4,Germany,D015179,1
+PRJEB27928,ERR2726419,Metagenomics,Illumina HiSeq,50,Female,23.4,Germany,D006262,1
+PRJEB27928,ERR2726420,Metagenomics,Illumina HiSeq,61,Male,29.9,Germany,D006262,1
+PRJEB27928,ERR2726421,Metagenomics,Illumina HiSeq,59,Female,22.1,Germany,D006262,1
+PRJEB27928,ERR2726422,Metagenomics,Illumina HiSeq,50,Male,21.6,Germany,D006262,1
+PRJEB27928,ERR2726423,Metagenomics,Illumina HiSeq,81,Male,26.1,Germany,D015179,1
+PRJEB27928,ERR2726424,Metagenomics,Illumina HiSeq,81,Male,26.1,Germany,D015179,1
+PRJEB27928,ERR2726425,Metagenomics,Illumina HiSeq,81,Male,26.1,Germany,D015179,1
+PRJEB27928,ERR2726426,Metagenomics,Illumina HiSeq,81,Male,26.1,Germany,D015179,1
+PRJEB27928,ERR2726427,Metagenomics,Illumina HiSeq,55,Female,18,Germany,D006262,1
+PRJEB27928,ERR2726428,Metagenomics,Illumina HiSeq,73,Male,24.8,Germany,D006262,1
+PRJEB27928,ERR2726429,Metagenomics,Illumina HiSeq,45,Male,22.1,Germany,D006262,1
+PRJEB27928,ERR2726430,Metagenomics,Illumina HiSeq,51,Male,26.3,Germany,D006262,1
+PRJEB27928,ERR2726431,Metagenomics,Illumina HiSeq,48,Female,25.4,Germany,D006262,1
+PRJEB27928,ERR2726432,Metagenomics,Illumina HiSeq,64,Male,26.8,Germany,D006262,1
+PRJEB27928,ERR2726433,Metagenomics,Illumina HiSeq,75,Male,21.5,Germany,D006262,1
+PRJEB27928,ERR2726434,Metagenomics,Illumina HiSeq,57,Female,22.2,Germany,D006262,1
+PRJEB27928,ERR2726435,Metagenomics,Illumina HiSeq,64,Male,27.6,Germany,D006262,1
+PRJEB27928,ERR2726436,Metagenomics,Illumina HiSeq,60,Female,25.8,Germany,D006262,1
+PRJEB27928,ERR2726437,Metagenomics,Illumina HiSeq,61,Male,25.2,Germany,D015179,1
+PRJEB27928,ERR2726438,Metagenomics,Illumina HiSeq,61,Male,25.2,Germany,D015179,1
+PRJEB27928,ERR2726439,Metagenomics,Illumina HiSeq,61,Male,25.2,Germany,D015179,1
+PRJEB27928,ERR2726440,Metagenomics,Illumina HiSeq,61,Male,25.2,Germany,D015179,1
+PRJEB27928,ERR2726441,Metagenomics,Illumina HiSeq,29,Female,30.5,Germany,D006262,1
+PRJEB27928,ERR2726442,Metagenomics,Illumina HiSeq,44,Male,25.1,Germany,D006262,1
+PRJEB27928,ERR2726443,Metagenomics,Illumina HiSeq,76,Male,29.5,Germany,D006262,1
+PRJEB27928,ERR2726444,Metagenomics,Illumina HiSeq,56,Male,25,Germany,D006262,1
+PRJEB27928,ERR2726445,Metagenomics,Illumina HiSeq,53,Male,18.5,Germany,D006262,1
+PRJEB27928,ERR2726446,Metagenomics,Illumina HiSeq,61,Female,25.4,Germany,D006262,1
+PRJEB27928,ERR2726447,Metagenomics,Illumina HiSeq,67,Male,24.4,Germany,D006262,1
+PRJEB27928,ERR2726448,Metagenomics,Illumina HiSeq,67,Female,30.1,Germany,D015179,1
+PRJEB27928,ERR2726449,Metagenomics,Illumina HiSeq,53,Male,26.2,Germany,D006262,1
+PRJEB27928,ERR2726450,Metagenomics,Illumina HiSeq,75,Male,30.1,Germany,D006262,1
+PRJEB27928,ERR2726451,Metagenomics,Illumina HiSeq,53,Female,24.1,Germany,D006262,1
+PRJEB27928,ERR2726452,Metagenomics,Illumina HiSeq,41,Male,23.8,Germany,D006262,1
+PRJEB27928,ERR2726453,Metagenomics,Illumina HiSeq,61,Male,21.6,Germany,D015179,1
+PRJEB27928,ERR2726454,Metagenomics,Illumina HiSeq,61,Male,21.6,Germany,D015179,1
+PRJEB27928,ERR2726455,Metagenomics,Illumina HiSeq,61,Male,21.6,Germany,D015179,1
+PRJEB27928,ERR2726456,Metagenomics,Illumina HiSeq,61,Male,21.6,Germany,D015179,1
+PRJEB27928,ERR2726457,Metagenomics,Illumina HiSeq,46,Male,26.3,Germany,D006262,1
+PRJEB27928,ERR2726458,Metagenomics,Illumina HiSeq,64,Male,24.6,Germany,D006262,1
+PRJEB27928,ERR2726459,Metagenomics,Illumina HiSeq,63,Female,20.2,Germany,D006262,1
+PRJEB27928,ERR2726460,Metagenomics,Illumina HiSeq,75,Male,22.9,Germany,D006262,1
+PRJEB27928,ERR2726461,Metagenomics,Illumina HiSeq,50,Male,22.6,Germany,D006262,1
+PRJEB27928,ERR2726462,Metagenomics,Illumina HiSeq,65,Male,32.7,Germany,D006262,1
+PRJEB27928,ERR2726463,Metagenomics,Illumina HiSeq,79,Male,22.4,Germany,D015179,1
+PRJEB27928,ERR2726464,Metagenomics,Illumina HiSeq,79,Male,22.4,Germany,D015179,1
+PRJEB27928,ERR2726465,Metagenomics,Illumina HiSeq,79,Male,22.4,Germany,D015179,1
+PRJEB27928,ERR2726466,Metagenomics,Illumina HiSeq,79,Male,22.4,Germany,D015179,1
+PRJEB27928,ERR2726467,Metagenomics,Illumina HiSeq,81,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726468,Metagenomics,Illumina HiSeq,81,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726469,Metagenomics,Illumina HiSeq,81,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726470,Metagenomics,Illumina HiSeq,81,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726471,Metagenomics,Illumina HiSeq,61,Male,27,Germany,D006262,1
+PRJEB27928,ERR2726472,Metagenomics,Illumina HiSeq,75,Female,19.3,Germany,D006262,1
+PRJEB27928,ERR2726473,Metagenomics,Illumina HiSeq,57,Female,21.2,Germany,D006262,1
+PRJEB27928,ERR2726474,Metagenomics,Illumina HiSeq,66,Male,30.3,Germany,D006262,1
+PRJEB27928,ERR2726475,Metagenomics,Illumina HiSeq,64,Male,25.4,Germany,D006262,1
+PRJEB27928,ERR2726476,Metagenomics,Illumina HiSeq,61,Female,24.1,Germany,D015179,1
+PRJEB27928,ERR2726477,Metagenomics,Illumina HiSeq,61,Female,24.1,Germany,D015179,1
+PRJEB27928,ERR2726478,Metagenomics,Illumina HiSeq,61,Female,24.1,Germany,D015179,1
+PRJEB27928,ERR2726479,Metagenomics,Illumina HiSeq,61,Female,24.1,Germany,D015179,1
+PRJEB27928,ERR2726480,Metagenomics,Illumina HiSeq,63,Female,28.8,Germany,D015179,1
+PRJEB27928,ERR2726481,Metagenomics,Illumina HiSeq,63,Female,28.8,Germany,D015179,1
+PRJEB27928,ERR2726482,Metagenomics,Illumina HiSeq,63,Female,28.8,Germany,D015179,1
+PRJEB27928,ERR2726483,Metagenomics,Illumina HiSeq,63,Female,28.8,Germany,D015179,1
+PRJEB27928,ERR2726484,Metagenomics,Illumina HiSeq,50,Female,32.1,Germany,D015179,1
+PRJEB27928,ERR2726485,Metagenomics,Illumina HiSeq,64,Female,21.1,Germany,D006262,1
+PRJEB27928,ERR2726486,Metagenomics,Illumina HiSeq,73,Male,24.5,Germany,D006262,1
+PRJEB27928,ERR2726487,Metagenomics,Illumina HiSeq,64,Female,22.8,Germany,D006262,1
+PRJEB27928,ERR2726488,Metagenomics,Illumina HiSeq,56,Female,30,Germany,D015179,1
+PRJEB27928,ERR2726489,Metagenomics,Illumina HiSeq,60,Female,35.8,Germany,D015179,1
+PRJEB27928,ERR2726490,Metagenomics,Illumina HiSeq,60,Female,35.8,Germany,D015179,1
+PRJEB27928,ERR2726491,Metagenomics,Illumina HiSeq,60,Female,35.8,Germany,D015179,1
+PRJEB27928,ERR2726492,Metagenomics,Illumina HiSeq,60,Female,35.8,Germany,D015179,1
+PRJEB27928,ERR2726493,Metagenomics,Illumina HiSeq,58,Female,23.8,Germany,D006262,1
+PRJEB27928,ERR2726494,Metagenomics,Illumina HiSeq,60,Male,19.7,Germany,D015179,1
+PRJEB27928,ERR2726495,Metagenomics,Illumina HiSeq,60,Male,19.7,Germany,D015179,1
+PRJEB27928,ERR2726496,Metagenomics,Illumina HiSeq,60,Male,19.7,Germany,D015179,1
+PRJEB27928,ERR2726497,Metagenomics,Illumina HiSeq,60,Male,19.7,Germany,D015179,1
+PRJEB27928,ERR2726498,Metagenomics,Illumina HiSeq,57,Female,22.2,Germany,D006262,1
+PRJEB27928,ERR2726499,Metagenomics,Illumina HiSeq,48,Male,23,Germany,D006262,1
+PRJEB27928,ERR2726500,Metagenomics,Illumina HiSeq,53,Female,23,Germany,D006262,1
+PRJEB27928,ERR2726501,Metagenomics,Illumina HiSeq,62,Female,21.3,Germany,D015179,1
+PRJEB27928,ERR2726502,Metagenomics,Illumina HiSeq,60,Female,23,Germany,D006262,1
+PRJEB27928,ERR2726503,Metagenomics,Illumina HiSeq,60,Female,21.9,Germany,D015179,1
+PRJEB27928,ERR2726504,Metagenomics,Illumina HiSeq,69,Female,25.3,Germany,D006262,1
+PRJEB27928,ERR2726505,Metagenomics,Illumina HiSeq,28,Male,24.6,Germany,D006262,1
+PRJEB27928,ERR2726506,Metagenomics,Illumina HiSeq,54,Female,24.6,Germany,D006262,1
+PRJEB27928,ERR2726507,Metagenomics,Illumina HiSeq,52,Male,29.9,Germany,D015179,1
+PRJEB27928,ERR2726508,Metagenomics,Illumina HiSeq,52,Male,29.9,Germany,D015179,1
+PRJEB27928,ERR2726509,Metagenomics,Illumina HiSeq,52,Male,29.9,Germany,D015179,1
+PRJEB27928,ERR2726510,Metagenomics,Illumina HiSeq,52,Male,29.9,Germany,D015179,1
+PRJEB27928,ERR2726511,Metagenomics,Illumina HiSeq,51,Female,25.6,Germany,D006262,1
+PRJEB27928,ERR2726512,Metagenomics,Illumina HiSeq,58,Female,27,Germany,D006262,1
+PRJEB27928,ERR2726513,Metagenomics,Illumina HiSeq,66,Female,13.3,Germany,D015179,1
+PRJEB27928,ERR2726514,Metagenomics,Illumina HiSeq,66,Female,13.3,Germany,D015179,1
+PRJEB27928,ERR2726515,Metagenomics,Illumina HiSeq,66,Female,13.3,Germany,D015179,1
+PRJEB27928,ERR2726516,Metagenomics,Illumina HiSeq,66,Female,13.3,Germany,D015179,1
+PRJEB27928,ERR2726517,Metagenomics,Illumina HiSeq,45,Female,27.2,Germany,D006262,1
+PRJEB27928,ERR2726518,Metagenomics,Illumina HiSeq,84,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726519,Metagenomics,Illumina HiSeq,84,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726520,Metagenomics,Illumina HiSeq,84,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726521,Metagenomics,Illumina HiSeq,84,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726522,Metagenomics,Illumina HiSeq,73,Male,26.6,Germany,D015179,1
+PRJEB27928,ERR2726523,Metagenomics,Illumina HiSeq,73,Male,26.6,Germany,D015179,1
+PRJEB27928,ERR2726524,Metagenomics,Illumina HiSeq,73,Male,26.6,Germany,D015179,1
+PRJEB27928,ERR2726525,Metagenomics,Illumina HiSeq,73,Male,26.6,Germany,D015179,1
+PRJEB27928,ERR2726526,Metagenomics,Illumina HiSeq,59,Female,32.3,Germany,D006262,1
+PRJEB27928,ERR2726527,Metagenomics,Illumina HiSeq,59,Male,26.5,Germany,D015179,1
+PRJEB27928,ERR2726528,Metagenomics,Illumina HiSeq,59,Male,26.5,Germany,D015179,1
+PRJEB27928,ERR2726529,Metagenomics,Illumina HiSeq,59,Male,26.5,Germany,D015179,1
+PRJEB27928,ERR2726530,Metagenomics,Illumina HiSeq,59,Male,26.5,Germany,D015179,1
+PRJEB27928,ERR2726531,Metagenomics,Illumina HiSeq,37,Male,24.5,Germany,D006262,1
+PRJEB27928,ERR2726532,Metagenomics,Illumina HiSeq,39,Male,24.9,Germany,D006262,1
+PRJEB27928,ERR2726533,Metagenomics,Illumina HiSeq,70,Male,26.7,Germany,D006262,1
+PRJEB27928,ERR2726534,Metagenomics,Illumina HiSeq,45,Male,30.7,Germany,D006262,1
+PRJEB27928,ERR2726535,Metagenomics,Illumina HiSeq,62,Female,28.5,Germany,D006262,1
+PRJEB27928,ERR2726536,Metagenomics,Illumina HiSeq,74,Male,22.9,Germany,D006262,1
+PRJEB27928,ERR2726537,Metagenomics,Illumina HiSeq,59,Female,22.5,Germany,D006262,1
+PRJEB27928,ERR2726538,Metagenomics,Illumina HiSeq,59,Female,22.7,Germany,D006262,1
+PRJEB27928,ERR2726539,Metagenomics,Illumina HiSeq,62,Female,27,Germany,D006262,1
+PRJEB27928,ERR2726540,Metagenomics,Illumina HiSeq,63,Female,25.8,Germany,D015179,1
+PRJEB27928,ERR2726541,Metagenomics,Illumina HiSeq,85,Female,19.7,Germany,D015179,1
+PRJEB27928,ERR2726542,Metagenomics,Illumina HiSeq,85,Female,19.7,Germany,D015179,1
+PRJEB27928,ERR2726543,Metagenomics,Illumina HiSeq,85,Female,19.7,Germany,D015179,1
+PRJEB27928,ERR2726544,Metagenomics,Illumina HiSeq,85,Female,19.7,Germany,D015179,1
+PRJEB27928,ERR2726545,Metagenomics,Illumina HiSeq,80,Male,28.4,Germany,D015179,1
+PRJEB27928,ERR2726546,Metagenomics,Illumina HiSeq,80,Male,28.4,Germany,D015179,1
+PRJEB27928,ERR2726547,Metagenomics,Illumina HiSeq,80,Male,28.4,Germany,D015179,1
+PRJEB27928,ERR2726548,Metagenomics,Illumina HiSeq,80,Male,28.4,Germany,D015179,1
+PRJEB27928,ERR2726549,Metagenomics,Illumina HiSeq,50,Female,23.4,Germany,D006262,1
+PRJEB27928,ERR2726550,Metagenomics,Illumina HiSeq,61,Male,29.9,Germany,D006262,1
+PRJEB27928,ERR2726551,Metagenomics,Illumina HiSeq,59,Female,22.1,Germany,D006262,1
+PRJEB27928,ERR2726552,Metagenomics,Illumina HiSeq,50,Male,21.6,Germany,D006262,1
+PRJEB27928,ERR2726553,Metagenomics,Illumina HiSeq,81,Male,26.1,Germany,D015179,1
+PRJEB27928,ERR2726554,Metagenomics,Illumina HiSeq,81,Male,26.1,Germany,D015179,1
+PRJEB27928,ERR2726555,Metagenomics,Illumina HiSeq,81,Male,26.1,Germany,D015179,1
+PRJEB27928,ERR2726556,Metagenomics,Illumina HiSeq,81,Male,26.1,Germany,D015179,1
+PRJEB27928,ERR2726557,Metagenomics,Illumina HiSeq,55,Female,18,Germany,D006262,1
+PRJEB27928,ERR2726558,Metagenomics,Illumina HiSeq,73,Male,24.8,Germany,D006262,1
+PRJEB27928,ERR2726559,Metagenomics,Illumina HiSeq,45,Male,22.1,Germany,D006262,1
+PRJEB27928,ERR2726560,Metagenomics,Illumina HiSeq,51,Male,26.3,Germany,D006262,1
+PRJEB27928,ERR2726561,Metagenomics,Illumina HiSeq,48,Female,25.4,Germany,D006262,1
+PRJEB27928,ERR2726562,Metagenomics,Illumina HiSeq,64,Male,26.8,Germany,D006262,1
+PRJEB27928,ERR2726563,Metagenomics,Illumina HiSeq,75,Male,21.5,Germany,D006262,1
+PRJEB27928,ERR2726564,Metagenomics,Illumina HiSeq,57,Female,22.2,Germany,D006262,1
+PRJEB27928,ERR2726565,Metagenomics,Illumina HiSeq,64,Male,27.6,Germany,D006262,1
+PRJEB27928,ERR2726566,Metagenomics,Illumina HiSeq,60,Female,25.8,Germany,D006262,1
+PRJEB27928,ERR2726567,Metagenomics,Illumina HiSeq,61,Male,25.2,Germany,D015179,1
+PRJEB27928,ERR2726568,Metagenomics,Illumina HiSeq,61,Male,25.2,Germany,D015179,1
+PRJEB27928,ERR2726569,Metagenomics,Illumina HiSeq,61,Male,25.2,Germany,D015179,1
+PRJEB27928,ERR2726570,Metagenomics,Illumina HiSeq,61,Male,25.2,Germany,D015179,1
+PRJEB27928,ERR2726571,Metagenomics,Illumina HiSeq,29,Female,30.5,Germany,D006262,1
+PRJEB27928,ERR2726572,Metagenomics,Illumina HiSeq,44,Male,25.1,Germany,D006262,1
+PRJEB27928,ERR2726573,Metagenomics,Illumina HiSeq,76,Male,29.5,Germany,D006262,1
+PRJEB27928,ERR2726574,Metagenomics,Illumina HiSeq,56,Male,25,Germany,D006262,1
+PRJEB27928,ERR2726575,Metagenomics,Illumina HiSeq,53,Male,18.5,Germany,D006262,1
+PRJEB27928,ERR2726576,Metagenomics,Illumina HiSeq,61,Female,25.4,Germany,D006262,1
+PRJEB27928,ERR2726577,Metagenomics,Illumina HiSeq,67,Male,24.4,Germany,D006262,1
+PRJEB27928,ERR2726578,Metagenomics,Illumina HiSeq,67,Female,30.1,Germany,D015179,1
+PRJEB27928,ERR2726579,Metagenomics,Illumina HiSeq,53,Male,26.2,Germany,D006262,1
+PRJEB27928,ERR2726580,Metagenomics,Illumina HiSeq,75,Male,30.1,Germany,D006262,1
+PRJEB27928,ERR2726581,Metagenomics,Illumina HiSeq,53,Female,24.1,Germany,D006262,1
+PRJEB27928,ERR2726582,Metagenomics,Illumina HiSeq,41,Male,23.8,Germany,D006262,1
+PRJEB27928,ERR2726583,Metagenomics,Illumina HiSeq,61,Male,21.6,Germany,D015179,1
+PRJEB27928,ERR2726584,Metagenomics,Illumina HiSeq,61,Male,21.6,Germany,D015179,1
+PRJEB27928,ERR2726585,Metagenomics,Illumina HiSeq,61,Male,21.6,Germany,D015179,1
+PRJEB27928,ERR2726586,Metagenomics,Illumina HiSeq,61,Male,21.6,Germany,D015179,1
+PRJEB27928,ERR2726587,Metagenomics,Illumina HiSeq,46,Male,26.3,Germany,D006262,1
+PRJEB27928,ERR2726588,Metagenomics,Illumina HiSeq,64,Male,24.6,Germany,D006262,1
+PRJEB27928,ERR2726589,Metagenomics,Illumina HiSeq,63,Female,20.2,Germany,D006262,1
+PRJEB27928,ERR2726590,Metagenomics,Illumina HiSeq,75,Male,22.9,Germany,D006262,1
+PRJEB27928,ERR2726591,Metagenomics,Illumina HiSeq,50,Male,22.6,Germany,D006262,1
+PRJEB27928,ERR2726592,Metagenomics,Illumina HiSeq,65,Male,32.7,Germany,D006262,1
+PRJEB27928,ERR2726593,Metagenomics,Illumina HiSeq,79,Male,22.4,Germany,D015179,1
+PRJEB27928,ERR2726594,Metagenomics,Illumina HiSeq,79,Male,22.4,Germany,D015179,1
+PRJEB27928,ERR2726595,Metagenomics,Illumina HiSeq,79,Male,22.4,Germany,D015179,1
+PRJEB27928,ERR2726596,Metagenomics,Illumina HiSeq,79,Male,22.4,Germany,D015179,1
+PRJEB27928,ERR2726597,Metagenomics,Illumina HiSeq,81,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726598,Metagenomics,Illumina HiSeq,81,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726599,Metagenomics,Illumina HiSeq,81,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726600,Metagenomics,Illumina HiSeq,81,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726601,Metagenomics,Illumina HiSeq,61,Male,27,Germany,D006262,1
+PRJEB27928,ERR2726602,Metagenomics,Illumina HiSeq,75,Female,19.3,Germany,D006262,1
+PRJEB27928,ERR2726603,Metagenomics,Illumina HiSeq,57,Female,21.2,Germany,D006262,1
+PRJEB27928,ERR2726604,Metagenomics,Illumina HiSeq,66,Male,30.3,Germany,D006262,1
+PRJEB27928,ERR2726605,Metagenomics,Illumina HiSeq,64,Male,25.4,Germany,D006262,1
+PRJEB27928,ERR2726606,Metagenomics,Illumina HiSeq,61,Female,24.1,Germany,D015179,1
+PRJEB27928,ERR2726607,Metagenomics,Illumina HiSeq,61,Female,24.1,Germany,D015179,1
+PRJEB27928,ERR2726608,Metagenomics,Illumina HiSeq,61,Female,24.1,Germany,D015179,1
+PRJEB27928,ERR2726609,Metagenomics,Illumina HiSeq,61,Female,24.1,Germany,D015179,1
+PRJEB27928,ERR2726610,Metagenomics,Illumina HiSeq,63,Female,28.8,Germany,D015179,1
+PRJEB27928,ERR2726611,Metagenomics,Illumina HiSeq,63,Female,28.8,Germany,D015179,1
+PRJEB27928,ERR2726612,Metagenomics,Illumina HiSeq,63,Female,28.8,Germany,D015179,1
+PRJEB27928,ERR2726613,Metagenomics,Illumina HiSeq,63,Female,28.8,Germany,D015179,1
+PRJEB27928,ERR2726614,Metagenomics,Illumina HiSeq,50,Female,32.1,Germany,D015179,1
+PRJEB27928,ERR2726615,Metagenomics,Illumina HiSeq,64,Female,21.1,Germany,D006262,1
+PRJEB27928,ERR2726616,Metagenomics,Illumina HiSeq,73,Male,24.5,Germany,D006262,1
+PRJEB27928,ERR2726617,Metagenomics,Illumina HiSeq,64,Female,22.8,Germany,D006262,1
+PRJEB27928,ERR2726618,Metagenomics,Illumina HiSeq,56,Female,30,Germany,D015179,1
+PRJEB27928,ERR2726619,Metagenomics,Illumina HiSeq,60,Female,35.8,Germany,D015179,1
+PRJEB27928,ERR2726620,Metagenomics,Illumina HiSeq,60,Female,35.8,Germany,D015179,1
+PRJEB27928,ERR2726621,Metagenomics,Illumina HiSeq,60,Female,35.8,Germany,D015179,1
+PRJEB27928,ERR2726622,Metagenomics,Illumina HiSeq,60,Female,35.8,Germany,D015179,1
+PRJEB27928,ERR2726623,Metagenomics,Illumina HiSeq,58,Female,23.8,Germany,D006262,1
+PRJEB27928,ERR2726624,Metagenomics,Illumina HiSeq,60,Male,19.7,Germany,D015179,1
+PRJEB27928,ERR2726625,Metagenomics,Illumina HiSeq,60,Male,19.7,Germany,D015179,1
+PRJEB27928,ERR2726626,Metagenomics,Illumina HiSeq,60,Male,19.7,Germany,D015179,1
+PRJEB27928,ERR2726627,Metagenomics,Illumina HiSeq,60,Male,19.7,Germany,D015179,1
+PRJEB27928,ERR2726628,Metagenomics,Illumina HiSeq,57,Female,22.2,Germany,D006262,1
+PRJEB27928,ERR2726629,Metagenomics,Illumina HiSeq,48,Male,23,Germany,D006262,1
+PRJEB27928,ERR2726630,Metagenomics,Illumina HiSeq,53,Female,23,Germany,D006262,1
+PRJEB27928,ERR2726631,Metagenomics,Illumina HiSeq,62,Female,21.3,Germany,D015179,1
+PRJEB27928,ERR2726632,Metagenomics,Illumina HiSeq,60,Female,23,Germany,D006262,1
+PRJEB27928,ERR2726633,Metagenomics,Illumina HiSeq,60,Female,21.9,Germany,D015179,1
+PRJEB27928,ERR2726634,Metagenomics,Illumina HiSeq,69,Female,25.3,Germany,D006262,1
+PRJEB27928,ERR2726635,Metagenomics,Illumina HiSeq,28,Male,24.6,Germany,D006262,1
+PRJEB27928,ERR2726636,Metagenomics,Illumina HiSeq,54,Female,24.6,Germany,D006262,1
+PRJEB27928,ERR2726637,Metagenomics,Illumina HiSeq,52,Male,29.9,Germany,D015179,1
+PRJEB27928,ERR2726638,Metagenomics,Illumina HiSeq,52,Male,29.9,Germany,D015179,1
+PRJEB27928,ERR2726639,Metagenomics,Illumina HiSeq,52,Male,29.9,Germany,D015179,1
+PRJEB27928,ERR2726640,Metagenomics,Illumina HiSeq,52,Male,29.9,Germany,D015179,1
+PRJEB27928,ERR2726641,Metagenomics,Illumina HiSeq,51,Female,25.6,Germany,D006262,1
+PRJEB27928,ERR2726642,Metagenomics,Illumina HiSeq,58,Female,27,Germany,D006262,1
+PRJEB27928,ERR2726643,Metagenomics,Illumina HiSeq,66,Female,13.3,Germany,D015179,1
+PRJEB27928,ERR2726644,Metagenomics,Illumina HiSeq,66,Female,13.3,Germany,D015179,1
+PRJEB27928,ERR2726645,Metagenomics,Illumina HiSeq,66,Female,13.3,Germany,D015179,1
+PRJEB27928,ERR2726646,Metagenomics,Illumina HiSeq,66,Female,13.3,Germany,D015179,1
+PRJEB27928,ERR2726647,Metagenomics,Illumina HiSeq,45,Female,27.2,Germany,D006262,1
+PRJEB27928,ERR2726648,Metagenomics,Illumina HiSeq,84,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726649,Metagenomics,Illumina HiSeq,84,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726650,Metagenomics,Illumina HiSeq,84,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726651,Metagenomics,Illumina HiSeq,84,Male,24,Germany,D015179,1
+PRJEB27928,ERR2726652,Metagenomics,Illumina HiSeq,73,Male,26.6,Germany,D015179,1
+PRJEB27928,ERR2726653,Metagenomics,Illumina HiSeq,73,Male,26.6,Germany,D015179,1
+PRJEB27928,ERR2726654,Metagenomics,Illumina HiSeq,73,Male,26.6,Germany,D015179,1
+PRJEB27928,ERR2726655,Metagenomics,Illumina HiSeq,73,Male,26.6,Germany,D015179,1
+PRJEB27928,ERR2726656,Metagenomics,Illumina HiSeq,59,Female,32.3,Germany,D006262,1
+PRJEB27928,ERR2726657,Metagenomics,Illumina HiSeq,59,Male,26.5,Germany,D015179,1
+PRJEB27928,ERR2726658,Metagenomics,Illumina HiSeq,59,Male,26.5,Germany,D015179,1
+PRJEB27928,ERR2726659,Metagenomics,Illumina HiSeq,59,Male,26.5,Germany,D015179,1
+PRJEB27928,ERR2726660,Metagenomics,Illumina HiSeq,59,Male,26.5,Germany,D015179,1
+PRJEB27928,ERR2726661,Metagenomics,Illumina HiSeq,37,Male,24.5,Germany,D006262,1
+PRJEB27928,ERR2726662,Metagenomics,Illumina HiSeq,39,Male,24.9,Germany,D006262,1
+PRJEB27928,ERR2726663,Metagenomics,Illumina HiSeq,70,Male,26.7,Germany,D006262,1
+PRJNA397219,SRR5903321,Metagenomics,Illumina HiSeq 2500,76,Female,25.28,United States of America,D006262,1
+PRJNA397219,SRR5903322,Metagenomics,Illumina HiSeq 2500,55,Male,27.04,United States of America,D006262,1
+PRJNA397219,SRR5903323,Metagenomics,Illumina HiSeq 2500,83,Female,35.4,United States of America,D015179,1
+PRJNA397219,SRR5903324,Metagenomics,Illumina HiSeq 2500,50,Male,30.1,United States of America,D015179,1
+PRJNA397219,SRR5903325,Metagenomics,Illumina HiSeq 2500,52,Female,23.58,United States of America,D015179,1
+PRJNA397219,SRR5903326,Metagenomics,Illumina HiSeq 2500,59,Male,25.89,United States of America,D015179,1
+PRJNA397219,SRR5903327,Metagenomics,Illumina HiSeq 2500,63,Male,30.65,United States of America,D015179,1
+PRJNA397219,SRR5903328,Metagenomics,Illumina HiSeq 2500,63,Male,21,United States of America,D015179,1
+PRJNA397219,SRR5903329,Metagenomics,Illumina HiSeq 2500,64,Male,22.2,United States of America,D015179,1
+PRJNA397219,SRR5903330,Metagenomics,Illumina HiSeq 2500,88,Female,31.98,United States of America,D015179,1
+PRJNA397219,SRR5903331,Metagenomics,Illumina HiSeq 2500,64,Male,26.74,United States of America,D006262,1
+PRJNA397219,SRR5903332,Metagenomics,Illumina HiSeq 2500,60,Male,24.97,United States of America,D006262,1
+PRJNA397219,SRR5903333,Metagenomics,Illumina HiSeq 2500,59,Male,24.46,United States of America,D006262,1
+PRJNA397219,SRR5903334,Metagenomics,Illumina HiSeq 2500,78,Female,28.78,United States of America,D006262,1
+PRJNA397219,SRR5903335,Metagenomics,Illumina HiSeq 2500,74,Female,31.09,United States of America,D006262,1
+PRJNA397219,SRR5903336,Metagenomics,Illumina HiSeq 2500,81,Female,22.15,United States of America,D015179,1
+PRJNA397219,SRR5903337,Metagenomics,Illumina HiSeq 2500,59,Male,25.89,United States of America,D015179,1
+PRJNA397219,SRR5903338,Metagenomics,Illumina HiSeq 2500,83,Female,35.4,United States of America,D015179,1
+PRJNA397219,SRR5903339,Metagenomics,Illumina HiSeq 2500,50,Male,30.1,United States of America,D015179,1
+PRJNA397219,SRR5903340,Metagenomics,Illumina HiSeq 2500,76,Female,25.28,United States of America,D006262,1
+PRJNA397219,SRR5903341,Metagenomics,Illumina HiSeq 2500,55,Male,27.04,United States of America,D006262,1
+PRJNA397219,SRR5903342,Metagenomics,Illumina HiSeq 2500,78,Female,24.9,United States of America,D015179,1
+PRJNA397219,SRR5903343,Metagenomics,Illumina HiSeq 2500,74,Female,31.09,United States of America,D006262,1
+PRJNA397219,SRR5903344,Metagenomics,Illumina HiSeq 2500,61,Male,28.2,United States of America,D006262,1
+PRJNA397219,SRR5903345,Metagenomics,Illumina HiSeq 2500,63,Male,30.65,United States of America,D015179,1
+PRJNA397219,SRR5903346,Metagenomics,Illumina HiSeq 2500,63,Male,21,United States of America,D015179,1
+PRJNA397219,SRR5903347,Metagenomics,Illumina HiSeq 2500,75,Female,25.4,United States of America,D006262,1
+PRJNA397219,SRR5903348,Metagenomics,Illumina HiSeq 2500,51,Female,22.54,United States of America,D006262,1
+PRJNA397219,SRR5903349,Metagenomics,Illumina HiSeq 2500,78,Male,29.53,United States of America,D006262,1
+PRJNA397219,SRR5903350,Metagenomics,Illumina HiSeq 2500,76,Female,25.28,United States of America,D006262,1
+PRJNA397219,SRR5903351,Metagenomics,Illumina HiSeq 2500,55,Male,27.04,United States of America,D006262,1
+PRJNA397219,SRR5903352,Metagenomics,Illumina HiSeq 2500,78,Female,28.78,United States of America,D006262,1
+PRJNA397219,SRR5903353,Metagenomics,Illumina HiSeq 2500,61,Male,28.2,United States of America,D006262,1
+PRJNA397219,SRR5903354,Metagenomics,Illumina HiSeq 2500,75,Female,25.4,United States of America,D006262,1
+PRJNA397219,SRR5903355,Metagenomics,Illumina HiSeq 2500,59,Male,24.46,United States of America,D006262,1
+PRJNA397219,SRR5903356,Metagenomics,Illumina HiSeq 2500,60,Male,24.97,United States of America,D006262,1
+PRJNA397219,SRR5903357,Metagenomics,Illumina HiSeq 2500,75,Male,31.56,United States of America,D015179,1
+PRJNA397219,SRR5903358,Metagenomics,Illumina HiSeq 2500,64,Male,26.74,United States of America,D006262,1
+PRJNA397219,SRR5903359,Metagenomics,Illumina HiSeq 2500,51,Female,22.54,United States of America,D006262,1
+PRJNA397219,SRR5903360,Metagenomics,Illumina HiSeq 2500,78,Male,29.53,United States of America,D006262,1
+PRJNA397219,SRR5903361,Metagenomics,Illumina HiSeq 2500,59,Male,24.46,United States of America,D006262,1
+PRJNA397219,SRR5903362,Metagenomics,Illumina HiSeq 2500,60,Male,24.97,United States of America,D006262,1
+PRJNA397219,SRR5903363,Metagenomics,Illumina HiSeq 2500,74,Female,31.09,United States of America,D006262,1
+PRJNA397219,SRR5903364,Metagenomics,Illumina HiSeq 2500,78,Female,28.78,United States of America,D006262,1
+PRJNA397219,SRR5903365,Metagenomics,Illumina HiSeq 2500,88,Female,31.98,United States of America,D015179,1
+PRJNA397219,SRR5903366,Metagenomics,Illumina HiSeq 2500,64,Male,22.2,United States of America,D015179,1
+PRJNA397219,SRR5903367,Metagenomics,Illumina HiSeq 2500,81,Female,22.15,United States of America,D015179,1
+PRJNA397219,SRR5903368,Metagenomics,Illumina HiSeq 2500,78,Female,24.9,United States of America,D015179,1
+PRJNA397219,SRR5903369,Metagenomics,Illumina HiSeq 2500,75,Male,31.56,United States of America,D015179,1
+PRJNA397219,SRR5903370,Metagenomics,Illumina HiSeq 2500,64,Male,26.74,United States of America,D006262,1
+PRJNA397219,SRR5903371,Metagenomics,Illumina HiSeq 2500,51,Female,22.54,United States of America,D006262,1
+PRJNA397219,SRR5903372,Metagenomics,Illumina HiSeq 2500,78,Male,29.53,United States of America,D006262,1
+PRJNA397219,SRR5903373,Metagenomics,Illumina HiSeq 2500,61,Male,28.2,United States of America,D006262,1
+PRJNA397219,SRR5903374,Metagenomics,Illumina HiSeq 2500,75,Female,25.4,United States of America,D006262,1
+PRJNA397219,SRR5903375,Metagenomics,Illumina HiSeq 2500,52,Female,23.58,United States of America,D015179,1
+PRJNA397219,SRR5903376,Metagenomics,Illumina HiSeq 2500,50,Male,30.1,United States of America,D015179,1
+PRJNA397219,SRR5903377,Metagenomics,Illumina HiSeq 2500,83,Female,35.4,United States of America,D015179,1
+PRJNA397219,SRR5903378,Metagenomics,Illumina HiSeq 2500,59,Male,25.89,United States of America,D015179,1
+PRJNA397219,SRR5903379,Metagenomics,Illumina HiSeq 2500,52,Female,23.58,United States of America,D015179,1
+PRJNA397219,SRR5903380,Metagenomics,Illumina HiSeq 2500,63,Male,21,United States of America,D015179,1
+PRJNA397219,SRR5903381,Metagenomics,Illumina HiSeq 2500,63,Male,30.65,United States of America,D015179,1
+PRJNA397219,SRR5903382,Metagenomics,Illumina HiSeq 2500,88,Female,31.98,United States of America,D015179,1
+PRJNA397219,SRR5903383,Metagenomics,Illumina HiSeq 2500,64,Male,22.2,United States of America,D015179,1
+PRJNA397219,SRR5903384,Metagenomics,Illumina HiSeq 2500,81,Female,22.15,United States of America,D015179,1
+PRJNA397219,SRR5903385,Metagenomics,Illumina HiSeq 2500,78,Female,24.9,United States of America,D015179,1
+PRJNA397219,SRR5903386,Metagenomics,Illumina HiSeq 2500,75,Male,31.56,United States of America,D015179,1
+PRJNA397219,SRR5903746,Amplicon,Illumina MiSeq,74,Female,31.09,United States of America,D006262,1
+PRJNA397219,SRR5903747,Amplicon,Illumina MiSeq,78,Female,28.78,United States of America,D006262,1
+PRJNA397219,SRR5903748,Amplicon,Illumina MiSeq,75,Male,31.56,United States of America,D015179,1
+PRJNA397219,SRR5903749,Amplicon,Illumina MiSeq,64,Male,26.74,United States of America,D006262,1
+PRJNA397219,SRR5903750,Amplicon,Illumina MiSeq,51,Female,22.54,United States of America,D006262,1
+PRJNA397219,SRR5903751,Amplicon,Illumina MiSeq,78,Male,29.53,United States of America,D006262,1
+PRJNA397219,SRR5903752,Amplicon,Illumina MiSeq,61,Male,28.2,United States of America,D006262,1
+PRJNA397219,SRR5903753,Amplicon,Illumina MiSeq,75,Female,25.4,United States of America,D006262,1
+PRJNA397219,SRR5903754,Amplicon,Illumina MiSeq,59,Male,24.46,United States of America,D006262,0
+PRJNA397219,SRR5903755,Amplicon,Illumina MiSeq,60,Male,24.97,United States of America,D006262,1
+PRJNA397219,SRR5903756,Amplicon,Illumina MiSeq,81,Female,22.15,United States of America,D015179,1
+PRJNA397219,SRR5903757,Amplicon,Illumina MiSeq,78,Female,24.9,United States of America,D015179,1
+PRJNA397219,SRR5903758,Amplicon,Illumina MiSeq,63,Male,21,United States of America,D015179,1
+PRJNA397219,SRR5903759,Amplicon,Illumina MiSeq,63,Male,30.65,United States of America,D015179,1
+PRJNA397219,SRR5903760,Amplicon,Illumina MiSeq,88,Female,31.98,United States of America,D015179,1
+PRJNA397219,SRR5903761,Amplicon,Illumina MiSeq,64,Male,22.2,United States of America,D015179,1
+PRJNA397219,SRR5903762,Amplicon,Illumina MiSeq,50,Male,30.1,United States of America,D015179,1
+PRJNA397219,SRR5903763,Amplicon,Illumina MiSeq,83,Female,35.4,United States of America,D015179,1
+PRJNA397219,SRR5903764,Amplicon,Illumina MiSeq,59,Male,25.89,United States of America,D015179,1
+PRJNA397219,SRR5903765,Amplicon,Illumina MiSeq,52,Female,23.58,United States of America,D015179,1
+PRJNA397219,SRR5903766,Amplicon,Illumina MiSeq,76,Female,25.28,United States of America,D006262,1
+PRJNA397219,SRR5903767,Amplicon,Illumina MiSeq,55,Male,27.04,United States of America,D006262,1
+PRJNA447983,SRR6915091,Metagenomics,Illumina HiSeq 2500,77,Male,23,Italy,D015179,1
+PRJNA447983,SRR6915092,Metagenomics,Illumina HiSeq 2500,60,Female,20,Italy,D006262,1
+PRJNA447983,SRR6915093,Metagenomics,Illumina HiSeq 2500,69,Male,27,Italy,D015179,1
+PRJNA447983,SRR6915094,Metagenomics,Illumina HiSeq 2500,82,Male,28,Italy,D015179,1
+PRJNA447983,SRR6915095,Metagenomics,Illumina HiSeq 2500,84,Male,22,Italy,D015179,1
+PRJNA447983,SRR6915096,Metagenomics,Illumina HiSeq 2500,60,Male,24,Italy,D000236,1
+PRJNA447983,SRR6915097,Metagenomics,Illumina HiSeq 2500,80,Female,32,Italy,D006262,1
+PRJNA447983,SRR6915098,Metagenomics,Illumina HiSeq 2500,74,Male,23,Italy,D015179,1
+PRJNA447983,SRR6915099,Metagenomics,Illumina HiSeq 2500,63,Male,25,Italy,D015179,1
+PRJNA447983,SRR6915100,Metagenomics,Illumina HiSeq 2500,80,Male,24,Italy,D006262,1
+PRJNA447983,SRR6915101,Metagenomics,Illumina HiSeq 2500,84,Female,23,Italy,D015179,1
+PRJNA447983,SRR6915102,Metagenomics,Illumina HiSeq 2500,61,Male,23,Italy,D015179,1
+PRJNA447983,SRR6915103,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915104,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915105,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915106,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915107,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915108,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915109,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915110,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915111,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915112,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915113,Metagenomics,Illumina HiSeq 2500,77,Female,,Italy,D006262,1
+PRJNA447983,SRR6915114,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915115,Metagenomics,Illumina HiSeq 2500,83,Female,19,Italy,D015179,1
+PRJNA447983,SRR6915116,Metagenomics,Illumina HiSeq 2500,70,Female,25,Italy,D006262,1
+PRJNA447983,SRR6915117,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915118,Metagenomics,Illumina HiSeq 2500,67,Male,26,Italy,D000236,1
+PRJNA447983,SRR6915119,Metagenomics,Illumina HiSeq 2500,66,Male,24,Italy,D015179,1
+PRJNA447983,SRR6915120,Metagenomics,Illumina HiSeq 2500,64,Male,23,Italy,D015179,1
+PRJNA447983,SRR6915121,Metagenomics,Illumina HiSeq 2500,66,Male,34,Italy,D006262,1
+PRJNA447983,SRR6915122,Metagenomics,Illumina HiSeq 2500,64,Male,26,Italy,D006262,1
+PRJNA447983,SRR6915123,Metagenomics,Illumina HiSeq 2500,78,Male,26,Italy,D015179,1
+PRJNA447983,SRR6915124,Metagenomics,Illumina HiSeq 2500,77,Male,36,Italy,D000236,1
+PRJNA447983,SRR6915125,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915126,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915127,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915128,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915129,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915130,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915131,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915132,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915133,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915134,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915135,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915136,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915137,Metagenomics,Illumina HiSeq 2500,69,Female,29,Italy,D015179,1
+PRJNA447983,SRR6915138,Metagenomics,Illumina HiSeq 2500,58,Female,25,Italy,D000236,1
+PRJNA447983,SRR6915139,Metagenomics,Illumina HiSeq 2500,58,Male,23,Italy,D000236,1
+PRJNA447983,SRR6915140,Metagenomics,Illumina HiSeq 2500,77,Male,24,Italy,D000236,1
+PRJNA447983,SRR6915141,Metagenomics,Illumina HiSeq 2500,58,Male,26,Italy,D000236,1
+PRJNA447983,SRR6915142,Metagenomics,Illumina HiSeq 2500,63,Female,21,Italy,D000236,1
+PRJNA447983,SRR6915143,Metagenomics,Illumina HiSeq 2500,79,Male,22,Italy,D000236,1
+PRJNA447983,SRR6915144,Metagenomics,Illumina HiSeq 2500,68,Female,22,Italy,D006262,1
+PRJNA447983,SRR6915145,Metagenomics,Illumina HiSeq 2500,60,Male,22,Italy,D006262,1
+PRJNA447983,SRR6915146,Metagenomics,Illumina HiSeq 2500,53,Female,23,Italy,D000236,1
+PRJNA447983,SRR6915147,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915148,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915149,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915150,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915151,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915152,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915153,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915154,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915155,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915156,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915157,Metagenomics,Illumina HiSeq 2500,70,Male,28,Italy,D000236,1
+PRJNA447983,SRR6915158,Metagenomics,Illumina HiSeq 2500,71,Female,30,Italy,D015179,1
+PRJNA447983,SRR6915159,Metagenomics,Illumina HiSeq 2500,58,Male,25,Italy,D015179,1
+PRJNA447983,SRR6915160,Metagenomics,Illumina HiSeq 2500,67,Female,21,Italy,D015179,1
+PRJNA447983,SRR6915161,Metagenomics,Illumina HiSeq 2500,61,Male,29,Italy,D000236,1
+PRJNA447983,SRR6915162,Metagenomics,Illumina HiSeq 2500,49,Male,21,Italy,D000236,1
+PRJNA447983,SRR6915163,Metagenomics,Illumina HiSeq 2500,57,Male,29,Italy,D000236,1
+PRJNA447983,SRR6915164,Metagenomics,Illumina HiSeq 2500,58,Male,24,Italy,D006262,1
+PRJNA447983,SRR6915165,Metagenomics,Illumina HiSeq 2500,61,Female,,Italy,D006262,1
+PRJNA447983,SRR6915166,Metagenomics,Illumina HiSeq 2500,70,Male,24,Italy,D015179,1
+PRJNA447983,SRR6915167,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915168,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915169,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915170,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915171,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915172,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915173,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915174,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915175,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915176,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915177,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915178,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915179,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915180,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915181,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915182,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915183,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915184,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915185,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915186,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915187,Metagenomics,Illumina HiSeq 2500,64,Male,25,Italy,D006262,1
+PRJNA447983,SRR6915188,Metagenomics,Illumina HiSeq 2500,60,Male,22,Italy,D015179,1
+PRJNA447983,SRR6915189,Metagenomics,Illumina HiSeq 2500,81,Female,28,Italy,D006262,1
+PRJNA447983,SRR6915190,Metagenomics,Illumina HiSeq 2500,78,Male,24,Italy,D015179,1
+PRJNA447983,SRR6915191,Metagenomics,Illumina HiSeq 2500,69,Male,24,Italy,D006262,1
+PRJNA447983,SRR6915192,Metagenomics,Illumina HiSeq 2500,64,Male,27,Italy,D006262,1
+PRJNA447983,SRR6915193,Metagenomics,Illumina HiSeq 2500,69,Male,30,Italy,D006262,1
+PRJNA447983,SRR6915194,Metagenomics,Illumina HiSeq 2500,71,Male,24,Italy,D006262,1
+PRJNA447983,SRR6915195,Metagenomics,Illumina HiSeq 2500,,,,Italy,D015179,1
+PRJNA447983,SRR6915196,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915197,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915198,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915199,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915200,Metagenomics,Illumina HiSeq 2500,,,,Italy,D006262,1
+PRJNA447983,SRR6915201,Metagenomics,Illumina HiSeq 2500,83,Female,24,Italy,D015179,1
+PRJNA447983,SRR6915202,Metagenomics,Illumina HiSeq 2500,61,Male,22,Italy,D006262,1
+PRJNA447983,SRR6915203,Metagenomics,Illumina HiSeq 2500,67,Male,,Italy,D000236,1
+PRJNA447983,SRR6915204,Metagenomics,Illumina HiSeq 2500,53,Female,21,Italy,D000236,1
+PRJNA447983,SRR6915205,Metagenomics,Illumina HiSeq 2500,56,Female,30,Italy,D000236,1
+PRJNA447983,SRR6915206,Metagenomics,Illumina HiSeq 2500,59,Male,26,Italy,D006262,1
+PRJNA447983,SRR6915207,Metagenomics,Illumina HiSeq 2500,63,Female,28,Italy,D006262,1
+PRJNA447983,SRR6915208,Metagenomics,Illumina HiSeq 2500,76,Male,26,Italy,D015179,1
+PRJNA447983,SRR6915209,Metagenomics,Illumina HiSeq 2500,57,Male,30,Italy,D015179,1
+PRJNA447983,SRR6915210,Metagenomics,Illumina HiSeq 2500,74,Male,25,Italy,D015179,1
+PRJNA447983,SRR6915211,Metagenomics,Illumina HiSeq 2500,64,Male,30,Italy,D015179,1
+PRJNA447983,SRR6915212,Metagenomics,Illumina HiSeq 2500,64,Female,25,Italy,D000236,1
+PRJNA447983,SRR6915213,Metagenomics,Illumina HiSeq 2500,78,Male,30,Italy,D015179,1
+PRJNA447983,SRR6915214,Metagenomics,Illumina HiSeq 2500,50,Male,26,Italy,D000236,1
+PRJNA447983,SRR6915215,Metagenomics,Illumina HiSeq 2500,57,Male,29,Italy,D000236,1
+PRJNA447983,SRR6915216,Metagenomics,Illumina HiSeq 2500,59,Male,22,Italy,D000236,1
+PRJNA447983,SRR6915217,Metagenomics,Illumina HiSeq 2500,67,Female,24,Italy,D006262,1
+PRJNA447983,SRR6915218,Metagenomics,Illumina HiSeq 2500,63,Male,37,Italy,D015179,1
+PRJNA447983,SRR6915219,Metagenomics,Illumina HiSeq 2500,77,Male,22,Italy,D015179,1
+PRJNA447983,SRR6915220,Metagenomics,Illumina HiSeq 2500,67,Male,35,Italy,D015179,1
+PRJNA447983,SRR6915221,Metagenomics,Illumina HiSeq 2500,70,Female,21,Italy,D000236,1
+PRJNA447983,SRR6915222,Metagenomics,Illumina HiSeq 2500,70,Female,20,Italy,D006262,1
+PRJNA447983,SRR6915223,Metagenomics,Illumina HiSeq 2500,75,Male,,Italy,D015179,1
+PRJNA447983,SRR6915224,Metagenomics,Illumina HiSeq 2500,77,Female,20,Italy,D000236,1
+PRJNA447983,SRR6915225,Metagenomics,Illumina HiSeq 2500,77,Female,25,Italy,D006262,1
+PRJNA447983,SRR6915226,Metagenomics,Illumina HiSeq 2500,68,Female,30,Italy,D000236,1
+PRJNA447983,SRR6915227,Metagenomics,Illumina HiSeq 2500,71,Male,25,Italy,D006262,1
+PRJNA447983,SRR6915228,Metagenomics,Illumina HiSeq 2500,73,Female,31,Italy,D000236,1
+PRJNA447983,SRR6915229,Metagenomics,Illumina HiSeq 2500,62,Female,29,Italy,D000236,1
+PRJNA447983,SRR6915230,Metagenomics,Illumina HiSeq 2500,55,Male,19,Italy,D000236,1
+PRJEB10878,ERR1018185,Metagenomics,Illumina HiSeq 2000,64,Male,23.1,China,D015179,1
+PRJEB10878,ERR1018186,Metagenomics,Illumina HiSeq 2000,73,Male,23.8,China,D015179,1
+PRJEB10878,ERR1018187,Metagenomics,Illumina HiSeq 2000,67,Female,24.7,China,D015179,1
+PRJEB10878,ERR1018188,Metagenomics,Illumina HiSeq 2000,56,Male,25.6,China,D015179,1
+PRJEB10878,ERR1018189,Metagenomics,Illumina HiSeq 2000,59,Female,20.7,China,D015179,1
+PRJEB10878,ERR1018190,Metagenomics,Illumina HiSeq 2000,61,Male,25.2,China,D015179,1
+PRJEB10878,ERR1018191,Metagenomics,Illumina HiSeq 2000,60,Male,23.2,China,D015179,1
+PRJEB10878,ERR1018192,Metagenomics,Illumina HiSeq 2000,73,Female,17.7,China,D015179,1
+PRJEB10878,ERR1018193,Metagenomics,Illumina HiSeq 2000,62,Male,21.7,China,D006262,1
+PRJEB10878,ERR1018194,Metagenomics,Illumina HiSeq 2000,72,Female,26.3,China,D015179,1
+PRJEB10878,ERR1018195,Metagenomics,Illumina HiSeq 2000,65,Male,20.7,China,D006262,1
+PRJEB10878,ERR1018196,Metagenomics,Illumina HiSeq 2000,65,Male,24.8,China,D015179,1
+PRJEB10878,ERR1018197,Metagenomics,Illumina HiSeq 2000,71,Male,25.8,China,D015179,1
+PRJEB10878,ERR1018198,Metagenomics,Illumina HiSeq 2000,50,Male,25.2,China,D015179,1
+PRJEB10878,ERR1018199,Metagenomics,Illumina HiSeq 2000,55,Male,22.2,China,D015179,1
+PRJEB10878,ERR1018200,Metagenomics,Illumina HiSeq 2000,77,Male,21.7,China,D015179,1
+PRJEB10878,ERR1018201,Metagenomics,Illumina HiSeq 2000,45,Female,23,China,D015179,1
+PRJEB10878,ERR1018202,Metagenomics,Illumina HiSeq 2000,89,Female,23.7,China,D015179,1
+PRJEB10878,ERR1018203,Metagenomics,Illumina HiSeq 2000,58,Female,21.6,China,D006262,1
+PRJEB10878,ERR1018204,Metagenomics,Illumina HiSeq 2000,58,Female,23.9,China,D015179,1
+PRJEB10878,ERR1018205,Metagenomics,Illumina HiSeq 2000,68,Male,21.7,China,D006262,1
+PRJEB10878,ERR1018206,Metagenomics,Illumina HiSeq 2000,64,Female,29.1,China,D015179,1
+PRJEB10878,ERR1018207,Metagenomics,Illumina HiSeq 2000,75,Female,28.7,China,D015179,1
+PRJEB10878,ERR1018208,Metagenomics,Illumina HiSeq 2000,73,Male,22.7,China,D015179,1
+PRJEB10878,ERR1018209,Metagenomics,Illumina HiSeq 2000,62,Female,21.4,China,D006262,1
+PRJEB10878,ERR1018210,Metagenomics,Illumina HiSeq 2000,80,Male,24,China,D015179,1
+PRJEB10878,ERR1018211,Metagenomics,Illumina HiSeq 2000,67,Male,23.1,China,D015179,1
+PRJEB10878,ERR1018212,Metagenomics,Illumina HiSeq 2000,61,Female,22,China,D015179,1
+PRJEB10878,ERR1018213,Metagenomics,Illumina HiSeq 2000,63,Male,24.4,China,D015179,1
+PRJEB10878,ERR1018214,Metagenomics,Illumina HiSeq 2000,51,Female,19.6,China,D015179,1
+PRJEB10878,ERR1018215,Metagenomics,Illumina HiSeq 2000,64,Male,,China,D015179,1
+PRJEB10878,ERR1018216,Metagenomics,Illumina HiSeq 2000,74,Female,28.7,China,D015179,1
+PRJEB10878,ERR1018217,Metagenomics,Illumina HiSeq 2000,68,Male,20.4,China,D006262,1
+PRJEB10878,ERR1018218,Metagenomics,Illumina HiSeq 2000,83,Female,30.4,China,D015179,1
+PRJEB10878,ERR1018219,Metagenomics,Illumina HiSeq 2000,70,Male,24.6,China,D015179,1
+PRJEB10878,ERR1018220,Metagenomics,Illumina HiSeq 2000,56,Male,25.9,China,D015179,1
+PRJEB10878,ERR1018221,Metagenomics,Illumina HiSeq 2000,54,Male,17.9,China,D015179,1
+PRJEB10878,ERR1018222,Metagenomics,Illumina HiSeq 2000,74,Male,26.8,China,D015179,1
+PRJEB10878,ERR1018223,Metagenomics,Illumina HiSeq 2000,57,Male,23.2,China,D015179,1
+PRJEB10878,ERR1018224,Metagenomics,Illumina HiSeq 2000,54,Female,29.7,China,D015179,1
+PRJEB10878,ERR1018225,Metagenomics,Illumina HiSeq 2000,62,Male,22.7,China,D015179,1
+PRJEB10878,ERR1018226,Metagenomics,Illumina HiSeq 2000,54,Female,25.6,China,D015179,1
+PRJEB10878,ERR1018227,Metagenomics,Illumina HiSeq 2000,69,Male,29,China,D015179,1
+PRJEB10878,ERR1018228,Metagenomics,Illumina HiSeq 2000,64,Male,24.8,China,D015179,1
+PRJEB10878,ERR1018229,Metagenomics,Illumina HiSeq 2000,44,Male,22.5,China,D015179,1
+PRJEB10878,ERR1018230,Metagenomics,Illumina HiSeq 2000,60,Male,17.3,China,D015179,1
+PRJEB10878,ERR1018231,Metagenomics,Illumina HiSeq 2000,73,Male,24.5,China,D015179,1
+PRJEB10878,ERR1018232,Metagenomics,Illumina HiSeq 2000,62,Female,32.5,China,D006262,1
+PRJEB10878,ERR1018233,Metagenomics,Illumina HiSeq 2000,58,Male,22.3,China,D006262,1
+PRJEB10878,ERR1018234,Metagenomics,Illumina HiSeq 2000,64,Male,24.8,China,D006262,1
+PRJEB10878,ERR1018235,Metagenomics,Illumina HiSeq 2000,65,Female,35.1,China,D006262,1
+PRJEB10878,ERR1018236,Metagenomics,Illumina HiSeq 2000,62,Male,23.5,China,D006262,1
+PRJEB10878,ERR1018237,Metagenomics,Illumina HiSeq 2000,69,Female,24.9,China,D006262,1
+PRJEB10878,ERR1018238,Metagenomics,Illumina HiSeq 2000,55,Male,26.4,China,D006262,1
+PRJEB10878,ERR1018239,Metagenomics,Illumina HiSeq 2000,64,Female,26.4,China,D006262,1
+PRJEB10878,ERR1018240,Metagenomics,Illumina HiSeq 2000,59,Male,25.6,China,D006262,1
+PRJEB10878,ERR1018241,Metagenomics,Illumina HiSeq 2000,70,Male,21,China,D015179,1
+PRJEB10878,ERR1018242,Metagenomics,Illumina HiSeq 2000,71,Female,26.7,China,D006262,1
+PRJEB10878,ERR1018243,Metagenomics,Illumina HiSeq 2000,51,Male,21.9,China,D006262,1
+PRJEB10878,ERR1018244,Metagenomics,Illumina HiSeq 2000,50,Male,20.5,China,D006262,1
+PRJEB10878,ERR1018245,Metagenomics,Illumina HiSeq 2000,64,Male,24.7,China,D006262,1
+PRJEB10878,ERR1018246,Metagenomics,Illumina HiSeq 2000,50,Male,23.3,China,D006262,1
+PRJEB10878,ERR1018247,Metagenomics,Illumina HiSeq 2000,66,Female,22.4,China,D006262,1
+PRJEB10878,ERR1018248,Metagenomics,Illumina HiSeq 2000,52,Male,28.4,China,D006262,1
+PRJEB10878,ERR1018249,Metagenomics,Illumina HiSeq 2000,64,Male,25.6,China,D006262,1
+PRJEB10878,ERR1018250,Metagenomics,Illumina HiSeq 2000,58,Male,23.1,China,D006262,1
+PRJEB10878,ERR1018251,Metagenomics,Illumina HiSeq 2000,64,Female,17.1,China,D006262,1
+PRJEB10878,ERR1018252,Metagenomics,Illumina HiSeq 2000,65,Male,22.4,China,D006262,1
+PRJEB10878,ERR1018253,Metagenomics,Illumina HiSeq 2000,53,Male,19.7,China,D006262,1
+PRJEB10878,ERR1018254,Metagenomics,Illumina HiSeq 2000,64,Female,21.1,China,D006262,1
+PRJEB10878,ERR1018255,Metagenomics,Illumina HiSeq 2000,68,Female,24.9,China,D006262,1
+PRJEB10878,ERR1018256,Metagenomics,Illumina HiSeq 2000,53,Male,23.4,China,D006262,1
+PRJEB10878,ERR1018257,Metagenomics,Illumina HiSeq 2000,64,Female,22.7,China,D006262,1
+PRJEB10878,ERR1018258,Metagenomics,Illumina HiSeq 2000,61,Male,21.5,China,D006262,1
+PRJEB10878,ERR1018259,Metagenomics,Illumina HiSeq 2000,62,Female,21.1,China,D006262,1
+PRJEB10878,ERR1018260,Metagenomics,Illumina HiSeq 2000,64,Male,24.1,China,D006262,1
+PRJEB10878,ERR1018261,Metagenomics,Illumina HiSeq 2000,55,Male,22.3,China,D006262,1
+PRJEB10878,ERR1018262,Metagenomics,Illumina HiSeq 2000,64,Female,22.6,China,D006262,1
+PRJEB10878,ERR1018263,Metagenomics,Illumina HiSeq 2000,71,Female,23,China,D006262,1
+PRJEB10878,ERR1018264,Metagenomics,Illumina HiSeq 2000,64,Female,22.2,China,D006262,1
+PRJEB10878,ERR1018265,Metagenomics,Illumina HiSeq 2000,65,Male,22.5,China,D006262,1
+PRJEB10878,ERR1018266,Metagenomics,Illumina HiSeq 2000,73,Female,24.1,China,D006262,1
+PRJEB10878,ERR1018267,Metagenomics,Illumina HiSeq 2000,54,Male,27.7,China,D006262,1
+PRJEB10878,ERR1018268,Metagenomics,Illumina HiSeq 2000,65,Female,21.2,China,D006262,1
+PRJEB10878,ERR1018269,Metagenomics,Illumina HiSeq 2000,60,Male,22.5,China,D006262,1
+PRJEB10878,ERR1018270,Metagenomics,Illumina HiSeq 2000,58,Male,26.3,China,D006262,1
+PRJEB10878,ERR1018271,Metagenomics,Illumina HiSeq 2000,64,Female,21.3,China,D006262,1
+PRJEB10878,ERR1018272,Metagenomics,Illumina HiSeq 2000,69,Male,23.8,China,D006262,1
+PRJEB10878,ERR1018273,Metagenomics,Illumina HiSeq 2000,65,Female,20,China,D006262,1
+PRJEB10878,ERR1018274,Metagenomics,Illumina HiSeq 2000,59,Male,23.7,China,D006262,1
+PRJEB10878,ERR1018275,Metagenomics,Illumina HiSeq 2000,70,Female,22.2,China,D006262,1
+PRJEB10878,ERR1018276,Metagenomics,Illumina HiSeq 2000,61,Male,23.7,China,D006262,1
+PRJEB10878,ERR1018277,Metagenomics,Illumina HiSeq 2000,52,Male,24.6,China,D006262,1
+PRJEB10878,ERR1018278,Metagenomics,Illumina HiSeq 2000,58,Male,24.5,China,D006262,1
+PRJEB10878,ERR1018279,Metagenomics,Illumina HiSeq 2000,60,Male,20,China,D015179,1
+PRJEB10878,ERR1018280,Metagenomics,Illumina HiSeq 2000,77,Male,24.5,China,D015179,1
+PRJEB10878,ERR1018281,Metagenomics,Illumina HiSeq 2000,59,Female,27,China,D015179,1
+PRJEB10878,ERR1018282,Metagenomics,Illumina HiSeq 2000,71,Female,21.2,China,D015179,1
+PRJEB10878,ERR1018283,Metagenomics,Illumina HiSeq 2000,56,Male,31.3,China,D015179,1
+PRJEB10878,ERR1018284,Metagenomics,Illumina HiSeq 2000,77,Male,22,China,D015179,1
+PRJEB10878,ERR1018285,Metagenomics,Illumina HiSeq 2000,77,Male,23.5,China,D015179,1
+PRJEB10878,ERR1018286,Metagenomics,Illumina HiSeq 2000,83,Female,22.8,China,D015179,1
+PRJEB10878,ERR1018287,Metagenomics,Illumina HiSeq 2000,79,Female,25.8,China,D015179,1
+PRJEB10878,ERR1018288,Metagenomics,Illumina HiSeq 2000,69,Female,28.3,China,D015179,1
+PRJEB10878,ERR1018289,Metagenomics,Illumina HiSeq 2000,62,Male,23.5,China,D015179,1
+PRJEB10878,ERR1018290,Metagenomics,Illumina HiSeq 2000,78,Male,27,China,D015179,1
+PRJEB10878,ERR1018291,Metagenomics,Illumina HiSeq 2000,49,Female,22.6,China,D015179,1
+PRJEB10878,ERR1018292,Metagenomics,Illumina HiSeq 2000,81,Male,18.2,China,D015179,1
+PRJEB10878,ERR1018293,Metagenomics,Illumina HiSeq 2000,63,Female,28,China,D015179,1
+PRJEB10878,ERR1018294,Metagenomics,Illumina HiSeq 2000,59,Male,24.5,China,D015179,1
+PRJEB10878,ERR1018295,Metagenomics,Illumina HiSeq 2000,73,Male,22.1,China,D015179,1
+PRJEB10878,ERR1018296,Metagenomics,Illumina HiSeq 2000,76,Male,21.9,China,D015179,1
+PRJEB10878,ERR1018297,Metagenomics,Illumina HiSeq 2000,74,Female,17.9,China,D015179,1
+PRJEB10878,ERR1018298,Metagenomics,Illumina HiSeq 2000,51,Male,26.9,China,D015179,1
+PRJEB10878,ERR1018299,Metagenomics,Illumina HiSeq 2000,74,Male,24.2,China,D015179,1
+PRJEB10878,ERR1018300,Metagenomics,Illumina HiSeq 2000,77,Male,20.2,China,D015179,1
+PRJEB10878,ERR1018301,Metagenomics,Illumina HiSeq 2000,34,Male,19.4,China,D015179,1
+PRJEB10878,ERR1018302,Metagenomics,Illumina HiSeq 2000,70,Female,26.7,China,D015179,1
+PRJEB10878,ERR1018303,Metagenomics,Illumina HiSeq 2000,83,Female,18.9,China,D015179,1
+PRJEB10878,ERR1018304,Metagenomics,Illumina HiSeq 2000,68,Male,21.5,China,D015179,1
+PRJEB10878,ERR1018305,Metagenomics,Illumina HiSeq 2000,79,Male,26.8,China,D015179,1
+PRJEB10878,ERR1018306,Metagenomics,Illumina HiSeq 2000,64,Female,28.3,China,D015179,1
+PRJEB10878,ERR1018307,Metagenomics,Illumina HiSeq 2000,67,Male,24.9,China,D015179,1
+PRJEB10878,ERR1018308,Metagenomics,Illumina HiSeq 2000,61,Male,23.8,China,D006262,1
+PRJEB10878,ERR1018309,Metagenomics,Illumina HiSeq 2000,62,Male,21.5,China,D006262,1
+PRJEB10878,ERR1018310,Metagenomics,Illumina HiSeq 2000,68,Male,23.7,China,D015179,1
+PRJEB10878,ERR1018311,Metagenomics,Illumina HiSeq 2000,55,Male,25.8,China,D015179,1
+PRJEB10878,ERR1018312,Metagenomics,Illumina HiSeq 2000,63,Male,22.5,China,D015179,1
+PRJEB7774,ERR688358,Metagenomics,Illumina HiSeq 2000,64,Male,29.35,Austria,D015179,1
+PRJEB7774,ERR688359,Metagenomics,Illumina HiSeq 2000,68,Male,32,Austria,D006262,1
+PRJEB7774,ERR688360,Metagenomics,Illumina HiSeq 2000,60,Female,22.1,Austria,D006262,1
+PRJEB7774,ERR688361,Metagenomics,Illumina HiSeq 2000,70,Male,34.11,Austria,D000236,1
+PRJEB7774,ERR688362,Metagenomics,Illumina HiSeq 2000,68,Male,23.45,Austria,D006262,1
+PRJEB7774,ERR688363,Metagenomics,Illumina HiSeq 2000,66,Male,30.3,Austria,D006262,1
+PRJEB7774,ERR688364,Metagenomics,Illumina HiSeq 2000,73,Male,29.7,Austria,D006262,1
+PRJEB7774,ERR688365,Metagenomics,Illumina HiSeq 2000,67,Male,27.14,Austria,D000236,1
+PRJEB7774,ERR688366,Metagenomics,Illumina HiSeq 2000,73,Male,17.99,Austria,D015179,1
+PRJEB7774,ERR688367,Metagenomics,Illumina HiSeq 2000,67,Female,30,Austria,D006262,1
+PRJEB7774,ERR688368,Metagenomics,Illumina HiSeq 2000,65,Male,28.03,Austria,D015179,1
+PRJEB7774,ERR688369,Metagenomics,Illumina HiSeq 2000,74,Female,28.3,Austria,D006262,1
+PRJEB7774,ERR688370,Metagenomics,Illumina HiSeq 2000,65,Female,23.31,Austria,D015179,1
+PRJEB7774,ERR688372,Metagenomics,Illumina HiSeq 2000,62,Male,26.88,Austria,D000236,1
+PRJEB7774,ERR688373,Metagenomics,Illumina HiSeq 2000,65,Male,29.06,Austria,D006262,1
+PRJEB7774,ERR688374,Metagenomics,Illumina HiSeq 2000,67,Male,29.4,Austria,D015179,1
+PRJEB7774,ERR688375,Metagenomics,Illumina HiSeq 2000,69,Female,24.13,Austria,D000236,1
+PRJEB7774,ERR688376,Metagenomics,Illumina HiSeq 2000,67,Male,22.79,Austria,D006262,1
+PRJEB7774,ERR688377,Metagenomics,Illumina HiSeq 2000,62,Male,30.1,Austria,D000236,1
+PRJEB7774,ERR688378,Metagenomics,Illumina HiSeq 2000,82,Male,30.47,Austria,D015179,1
+PRJEB7774,ERR688379,Metagenomics,Illumina HiSeq 2000,63,Male,34.08,Austria,D000236,1
+PRJEB7774,ERR688380,Metagenomics,Illumina HiSeq 2000,84,Male,27.28,Austria,D015179,1
+PRJEB7774,ERR688381,Metagenomics,Illumina HiSeq 2000,68,Female,21.7,Austria,D006262,1
+PRJEB7774,ERR688382,Metagenomics,Illumina HiSeq 2000,63,Male,30.9,Austria,D006262,1
+PRJEB7774,ERR688383,Metagenomics,Illumina HiSeq 2000,68,Male,22.2,Austria,D006262,1
+PRJEB7774,ERR688384,Metagenomics,Illumina HiSeq 2000,62,Male,35.43,Austria,D000236,1
+PRJEB7774,ERR688385,Metagenomics,Illumina HiSeq 2000,72,Male,29.03,Austria,D006262,1
+PRJEB7774,ERR688386,Metagenomics,Illumina HiSeq 2000,71,Male,29.04,Austria,D006262,1
+PRJEB7774,ERR688387,Metagenomics,Illumina HiSeq 2000,86,Female,20.5,Austria,D015179,1
+PRJEB7774,ERR688388,Metagenomics,Illumina HiSeq 2000,63,Male,30.4,Austria,D006262,1
+PRJEB7774,ERR688389,Metagenomics,Illumina HiSeq 2000,68,Female,34.01,Austria,D000236,1
+PRJEB7774,ERR688390,Metagenomics,Illumina HiSeq 2000,72,Male,31.8,Austria,D006262,1
+PRJEB7774,ERR688391,Metagenomics,Illumina HiSeq 2000,68,Female,24.84,Austria,D000236,1
+PRJEB7774,ERR688392,Metagenomics,Illumina HiSeq 2000,69,Female,30,Austria,D006262,1
+PRJEB7774,ERR688393,Metagenomics,Illumina HiSeq 2000,71,Male,27.04,Austria,D000236,1
+PRJEB7774,ERR688394,Metagenomics,Illumina HiSeq 2000,84,Female,31.22,Austria,D015179,1
+PRJEB7774,ERR688395,Metagenomics,Illumina HiSeq 2000,63,Male,30.77,Austria,D000236,1
+PRJEB7774,ERR688396,Metagenomics,Illumina HiSeq 2000,67,Male,23.14,Austria,D006262,1
+PRJEB7774,ERR688397,Metagenomics,Illumina HiSeq 2000,66,Female,21.7,Austria,D006262,1
+PRJEB7774,ERR688398,Metagenomics,Illumina HiSeq 2000,72,Female,27.43,Austria,D000236,1
+PRJEB7774,ERR688399,Metagenomics,Illumina HiSeq 2000,78,Female,31.24,Austria,D000236,1
+PRJEB7774,ERR688400,Metagenomics,Illumina HiSeq 2000,60,Male,26.64,Austria,D015179,1
+PRJEB7774,ERR688401,Metagenomics,Illumina HiSeq 2000,68,Male,32.25,Austria,D015179,1
+PRJEB7774,ERR688402,Metagenomics,Illumina HiSeq 2000,69,Female,24.4,Austria,D000236,1
+PRJEB7774,ERR688403,Metagenomics,Illumina HiSeq 2000,64,Male,29.3,Austria,D006262,1
+PRJEB7774,ERR688404,Metagenomics,Illumina HiSeq 2000,65,Male,28.9,Austria,D006262,1
+PRJEB7774,ERR688405,Metagenomics,Illumina HiSeq 2000,70,Female,31,Austria,D006262,1
+PRJEB7774,ERR688406,Metagenomics,Illumina HiSeq 2000,84,Female,27.77,Austria,D015179,1
+PRJEB7774,ERR688407,Metagenomics,Illumina HiSeq 2000,74,Female,28.5,Austria,D006262,1
+PRJEB7774,ERR688408,Metagenomics,Illumina HiSeq 2000,77,Male,25.7,Austria,D000236,1
+PRJEB7774,ERR688410,Metagenomics,Illumina HiSeq 2000,66,Male,29.98,Austria,D006262,1
+PRJEB7774,ERR688411,Metagenomics,Illumina HiSeq 2000,74,Male,26.37,Austria,D015179,1
+PRJEB7774,ERR688412,Metagenomics,Illumina HiSeq 2000,72,Female,28.7,Austria,D006262,1
+PRJEB7774,ERR688413,Metagenomics,Illumina HiSeq 2000,84,Female,24.7,Austria,D000236,1
+PRJEB7774,ERR688414,Metagenomics,Illumina HiSeq 2000,66,Male,30.02,Austria,D006262,1
+PRJEB7774,ERR688415,Metagenomics,Illumina HiSeq 2000,69,Female,28.3,Austria,D006262,1
+PRJEB7774,ERR688416,Metagenomics,Illumina HiSeq 2000,69,Female,22.4,Austria,D006262,1
+PRJEB7774,ERR688417,Metagenomics,Illumina HiSeq 2000,70,Male,31.25,Austria,D006262,1
+PRJEB7774,ERR688418,Metagenomics,Illumina HiSeq 2000,66,Male,34.04,Austria,D006262,1
+PRJEB7774,ERR688419,Metagenomics,Illumina HiSeq 2000,73,Female,32,Austria,D006262,1
+PRJEB7774,ERR688420,Metagenomics,Illumina HiSeq 2000,54,Male,27.34,Austria,D015179,1
+PRJEB7774,ERR688421,Metagenomics,Illumina HiSeq 2000,55,Female,23.34,Austria,D015179,1
+PRJEB7774,ERR688422,Metagenomics,Illumina HiSeq 2000,73,Female,29.75,Austria,D015179,1
+PRJEB7774,ERR688423,Metagenomics,Illumina HiSeq 2000,64,Female,24.09,Austria,D015179,1
+PRJEB7774,ERR688424,Metagenomics,Illumina HiSeq 2000,63,Male,25.88,Austria,D015179,1
+PRJEB7774,ERR688425,Metagenomics,Illumina HiSeq 2000,72,Male,28.41,Austria,D015179,1
+PRJEB7774,ERR688426,Metagenomics,Illumina HiSeq 2000,46,Male,30.86,Austria,D015179,1
+PRJEB7774,ERR688427,Metagenomics,Illumina HiSeq 2000,73,Male,24.82,Austria,D015179,1
+PRJEB7774,ERR688428,Metagenomics,Illumina HiSeq 2000,74,Female,29.17,Austria,D015179,1
+PRJEB7774,ERR688429,Metagenomics,Illumina HiSeq 2000,58,Male,27.76,Austria,D015179,1
+PRJEB7774,ERR688430,Metagenomics,Illumina HiSeq 2000,56,Female,20.07,Austria,D015179,1
+PRJEB7774,ERR688431,Metagenomics,Illumina HiSeq 2000,72,Female,26.67,Austria,D015179,1
+PRJEB7774,ERR688432,Metagenomics,Illumina HiSeq 2000,52,Female,27.14,Austria,D015179,1
+PRJEB7774,ERR688433,Metagenomics,Illumina HiSeq 2000,71,Male,29.74,Austria,D015179,1
+PRJEB7774,ERR688434,Metagenomics,Illumina HiSeq 2000,74,Male,24.34,Austria,D015179,1
+PRJEB7774,ERR688435,Metagenomics,Illumina HiSeq 2000,60,Female,30.08,Austria,D015179,1
+PRJEB7774,ERR688436,Metagenomics,Illumina HiSeq 2000,43,Male,22.68,Austria,D015179,1
+PRJEB7774,ERR688437,Metagenomics,Illumina HiSeq 2000,56,Male,29.41,Austria,D000236,1
+PRJEB7774,ERR688438,Metagenomics,Illumina HiSeq 2000,83,Female,21.94,Austria,D000236,1
+PRJEB7774,ERR688439,Metagenomics,Illumina HiSeq 2000,67,Male,33.23,Austria,D000236,1
+PRJEB7774,ERR688440,Metagenomics,Illumina HiSeq 2000,60,Female,30,Austria,D000236,1
+PRJEB7774,ERR688441,Metagenomics,Illumina HiSeq 2000,67,Male,28.34,Austria,D000236,1
+PRJEB7774,ERR688442,Metagenomics,Illumina HiSeq 2000,69,Male,21.46,Austria,D000236,1
+PRJEB7774,ERR688443,Metagenomics,Illumina HiSeq 2000,71,Female,29,Austria,D006262,1
+PRJEB7774,ERR688444,Metagenomics,Illumina HiSeq 2000,64,Male,29.38,Austria,D006262,1
+PRJEB7774,ERR688445,Metagenomics,Illumina HiSeq 2000,64,Female,20.52,Austria,D000236,1
+PRJEB7774,ERR688446,Metagenomics,Illumina HiSeq 2000,64,Male,22.78,Austria,D006262,1
+PRJEB7774,ERR688447,Metagenomics,Illumina HiSeq 2000,68,Female,22.1,Austria,D006262,1
+PRJEB7774,ERR688448,Metagenomics,Illumina HiSeq 2000,63,Male,34.14,Austria,D006262,1
+PRJEB7774,ERR688449,Metagenomics,Illumina HiSeq 2000,70,Male,31.6,Austria,D006262,1
+PRJEB7774,ERR688450,Metagenomics,Illumina HiSeq 2000,61,Female,22.8,Austria,D000236,1
+PRJEB7774,ERR688451,Metagenomics,Illumina HiSeq 2000,74,Female,28.5,Austria,D006262,1
+PRJEB7774,ERR688452,Metagenomics,Illumina HiSeq 2000,63,Male,30.4,Austria,D006262,1
+PRJEB7774,ERR688453,Metagenomics,Illumina HiSeq 2000,72,Female,30,Austria,D006262,1
+PRJEB7774,ERR688454,Metagenomics,Illumina HiSeq 2000,62,Female,32.8,Austria,D000236,1
+PRJEB7774,ERR688455,Metagenomics,Illumina HiSeq 2000,63,Male,27.4,Austria,D000236,1
+PRJEB7774,ERR688456,Metagenomics,Illumina HiSeq 2000,71,Female,29,Austria,D006262,1
+PRJEB7774,ERR688457,Metagenomics,Illumina HiSeq 2000,52,Female,32.8,Austria,D000236,1
+PRJEB7774,ERR688458,Metagenomics,Illumina HiSeq 2000,65,Male,31.22,Austria,D006262,1
+PRJEB7774,ERR688459,Metagenomics,Illumina HiSeq 2000,68,Female,22.4,Austria,D006262,1
+PRJEB7774,ERR688460,Metagenomics,Illumina HiSeq 2000,72,Male,31.8,Austria,D006262,1
+PRJEB7774,ERR688461,Metagenomics,Illumina HiSeq 2000,65,Male,22.03,Austria,D006262,1
+PRJEB7774,ERR688462,Metagenomics,Illumina HiSeq 2000,64,Male,29.3,Austria,D000236,1
+PRJEB7774,ERR688463,Metagenomics,Illumina HiSeq 2000,70,Female,22.67,Austria,D006262,1
+PRJEB7774,ERR688464,Metagenomics,Illumina HiSeq 2000,78,Female,24,Austria,D000236,1
+PRJEB7774,ERR688465,Metagenomics,Illumina HiSeq 2000,75,Female,31,Austria,D006262,1
+PRJEB7774,ERR688466,Metagenomics,Illumina HiSeq 2000,71,Male,24.8,Austria,D000236,1
+PRJEB7774,ERR688467,Metagenomics,Illumina HiSeq 2000,70,Male,23.67,Austria,D006262,1
+PRJEB7774,ERR688468,Metagenomics,Illumina HiSeq 2000,58,Male,21.7,Austria,D000236,1
+PRJEB7774,ERR688469,Metagenomics,Illumina HiSeq 2000,63,Male,31.17,Austria,D006262,1
+PRJEB7774,ERR688470,Metagenomics,Illumina HiSeq 2000,70,Female,22.8,Austria,D006262,1
+PRJEB7774,ERR688471,Metagenomics,Illumina HiSeq 2000,47,Female,25.78,Austria,D015179,1
+PRJEB7774,ERR688472,Metagenomics,Illumina HiSeq 2000,67,Female,22.58,Austria,D006262,1
+PRJEB7774,ERR688473,Metagenomics,Illumina HiSeq 2000,80,Male,26.47,Austria,D000236,1
+PRJEB7774,ERR688474,Metagenomics,Illumina HiSeq 2000,75,Female,30.12,Austria,D000236,1
+PRJEB7774,ERR688475,Metagenomics,Illumina HiSeq 2000,62,Female,22.1,Austria,D006262,1
+PRJEB7774,ERR688476,Metagenomics,Illumina HiSeq 2000,48,Male,25.61,Austria,D000236,1
+PRJEB7774,ERR688477,Metagenomics,Illumina HiSeq 2000,68,Male,29.8,Austria,D006262,1
+PRJEB7774,ERR688478,Metagenomics,Illumina HiSeq 2000,56,Female,22.8,Austria,D000236,1
+PRJEB7774,ERR688479,Metagenomics,Illumina HiSeq 2000,70,Female,25.2,Austria,D000236,1
+PRJEB7774,ERR688480,Metagenomics,Illumina HiSeq 2000,62,Male,24.3,Austria,D000236,1
+PRJEB7774,ERR688481,Metagenomics,Illumina HiSeq 2000,63,Female,30.47,Austria,D000236,1
+PRJEB7774,ERR688482,Metagenomics,Illumina HiSeq 2000,77,Male,37.56,Austria,D000236,1
+PRJEB7774,ERR688483,Metagenomics,Illumina HiSeq 2000,66,Female,22.65,Austria,D000236,1
+PRJEB7774,ERR688484,Metagenomics,Illumina HiSeq 2000,70,Female,29.38,Austria,D000236,1
+PRJEB7774,ERR688485,Metagenomics,Illumina HiSeq 2000,74,Female,24.13,Austria,D000236,1
+PRJEB7774,ERR688486,Metagenomics,Illumina HiSeq 2000,58,Male,27.02,Austria,D000236,1
+PRJEB7774,ERR688487,Metagenomics,Illumina HiSeq 2000,77,Male,29.41,Austria,D015179,1
+PRJEB7774,ERR688488,Metagenomics,Illumina HiSeq 2000,52,Male,25.73,Austria,D015179,1
+PRJEB7774,ERR688489,Metagenomics,Illumina HiSeq 2000,72,Female,24.22,Austria,D015179,1
+PRJEB7774,ERR688490,Metagenomics,Illumina HiSeq 2000,79,Male,26.3,Austria,D015179,1
+PRJEB7774,ERR688491,Metagenomics,Illumina HiSeq 2000,77,Male,19.16,Austria,D015179,1
+PRJEB7774,ERR688492,Metagenomics,Illumina HiSeq 2000,64,Male,29.07,Austria,D015179,1
+PRJEB7774,ERR688493,Metagenomics,Illumina HiSeq 2000,72,Female,27.12,Austria,D015179,1
+PRJEB7774,ERR688494,Metagenomics,Illumina HiSeq 2000,69,Male,29.94,Austria,D015179,1
+PRJEB7774,ERR688495,Metagenomics,Illumina HiSeq 2000,66,Male,22.6,Austria,D015179,1
+PRJEB7774,ERR688496,Metagenomics,Illumina HiSeq 2000,72,Female,23.83,Austria,D015179,1
+PRJEB7774,ERR688497,Metagenomics,Illumina HiSeq 2000,65,Male,29.74,Austria,D015179,1
+PRJEB7774,ERR688498,Metagenomics,Illumina HiSeq 2000,59,Female,29.2,Austria,D000236,1
+PRJEB7774,ERR688499,Metagenomics,Illumina HiSeq 2000,46,Male,23.15,Austria,D006262,1
+PRJEB7774,ERR688500,Metagenomics,Illumina HiSeq 2000,63,Male,33.56,Austria,D015179,1
+PRJEB7774,ERR688501,Metagenomics,Illumina HiSeq 2000,46,Male,28.74,Austria,D006262,1
+PRJEB7774,ERR688502,Metagenomics,Illumina HiSeq 2000,45,Female,22.15,Austria,D015179,1
+PRJEB7774,ERR688503,Metagenomics,Illumina HiSeq 2000,72,Male,24.34,Austria,D015179,1
+PRJEB7774,ERR688504,Metagenomics,Illumina HiSeq 2000,77,Female,23.5,Austria,D015179,1
+PRJEB7774,ERR688505,Metagenomics,Illumina HiSeq 2000,64,Male,29.35,Austria,D015179,1
+PRJEB7774,ERR688506,Metagenomics,Illumina HiSeq 2000,68,Male,32,Austria,D006262,1
+PRJEB7774,ERR688507,Metagenomics,Illumina HiSeq 2000,60,Female,22.1,Austria,D006262,1
+PRJEB7774,ERR688508,Metagenomics,Illumina HiSeq 2000,70,Male,34.11,Austria,D000236,1
+PRJEB7774,ERR688509,Metagenomics,Illumina HiSeq 2000,68,Male,23.45,Austria,D006262,1
+PRJEB7774,ERR688510,Metagenomics,Illumina HiSeq 2000,66,Male,30.3,Austria,D006262,1
+PRJEB7774,ERR688511,Metagenomics,Illumina HiSeq 2000,73,Male,29.7,Austria,D006262,1
+PRJEB7774,ERR688512,Metagenomics,Illumina HiSeq 2000,67,Male,27.14,Austria,D000236,1
+PRJEB7774,ERR688513,Metagenomics,Illumina HiSeq 2000,73,Male,17.99,Austria,D015179,1
+PRJEB7774,ERR688514,Metagenomics,Illumina HiSeq 2000,67,Female,30,Austria,D006262,1
+PRJEB7774,ERR688515,Metagenomics,Illumina HiSeq 2000,65,Male,28.03,Austria,D015179,1
+PRJEB7774,ERR688516,Metagenomics,Illumina HiSeq 2000,74,Female,28.3,Austria,D006262,1
+PRJEB7774,ERR688517,Metagenomics,Illumina HiSeq 2000,65,Female,23.31,Austria,D015179,1
+PRJEB7774,ERR688519,Metagenomics,Illumina HiSeq 2000,62,Male,26.88,Austria,D000236,1
+PRJEB7774,ERR688520,Metagenomics,Illumina HiSeq 2000,65,Male,29.06,Austria,D006262,1
+PRJEB7774,ERR688521,Metagenomics,Illumina HiSeq 2000,67,Male,29.4,Austria,D015179,1
+PRJEB7774,ERR688522,Metagenomics,Illumina HiSeq 2000,69,Female,24.13,Austria,D000236,1
+PRJEB7774,ERR688523,Metagenomics,Illumina HiSeq 2000,67,Male,22.79,Austria,D006262,1
+PRJEB7774,ERR688524,Metagenomics,Illumina HiSeq 2000,62,Male,30.1,Austria,D000236,1
+PRJEB7774,ERR688525,Metagenomics,Illumina HiSeq 2000,82,Male,30.47,Austria,D015179,1
+PRJEB7774,ERR688526,Metagenomics,Illumina HiSeq 2000,63,Male,34.08,Austria,D000236,1
+PRJEB7774,ERR688527,Metagenomics,Illumina HiSeq 2000,84,Male,27.28,Austria,D015179,1
+PRJEB7774,ERR688528,Metagenomics,Illumina HiSeq 2000,68,Female,21.7,Austria,D006262,1
+PRJEB7774,ERR688529,Metagenomics,Illumina HiSeq 2000,63,Male,30.9,Austria,D006262,1
+PRJEB7774,ERR688530,Metagenomics,Illumina HiSeq 2000,68,Male,22.2,Austria,D006262,1
+PRJEB7774,ERR688531,Metagenomics,Illumina HiSeq 2000,62,Male,35.43,Austria,D000236,1
+PRJEB7774,ERR688532,Metagenomics,Illumina HiSeq 2000,72,Male,29.03,Austria,D006262,1
+PRJEB7774,ERR688533,Metagenomics,Illumina HiSeq 2000,71,Male,29.04,Austria,D006262,1
+PRJEB7774,ERR688534,Metagenomics,Illumina HiSeq 2000,86,Female,20.5,Austria,D015179,1
+PRJEB7774,ERR688535,Metagenomics,Illumina HiSeq 2000,63,Male,30.4,Austria,D006262,1
+PRJEB7774,ERR688536,Metagenomics,Illumina HiSeq 2000,68,Female,34.01,Austria,D000236,1
+PRJEB7774,ERR688537,Metagenomics,Illumina HiSeq 2000,72,Male,31.8,Austria,D006262,1
+PRJEB7774,ERR688538,Metagenomics,Illumina HiSeq 2000,68,Female,24.84,Austria,D000236,1
+PRJEB7774,ERR688539,Metagenomics,Illumina HiSeq 2000,69,Female,30,Austria,D006262,1
+PRJEB7774,ERR688540,Metagenomics,Illumina HiSeq 2000,71,Male,27.04,Austria,D000236,1
+PRJEB7774,ERR688541,Metagenomics,Illumina HiSeq 2000,84,Female,31.22,Austria,D015179,1
+PRJEB7774,ERR688542,Metagenomics,Illumina HiSeq 2000,63,Male,30.77,Austria,D000236,1
+PRJEB7774,ERR688543,Metagenomics,Illumina HiSeq 2000,67,Male,23.14,Austria,D006262,1
+PRJEB7774,ERR688544,Metagenomics,Illumina HiSeq 2000,66,Female,21.7,Austria,D006262,1
+PRJEB7774,ERR688545,Metagenomics,Illumina HiSeq 2000,72,Female,27.43,Austria,D000236,1
+PRJEB7774,ERR688546,Metagenomics,Illumina HiSeq 2000,78,Female,31.24,Austria,D000236,1
+PRJEB7774,ERR688547,Metagenomics,Illumina HiSeq 2000,60,Male,26.64,Austria,D015179,1
+PRJEB7774,ERR688548,Metagenomics,Illumina HiSeq 2000,68,Male,32.25,Austria,D015179,1
+PRJEB7774,ERR688549,Metagenomics,Illumina HiSeq 2000,69,Female,24.4,Austria,D000236,1
+PRJEB7774,ERR688550,Metagenomics,Illumina HiSeq 2000,64,Male,29.3,Austria,D006262,1
+PRJEB7774,ERR688551,Metagenomics,Illumina HiSeq 2000,65,Male,28.9,Austria,D006262,1
+PRJEB7774,ERR688552,Metagenomics,Illumina HiSeq 2000,70,Female,31,Austria,D006262,1
+PRJEB7774,ERR688553,Metagenomics,Illumina HiSeq 2000,84,Female,27.77,Austria,D015179,1
+PRJEB7774,ERR688554,Metagenomics,Illumina HiSeq 2000,74,Female,28.5,Austria,D006262,1
+PRJEB7774,ERR688555,Metagenomics,Illumina HiSeq 2000,77,Male,25.7,Austria,D000236,1
+PRJEB7774,ERR688557,Metagenomics,Illumina HiSeq 2000,66,Male,29.98,Austria,D006262,1
+PRJEB7774,ERR688558,Metagenomics,Illumina HiSeq 2000,74,Male,26.37,Austria,D015179,1
+PRJEB7774,ERR688559,Metagenomics,Illumina HiSeq 2000,72,Female,28.7,Austria,D006262,1
+PRJEB7774,ERR688560,Metagenomics,Illumina HiSeq 2000,84,Female,24.7,Austria,D000236,1
+PRJEB7774,ERR688561,Metagenomics,Illumina HiSeq 2000,66,Male,30.02,Austria,D006262,1
+PRJEB7774,ERR688562,Metagenomics,Illumina HiSeq 2000,69,Female,28.3,Austria,D006262,1
+PRJEB7774,ERR688563,Metagenomics,Illumina HiSeq 2000,69,Female,22.4,Austria,D006262,1
+PRJEB7774,ERR688564,Metagenomics,Illumina HiSeq 2000,70,Male,31.25,Austria,D006262,1
+PRJEB7774,ERR688565,Metagenomics,Illumina HiSeq 2000,66,Male,34.04,Austria,D006262,1
+PRJEB7774,ERR688566,Metagenomics,Illumina HiSeq 2000,73,Female,32,Austria,D006262,1
+PRJEB7774,ERR688567,Metagenomics,Illumina HiSeq 2000,54,Male,27.34,Austria,D015179,1
+PRJEB7774,ERR688568,Metagenomics,Illumina HiSeq 2000,55,Female,23.34,Austria,D015179,1
+PRJEB7774,ERR688569,Metagenomics,Illumina HiSeq 2000,73,Female,29.75,Austria,D015179,1
+PRJEB7774,ERR688570,Metagenomics,Illumina HiSeq 2000,64,Female,24.09,Austria,D015179,1
+PRJEB7774,ERR688571,Metagenomics,Illumina HiSeq 2000,63,Male,25.88,Austria,D015179,1
+PRJEB7774,ERR688572,Metagenomics,Illumina HiSeq 2000,72,Male,28.41,Austria,D015179,1
+PRJEB7774,ERR688573,Metagenomics,Illumina HiSeq 2000,46,Male,30.86,Austria,D015179,1
+PRJEB7774,ERR688574,Metagenomics,Illumina HiSeq 2000,73,Male,24.82,Austria,D015179,1
+PRJEB7774,ERR688575,Metagenomics,Illumina HiSeq 2000,74,Female,29.17,Austria,D015179,1
+PRJEB7774,ERR688576,Metagenomics,Illumina HiSeq 2000,58,Male,27.76,Austria,D015179,1
+PRJEB7774,ERR688577,Metagenomics,Illumina HiSeq 2000,56,Female,20.07,Austria,D015179,1
+PRJEB7774,ERR688578,Metagenomics,Illumina HiSeq 2000,72,Female,26.67,Austria,D015179,1
+PRJEB7774,ERR688579,Metagenomics,Illumina HiSeq 2000,52,Female,27.14,Austria,D015179,1
+PRJEB7774,ERR688580,Metagenomics,Illumina HiSeq 2000,71,Male,29.74,Austria,D015179,1
+PRJEB7774,ERR688581,Metagenomics,Illumina HiSeq 2000,74,Male,24.34,Austria,D015179,1
+PRJEB7774,ERR688582,Metagenomics,Illumina HiSeq 2000,60,Female,30.08,Austria,D015179,1
+PRJEB7774,ERR688583,Metagenomics,Illumina HiSeq 2000,43,Male,22.68,Austria,D015179,1
+PRJEB7774,ERR688584,Metagenomics,Illumina HiSeq 2000,56,Male,29.41,Austria,D000236,1
+PRJEB7774,ERR688585,Metagenomics,Illumina HiSeq 2000,83,Female,21.94,Austria,D000236,1
+PRJEB7774,ERR688586,Metagenomics,Illumina HiSeq 2000,67,Male,33.23,Austria,D000236,1
+PRJEB7774,ERR688587,Metagenomics,Illumina HiSeq 2000,60,Female,30,Austria,D000236,1
+PRJEB7774,ERR688588,Metagenomics,Illumina HiSeq 2000,67,Male,28.34,Austria,D000236,1
+PRJEB7774,ERR688589,Metagenomics,Illumina HiSeq 2000,69,Male,21.46,Austria,D000236,1
+PRJEB7774,ERR688590,Metagenomics,Illumina HiSeq 2000,71,Female,29,Austria,D006262,1
+PRJEB7774,ERR688591,Metagenomics,Illumina HiSeq 2000,64,Male,29.38,Austria,D006262,1
+PRJEB7774,ERR688592,Metagenomics,Illumina HiSeq 2000,64,Female,20.52,Austria,D000236,1
+PRJEB7774,ERR688593,Metagenomics,Illumina HiSeq 2000,64,Male,22.78,Austria,D006262,1
+PRJEB7774,ERR688594,Metagenomics,Illumina HiSeq 2000,68,Female,22.1,Austria,D006262,1
+PRJEB7774,ERR688595,Metagenomics,Illumina HiSeq 2000,63,Male,34.14,Austria,D006262,1
+PRJEB7774,ERR688596,Metagenomics,Illumina HiSeq 2000,70,Male,31.6,Austria,D006262,1
+PRJEB7774,ERR688597,Metagenomics,Illumina HiSeq 2000,61,Female,22.8,Austria,D000236,1
+PRJEB7774,ERR688598,Metagenomics,Illumina HiSeq 2000,74,Female,28.5,Austria,D006262,1
+PRJEB7774,ERR688599,Metagenomics,Illumina HiSeq 2000,63,Male,30.4,Austria,D006262,1
+PRJEB7774,ERR688600,Metagenomics,Illumina HiSeq 2000,72,Female,30,Austria,D006262,1
+PRJEB7774,ERR688601,Metagenomics,Illumina HiSeq 2000,62,Female,32.8,Austria,D000236,1
+PRJEB7774,ERR688602,Metagenomics,Illumina HiSeq 2000,63,Male,27.4,Austria,D000236,1
+PRJEB7774,ERR688603,Metagenomics,Illumina HiSeq 2000,71,Female,29,Austria,D006262,1
+PRJEB7774,ERR688604,Metagenomics,Illumina HiSeq 2000,52,Female,32.8,Austria,D000236,1
+PRJEB7774,ERR688605,Metagenomics,Illumina HiSeq 2000,65,Male,31.22,Austria,D006262,1
+PRJEB7774,ERR688606,Metagenomics,Illumina HiSeq 2000,68,Female,22.4,Austria,D006262,1
+PRJEB7774,ERR688607,Metagenomics,Illumina HiSeq 2000,72,Male,31.8,Austria,D006262,1
+PRJEB7774,ERR688608,Metagenomics,Illumina HiSeq 2000,65,Male,22.03,Austria,D006262,1
+PRJEB7774,ERR688609,Metagenomics,Illumina HiSeq 2000,64,Male,29.3,Austria,D000236,1
+PRJEB7774,ERR688610,Metagenomics,Illumina HiSeq 2000,70,Female,22.67,Austria,D006262,1
+PRJEB7774,ERR688611,Metagenomics,Illumina HiSeq 2000,78,Female,24,Austria,D000236,1
+PRJEB7774,ERR688612,Metagenomics,Illumina HiSeq 2000,75,Female,31,Austria,D006262,1
+PRJEB7774,ERR688613,Metagenomics,Illumina HiSeq 2000,71,Male,24.8,Austria,D000236,1
+PRJEB7774,ERR688614,Metagenomics,Illumina HiSeq 2000,70,Male,23.67,Austria,D006262,1
+PRJEB7774,ERR688615,Metagenomics,Illumina HiSeq 2000,58,Male,21.7,Austria,D000236,1
+PRJEB7774,ERR688616,Metagenomics,Illumina HiSeq 2000,63,Male,31.17,Austria,D006262,1
+PRJEB7774,ERR688617,Metagenomics,Illumina HiSeq 2000,70,Female,22.8,Austria,D006262,1
+PRJEB7774,ERR688618,Metagenomics,Illumina HiSeq 2000,47,Female,25.78,Austria,D015179,1
+PRJEB7774,ERR688619,Metagenomics,Illumina HiSeq 2000,67,Female,22.58,Austria,D006262,1
+PRJEB7774,ERR688620,Metagenomics,Illumina HiSeq 2000,80,Male,26.47,Austria,D000236,1
+PRJEB7774,ERR688621,Metagenomics,Illumina HiSeq 2000,75,Female,30.12,Austria,D000236,1
+PRJEB7774,ERR688622,Metagenomics,Illumina HiSeq 2000,62,Female,22.1,Austria,D006262,1
+PRJEB7774,ERR688623,Metagenomics,Illumina HiSeq 2000,48,Male,25.61,Austria,D000236,1
+PRJEB7774,ERR688624,Metagenomics,Illumina HiSeq 2000,68,Male,29.8,Austria,D006262,1
+PRJEB7774,ERR688625,Metagenomics,Illumina HiSeq 2000,56,Female,22.8,Austria,D000236,1
+PRJEB7774,ERR688626,Metagenomics,Illumina HiSeq 2000,70,Female,25.2,Austria,D000236,1
+PRJEB7774,ERR688627,Metagenomics,Illumina HiSeq 2000,62,Male,24.3,Austria,D000236,1
+PRJEB7774,ERR688628,Metagenomics,Illumina HiSeq 2000,63,Female,30.47,Austria,D000236,1
+PRJEB7774,ERR688629,Metagenomics,Illumina HiSeq 2000,77,Male,37.56,Austria,D000236,1
+PRJEB7774,ERR688630,Metagenomics,Illumina HiSeq 2000,66,Female,22.65,Austria,D000236,1
+PRJEB7774,ERR688631,Metagenomics,Illumina HiSeq 2000,70,Female,29.38,Austria,D000236,1
+PRJEB7774,ERR688632,Metagenomics,Illumina HiSeq 2000,74,Female,24.13,Austria,D000236,1
+PRJEB7774,ERR688633,Metagenomics,Illumina HiSeq 2000,58,Male,27.02,Austria,D000236,1
+PRJEB7774,ERR688634,Metagenomics,Illumina HiSeq 2000,77,Male,29.41,Austria,D015179,1
+PRJEB7774,ERR688635,Metagenomics,Illumina HiSeq 2000,52,Male,25.73,Austria,D015179,1
+PRJEB7774,ERR688636,Metagenomics,Illumina HiSeq 2000,72,Female,24.22,Austria,D015179,1
+PRJEB7774,ERR688637,Metagenomics,Illumina HiSeq 2000,79,Male,26.3,Austria,D015179,1
+PRJEB7774,ERR688638,Metagenomics,Illumina HiSeq 2000,77,Male,19.16,Austria,D015179,1
+PRJEB7774,ERR688639,Metagenomics,Illumina HiSeq 2000,64,Male,29.07,Austria,D015179,1
+PRJEB7774,ERR688640,Metagenomics,Illumina HiSeq 2000,72,Female,27.12,Austria,D015179,1
+PRJEB7774,ERR688641,Metagenomics,Illumina HiSeq 2000,69,Male,29.94,Austria,D015179,1
+PRJEB7774,ERR688642,Metagenomics,Illumina HiSeq 2000,66,Male,22.6,Austria,D015179,1
+PRJEB7774,ERR688643,Metagenomics,Illumina HiSeq 2000,72,Female,23.83,Austria,D015179,1
+PRJEB7774,ERR688644,Metagenomics,Illumina HiSeq 2000,65,Male,29.74,Austria,D015179,1
+PRJEB7774,ERR688645,Metagenomics,Illumina HiSeq 2000,59,Female,29.2,Austria,D000236,1
+PRJEB7774,ERR688646,Metagenomics,Illumina HiSeq 2000,46,Male,23.15,Austria,D006262,1
+PRJEB7774,ERR688647,Metagenomics,Illumina HiSeq 2000,63,Male,33.56,Austria,D015179,1
+PRJEB7774,ERR688648,Metagenomics,Illumina HiSeq 2000,46,Male,28.74,Austria,D006262,1
+PRJEB7774,ERR688649,Metagenomics,Illumina HiSeq 2000,45,Female,22.15,Austria,D015179,1
+PRJEB7774,ERR688650,Metagenomics,Illumina HiSeq 2000,72,Male,24.34,Austria,D015179,1
+PRJEB7774,ERR688651,Metagenomics,Illumina HiSeq 2000,77,Female,23.5,Austria,D015179,1
+PRJEB7774,ERR710415,Metagenomics,Illumina HiSeq 2000,63,Male,25.65,Austria,D000236,1
+PRJEB7774,ERR710416,Metagenomics,Illumina HiSeq 2000,56,Female,43.58,Austria,D000236,1
+PRJEB7774,ERR710417,Metagenomics,Illumina HiSeq 2000,55,Male,27.76,Austria,D006262,1
+PRJEB7774,ERR710418,Metagenomics,Illumina HiSeq 2000,70,Male,28.72,Austria,D006262,1
+PRJEB7774,ERR710419,Metagenomics,Illumina HiSeq 2000,73,Female,26.56,Austria,D006262,1
+PRJEB7774,ERR710420,Metagenomics,Illumina HiSeq 2000,68,Male,23.53,Austria,D006262,1
+PRJEB7774,ERR710421,Metagenomics,Illumina HiSeq 2000,78,Male,31.22,Austria,D006262,1
+PRJEB7774,ERR710422,Metagenomics,Illumina HiSeq 2000,68,Female,27.55,Austria,D000236,1
+PRJEB7774,ERR710423,Metagenomics,Illumina HiSeq 2000,43,Female,22.65,Austria,D006262,1
+PRJEB7774,ERR710424,Metagenomics,Illumina HiSeq 2000,63,Male,25.65,Austria,D000236,1
+PRJEB7774,ERR710425,Metagenomics,Illumina HiSeq 2000,56,Female,43.58,Austria,D000236,1
+PRJEB7774,ERR710426,Metagenomics,Illumina HiSeq 2000,55,Male,27.76,Austria,D006262,1
+PRJEB7774,ERR710427,Metagenomics,Illumina HiSeq 2000,70,Male,28.72,Austria,D006262,1
+PRJEB7774,ERR710428,Metagenomics,Illumina HiSeq 2000,73,Female,26.56,Austria,D006262,1
+PRJEB7774,ERR710429,Metagenomics,Illumina HiSeq 2000,68,Male,23.53,Austria,D006262,1
+PRJEB7774,ERR710430,Metagenomics,Illumina HiSeq 2000,78,Male,31.22,Austria,D006262,1
+PRJEB7774,ERR710431,Metagenomics,Illumina HiSeq 2000,68,Female,27.55,Austria,D000236,1
+PRJEB7774,ERR710432,Metagenomics,Illumina HiSeq 2000,43,Female,22.65,Austria,D006262,1
+PRJDB4176,DRR127476,Metagenomics,Illumina HiSeq 2500,64,Male,22.46,Japan,D015179,1
+PRJDB4176,DRR127478,Metagenomics,Illumina HiSeq 2500,66,Female,22.6003,Japan,D015179,1
+PRJDB4176,DRR127481,Metagenomics,Illumina HiSeq 2500,61,Male,28.2933,Japan,D015179,1
+PRJDB4176,DRR127485,Metagenomics,Illumina HiSeq 2500,70,Female,21.9076,Japan,D015179,1
+PRJDB4176,DRR127488,Metagenomics,Illumina HiSeq 2500,72,Male,22.1367,Japan,D006262,1
+PRJDB4176,DRR127491,Metagenomics,Illumina HiSeq 2500,62,Female,21.0828,Japan,D015179,1
+PRJDB4176,DRR127507,Metagenomics,Illumina HiSeq 2500,65,Male,21.3039,Japan,D015179,1
+PRJDB4176,DRR127509,Metagenomics,Illumina HiSeq 2500,59,Male,25.4581,Japan,D015179,1
+PRJDB4176,DRR127514,Metagenomics,Illumina HiSeq 2500,78,Male,22.68,Japan,D015179,1
+PRJDB4176,DRR127515,Metagenomics,Illumina HiSeq 2500,30,Male,25.6896,Japan,D015179,1
+PRJDB4176,DRR127517,Metagenomics,Illumina HiSeq 2500,69,Female,23.5556,Japan,D015179,1
+PRJDB4176,DRR127519,Metagenomics,Illumina HiSeq 2500,57,Female,18.369,Japan,D015179,1
+PRJDB4176,DRR127521,Metagenomics,Illumina HiSeq 2500,38,Male,24.3911,Japan,D015179,1
+PRJDB4176,DRR127524,Metagenomics,Illumina HiSeq 2500,73,Male,25.8166,Japan,D006262,1
+PRJDB4176,DRR127532,Metagenomics,Illumina HiSeq 2500,59,Female,20.0288,Japan,D006262,1
+PRJDB4176,DRR127535,Metagenomics,Illumina HiSeq 2500,64,Male,20.5191,Japan,D006262,1
+PRJDB4176,DRR127536,Metagenomics,Illumina HiSeq 2500,44,Female,26.6728,Japan,D015179,1
+PRJDB4176,DRR127537,Metagenomics,Illumina HiSeq 2500,50,Female,20.3428,Japan,D006262,1
+PRJDB4176,DRR127546,Metagenomics,Illumina HiSeq 2500,67,Female,26.0417,Japan,D006262,1
+PRJDB4176,DRR127552,Metagenomics,Illumina HiSeq 2500,45,Male,22.2222,Japan,D006262,1
+PRJDB4176,DRR127557,Metagenomics,Illumina HiSeq 2500,62,Male,24.6181,Japan,D015179,1
+PRJDB4176,DRR127559,Metagenomics,Illumina HiSeq 2500,46,Male,19.1512,Japan,D015179,1
+PRJDB4176,DRR127567,Metagenomics,Illumina HiSeq 2500,70,Female,17.3484,Japan,D015179,1
+PRJDB4176,DRR127579,Metagenomics,Illumina HiSeq 2500,70,Male,20.5761,Japan,D015179,1
+PRJDB4176,DRR127580,Metagenomics,Illumina HiSeq 2500,63,Female,17.4818,Japan,D015179,1
+PRJDB4176,DRR127583,Metagenomics,Illumina HiSeq 2500,65,Female,19.8189,Japan,D006262,1
+PRJDB4176,DRR127588,Metagenomics,Illumina HiSeq 2500,76,Male,22.1003,Japan,D006262,1
+PRJDB4176,DRR127594,Metagenomics,Illumina HiSeq 2500,69,Male,21.5139,Japan,D015179,1
+PRJDB4176,DRR127596,Metagenomics,Illumina HiSeq 2500,76,Female,23.4221,Japan,D006262,1
+PRJDB4176,DRR127597,Metagenomics,Illumina HiSeq 2500,53,Female,18.662,Japan,D006262,1
+PRJDB4176,DRR127603,Metagenomics,Illumina HiSeq 2500,45,Female,23.4224,Japan,D015179,1
+PRJDB4176,DRR127613,Metagenomics,Illumina HiSeq 2500,75,Female,22.6667,Japan,D006262,1
+PRJDB4176,DRR127616,Metagenomics,Illumina HiSeq 2500,78,Male,22.8624,Japan,D006262,1
+PRJDB4176,DRR127617,Metagenomics,Illumina HiSeq 2500,59,Female,22.6562,Japan,D015179,1
+PRJDB4176,DRR127619,Metagenomics,Illumina HiSeq 2500,45,Male,23.9512,Japan,D006262,1
+PRJDB4176,DRR127625,Metagenomics,Illumina HiSeq 2500,64,Male,23.1084,Japan,D015179,1
+PRJDB4176,DRR127628,Metagenomics,Illumina HiSeq 2500,76,Male,21.7993,Japan,D006262,1
+PRJDB4176,DRR127634,Metagenomics,Illumina HiSeq 2500,42,Female,25.5937,Japan,D006262,1
+PRJDB4176,DRR127638,Metagenomics,Illumina HiSeq 2500,32,Female,22.3478,Japan,D015179,1
+PRJDB4176,DRR127646,Metagenomics,Illumina HiSeq 2500,49,Female,19.3821,Japan,D015179,1
+PRJDB4176,DRR127647,Metagenomics,Illumina HiSeq 2500,67,Female,20.1746,Japan,D015179,1
+PRJDB4176,DRR127649,Metagenomics,Illumina HiSeq 2500,49,Female,22.3081,Japan,D006262,1
+PRJDB4176,DRR127666,Metagenomics,Illumina HiSeq 2500,78,Male,25.9095,Japan,D015179,1
+PRJDB4176,DRR127669,Metagenomics,Illumina HiSeq 2500,54,Female,20.5688,Japan,D015179,1
+PRJDB4176,DRR127672,Metagenomics,Illumina HiSeq 2500,42,Male,26.1738,Japan,D006262,1
+PRJDB4176,DRR127674,Metagenomics,Illumina HiSeq 2500,59,Female,20.9566,Japan,D015179,1
+PRJDB4176,DRR127683,Metagenomics,Illumina HiSeq 2500,40,Male,22.9819,Japan,D006262,1
+PRJDB4176,DRR127685,Metagenomics,Illumina HiSeq 2500,70,Male,24.2424,Japan,D015179,1
+PRJDB4176,DRR127692,Metagenomics,Illumina HiSeq 2500,76,Male,25.9695,Japan,D006262,1
+PRJDB4176,DRR127700,Metagenomics,Illumina HiSeq 2500,46,Female,17.4449,Japan,D015179,1
+PRJDB4176,DRR127704,Metagenomics,Illumina HiSeq 2500,49,Female,21.2306,Japan,D006262,1
+PRJDB4176,DRR127707,Metagenomics,Illumina HiSeq 2500,63,Male,22.0581,Japan,D006262,1
+PRJDB4176,DRR127708,Metagenomics,Illumina HiSeq 2500,62,Male,25.5937,Japan,D015179,1
+PRJDB4176,DRR127713,Metagenomics,Illumina HiSeq 2500,49,Male,27.3982,Japan,D006262,1
+PRJDB4176,DRR127718,Metagenomics,Illumina HiSeq 2500,75,Female,22.2222,Japan,D015179,1
+PRJDB4176,DRR127720,Metagenomics,Illumina HiSeq 2500,73,Female,20.5457,Japan,D015179,1
+PRJDB4176,DRR127721,Metagenomics,Illumina HiSeq 2500,51,Male,28.3848,Japan,D006262,1
+PRJDB4176,DRR127724,Metagenomics,Illumina HiSeq 2500,66,Female,25.4109,Japan,D006262,1
+PRJDB4176,DRR127728,Metagenomics,Illumina HiSeq 2500,71,Female,18.0172,Japan,D006262,1
+PRJDB4176,DRR127731,Metagenomics,Illumina HiSeq 2500,66,Male,23.6652,Japan,D006262,1
+PRJDB4176,DRR127736,Metagenomics,Illumina HiSeq 2500,64,Female,23.1911,Japan,D006262,1
+PRJDB4176,DRR127737,Metagenomics,Illumina HiSeq 2500,77,Female,18.7305,Japan,D006262,1
+PRJDB4176,DRR127748,Metagenomics,Illumina HiSeq 2500,44,Male,22.0522,Japan,D006262,1
+PRJDB4176,DRR127751,Metagenomics,Illumina HiSeq 2500,74,Male,20.6852,Japan,D006262,1
+PRJDB4176,DRR127752,Metagenomics,Illumina HiSeq 2500,70,Male,23.6614,Japan,D006262,1
+PRJDB4176,DRR127754,Metagenomics,Illumina HiSeq 2500,55,Male,24.5779,Japan,D015179,1
+PRJDB4176,DRR127755,Metagenomics,Illumina HiSeq 2500,70,Male,25.7117,Japan,D006262,1
+PRJDB4176,DRR127756,Metagenomics,Illumina HiSeq 2500,75,Male,22.3081,Japan,D006262,1
+PRJDB4176,DRR127762,Metagenomics,Illumina HiSeq 2500,76,Male,23.7954,Japan,D006262,1
+PRJDB4176,DRR127763,Metagenomics,Illumina HiSeq 2500,76,Male,25.8806,Japan,D006262,1
+PRJDB4176,DRR127767,Metagenomics,Illumina HiSeq 2500,28,Male,26.2976,Japan,D015179,1
+PRJDB4176,DRR127774,Metagenomics,Illumina HiSeq 2500,69,Female,25.6369,Japan,D015179,1
+PRJDB4176,DRR127776,Metagenomics,Illumina HiSeq 2500,73,Female,20.7031,Japan,D006262,1
+PRJDB4176,DRR127777,Metagenomics,Illumina HiSeq 2500,77,Female,23.634,Japan,D006262,1
+PRJDB4176,DRR127789,Metagenomics,Illumina HiSeq 2500,51,Male,20.7612,Japan,D015179,1
+PRJDB4176,DRR162775,Metagenomics,Illumina HiSeq 2500,65,Male,21.5645,Japan,D006262,1
+PRJDB4176,DRR162776,Metagenomics,Illumina HiSeq 2500,66,Female,22.3478,Japan,D006262,1
+PRJDB4176,DRR162777,Metagenomics,Illumina HiSeq 2500,48,Male,23.03,Japan,D015179,1
+PRJDB4176,DRR162778,Metagenomics,Illumina HiSeq 2500,65,Male,21.3839,Japan,D015179,1
+PRJDB4176,DRR162779,Metagenomics,Illumina HiSeq 2500,70,Male,18.9619,Japan,D015179,1

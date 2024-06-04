@@ -1,0 +1,135 @@
+```{r}
+library(phyloseq)
+library(ggplot2)
+library(microbiome)
+library(microbiomeutilities)
+```
+
+```{r}
+# metadata
+meta_df <- read.csv("sample_data/total.csv", sep = ",", header = TRUE)
+rownames(meta_df) <- meta.df$run.ID
+head(meta.df)
+
+sampledata <- sample_data(meta_df)
+sample_names(sampledata) <- meta_df$run.ID
+head(sampledata)
+
+# count table
+abs_count_df <- read.csv("absolute_count_raw.csv", sep = "\t", header = TRUE)
+rownames(abs_count_df) <- abs_count_df$query_name
+abs_count_df <- subset(abs_count_df, select = -query_name)
+otu <- otu_table(as.matrix(t(abs_count_df)), taxa_are_rows = TRUE)
+
+# asv table
+taxa_df <- read.csv("tax_table.csv", sep = "\t", header = TRUE)
+rownames(taxa_df) <- taxa_df$Ident
+taxa_df <- subset(taxa_df, select = -c(Ident, X, Gtdb_representative))
+head(taxa_df)
+
+tax <- tax_table(as.matrix(taxa_df))
+```
+
+
+```{r}
+physeq <- phyloseq(otu, tax, sampledata)
+```
+
+
+# PCoA
+```{r}
+ord <- ordinate(physeq, "PCoA", "bray")
+plot_ordination(physeq, ord, type = "samples", color = "associated.phenotype")
+```
+
+# A-div
+```{r}
+adiv <- data.frame(
+  "Shannon" = phyloseq::estimate_richness(physeq, measures = "Shannon"),
+  "Simpson" = phyloseq::estimate_richness(physeq, measures = "Simpson"),
+  "Chao1" = phyloseq::estimate_richness(physeq, measures = "Chao1"),
+  "Age" = sample_data(physeq)$host.age,
+  "Disease" = sample_data(physeq)$associated.phenotype
+)
+
+adiv <- subset(adiv, select = -Chao1.se.chao1)
+adiv$Disease <- as.factor(adiv$Disease)
+adiv$Age <- as.factor(adiv$Age)
+
+# plot
+
+ggplot(adiv, aes(Disease, Shannon)) +
+  geom_boxplot()
+```
+
+```{r}
+ps_phylum <- microbiome::aggregate_rare(physeq,
+  level = "Phylum",
+  detection = 0.1,
+  prevalence = 0
+)
+
+abund_df <- microbiomeutilities::phy_to_ldf(
+  ps_phylum,
+  transform.counts = "compositional"
+)
+
+ggplot(abund_df, aes(x = Sam_rep, y = Abundance, fill = Phylum)) +
+  geom_bar(position = "fill",
+    stat = "identity"
+  )
+```
+
+
+```{r}
+# standard error
+se <- function(x) sd(x) / sqrt(length(x))
+
+top_phylum <- abund_df %>%
+  group_by(Phylum) %>%
+  summarise(mean_abundance = mean(Abundance),
+            se = se(Abundance),
+            median = median(Abundance),
+            q1 = quantile(Abundance)[2],
+            q3 = quantile(Abundance)[4]) %>%
+  ungroup()
+
+top_phylum <- top_phylum %>% arrange(desc(mean_abundance))
+top_phylum <- as.data.frame(top_phylum)
+top_phyla <- c("p__Bacillota_A",
+               "p__Firmicutes_A",
+               "p__Proteobacteria",
+               "p__Firmicutes_C",
+               "p__Actinobacteriota")
+
+
+abund_df <- abund_df %>% 
+  dplyr::mutate(pick_Phylum = ifelse(Phylum %in%
+                                       top.phyla,
+                                     yes = Phylum,
+                                     "Others"))
+
+# Plot
+abund_df$pick_Phylum <- as.factor(abund_df$pick_Phylum)
+abund_df$pick_Phylum <- factor(abund_df$pick_Phylum,
+  levels = c(top.phyla, "Others")
+) 
+
+abund_df <- abund_df[order(abund_df$host.age, decreasing = F),]
+
+abund_plot <-
+  ggplot(abund_df, aes(x = Sam_rep, y = Abundance, fill = pick_Phylum)) +
+  geom_bar(position = "fill", stat = "identity") +
+  scale_fill_manual(values = c("p__Bacteroidota" = "#6388B4",
+                               "p__Firmicutes_A" = "#FFAE34",
+                               "p__Proteobacteria" = "#EF6F6A",
+                               "p__Firmicutes_C" = "#8CC2CA",
+                               "p__Actinobacteriota" = "#F1FAEE",
+                               "Others" = "grey75"),
+    breaks = c(top.phyla, "Others"),
+  ) +
+  theme_classic() +
+  scale_y_continuous(expand = c(0, 0)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+```
+
