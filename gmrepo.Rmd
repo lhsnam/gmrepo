@@ -3,6 +3,7 @@ library(phyloseq)
 library(ggplot2)
 library(microbiome)
 library(microbiomeutilities)
+library(ranacapa)
 ```
 
 ```{r}
@@ -35,6 +36,57 @@ tax <- tax_table(as.matrix(taxa_df))
 physeq <- phyloseq(otu, tax, sampledata)
 ```
 
+# Remove singleton
+```{r}
+#sort sample total reads, prune taxa
+all.ps <- phyloseq::prune_taxa(phyloseq::taxa_sums(physeq) > 0, physeq)
+
+#explore singleton
+all.tx.pres <- rowSums(abundances(all.ps) > 0)
+all.singleton <- as.vector(
+  as.matrix(
+    tax_table(all.ps)[names(which(all.tx.pres == 1)), "Genus"]
+  )
+)
+all.singleton #793 singleton taxa
+
+names(all.singleton) <- rownames(
+  tax_table(all.ps)[names(which(all.tx.pres == 1)), "Genus"]
+)
+sort(table(all.singleton),
+     decreasing = TRUE)
+
+## most common singleton taxa are
+
+#counts of each singleton taxa
+sort(taxa_sums(all.ps)[names(all.singleton)], decreasing = TRUE)
+summary(taxa_sums(all.ps)[names(all.singleton)]) #median 198 // 3rd quartile 515
+
+table(
+  all.singleton[names(which(taxa_sums(all.ps)[names(all.singleton)] < 515))]
+)
+all.taxa.rm <- names(which(taxa_sums(all.ps)[names(all.singleton)] < 515))
+
+## Remove singleton taxa that have read abundance < 515 reads
+all.fil <- prune_taxa(!(taxa_names(all.ps) %in% all.taxa.rm), all.ps)
+all.fil #3985 taxa
+summary(sample_sums(all.fil) / sample_sums(all.ps)) #median 100%
+
+all.ggrare <- ggrare(
+  all.fil,
+  step = 100,
+  label = NULL,
+  color = "associated.phenotype"
+)
+all.ggrare.plot <- all.ggrare +
+  xlim(0, 3000) +
+  theme(legend.position = "bottom") +
+  theme_classic()
+
+all.ggrare.plot
+
+sort(sample_sums(all.fil))
+```
 
 # PCoA
 ```{r}
@@ -103,7 +155,7 @@ top_phyla <- c("p__Bacillota_A",
                "p__Actinobacteriota")
 
 
-abund_df <- abund_df %>% 
+abund_df <- abund_df %>%
   dplyr::mutate(pick_Phylum = ifelse(Phylum %in%
                                        top.phyla,
                                      yes = Phylum,
@@ -113,9 +165,9 @@ abund_df <- abund_df %>%
 abund_df$pick_Phylum <- as.factor(abund_df$pick_Phylum)
 abund_df$pick_Phylum <- factor(abund_df$pick_Phylum,
   levels = c(top.phyla, "Others")
-) 
+)
 
-abund_df <- abund_df[order(abund_df$host.age, decreasing = F),]
+abund_df <- abund_df[order(abund_df$host.age, decreasing = FALSE), ]
 
 abund_plot <-
   ggplot(abund_df, aes(x = Sam_rep, y = Abundance, fill = pick_Phylum)) +
@@ -133,3 +185,6 @@ abund_plot <-
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
 
+
+```{r}
+```
