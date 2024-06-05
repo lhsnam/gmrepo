@@ -91,6 +91,13 @@ sort(sample_sums(all.fil))
 # PCoA
 ```{r}
 ord <- ordinate(physeq, "PCoA", "bray")
+
+#Plot scree plot
+phyloseq::plot_scree(ord) +
+  geom_bar(stat = "identity", fill = "firebrick") +
+  scale_x_discrete(limits = c(1:10)) +
+  labs(x = "Axis", y = "Proportion of Variance")
+
 plot_ordination(physeq, ord, type = "samples", color = "associated.phenotype")
 ```
 
@@ -248,4 +255,8 @@ abund_plot <-
   theme_classic() +
   scale_y_continuous(expand = c(0, 0)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+```
+
+```{r}
+
 ```
