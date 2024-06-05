@@ -90,7 +90,7 @@ sort(sample_sums(all.fil))
 
 # PCoA
 ```{r}
-ord <- ordinate(physeq, "PCoA", "bray")
+ord <- ordinate(all.fil, "PCoA", "bray")
 
 #Plot scree plot
 phyloseq::plot_scree(ord) +
@@ -98,7 +98,11 @@ phyloseq::plot_scree(ord) +
   scale_x_discrete(limits = c(1:10)) +
   labs(x = "Axis", y = "Proportion of Variance")
 
-plot_ordination(physeq, ord, type = "samples", color = "associated.phenotype")
+plot_ordination(all.fil, ord,
+  type = "samples",
+  shape = "associated.phenotype",
+  color = "project.ID"
+)
 ```
 
 # A-div
@@ -133,7 +137,7 @@ ggplot(adiv, aes(Disease, Shannon)) +
 
 # Tukey post hoc test
 ```{r}
-adiv 
+adiv
 #Shannon
 shan_div <- adiv[, c("Shannon", "Disease")]
 tukey_shan <- TukeyHSD(aov(lm(Shannon ~ Disease,
@@ -148,7 +152,7 @@ tukey_simp <- TukeyHSD(aov(lm(Simpson ~ Disease,
                               simp_div)))$Disease
 tukey_simp <- as.data.frame(tukey_simp)
 
-tukey_simp[order(tukey_simp$`p adj`),]
+tukey_simp[order(tukey_simp$`p adj`), ]
 
 #Chao1
 chao1_div <- adiv[, c("Chao1", "Disease")]
