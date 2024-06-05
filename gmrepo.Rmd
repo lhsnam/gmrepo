@@ -79,7 +79,7 @@ all.ggrare <- ggrare(
   color = "associated.phenotype"
 )
 all.ggrare.plot <- all.ggrare +
-  xlim(0, 3000) +
+  # xlim(0, 3000) +
   theme(legend.position = "bottom") +
   theme_classic()
 
