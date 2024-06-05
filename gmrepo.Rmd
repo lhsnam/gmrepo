@@ -112,6 +112,8 @@ adiv <- data.frame(
 )
 
 adiv <- subset(adiv, select = -Chao1.se.chao1)
+names(adiv)[3] <- "Chao1"
+
 adiv$Disease <- as.factor(adiv$Disease)
 adiv$Age <- as.factor(adiv$Age)
 
@@ -127,6 +129,34 @@ ggplot(adiv, aes(Disease, Shannon)) +
     method = "wilcox.test",
     paired = FALSE
   )
+```
+
+# Tukey post hoc test
+```{r}
+adiv 
+#Shannon
+shan_div <- adiv[, c("Shannon", "Disease")]
+tukey_shan <- TukeyHSD(aov(lm(Shannon ~ Disease,
+                              shan_div)))$Disease
+tukey_shan <- as.data.frame(tukey_shan)
+
+tukey_shan[order(tukey_shan$`p adj`), ]
+
+#Simpson
+simp_div <- adiv[, c("Simpson", "Disease")]
+tukey_simp <- TukeyHSD(aov(lm(Simpson ~ Disease,
+                              simp_div)))$Disease
+tukey_simp <- as.data.frame(tukey_simp)
+
+tukey_simp[order(tukey_simp$`p adj`),]
+
+#Chao1
+chao1_div <- adiv[, c("Chao1", "Disease")]
+tukey_chao1 <- TukeyHSD(aov(lm(Chao1 ~ Disease,
+                               chao1_div)))$Disease
+tukey_chao1 <- as.data.frame(tukey_chao1)
+
+tukey_chao1[order(tukey_chao1$`p adj`), ]
 ```
 
 ```{r}
@@ -255,8 +285,4 @@ abund_plot <-
   theme_classic() +
   scale_y_continuous(expand = c(0, 0)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
-```
-
-```{r}
-
 ```
