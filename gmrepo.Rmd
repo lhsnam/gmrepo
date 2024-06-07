@@ -7,6 +7,8 @@ library(ranacapa)
 library(plotly)
 
 library(microViz)
+library(ggpubr)
+library(htmlwidgets)
 
 library(ANCOMBC)
 library(Maaslin2)
@@ -30,7 +32,11 @@ sample_names(sampledata) <- meta_df$run.ID
 head(sampledata)
 
 # count table
-abs_count_df <- read.csv("data/alternative/absolute_count_raw.csv", sep = "\t", header = TRUE)
+abs_count_df <- read.csv(
+  "data/alternative/absolute_count_raw.csv",
+  sep = "\t",
+  header = TRUE
+)
 rownames(abs_count_df) <- abs_count_df$query_name
 abs_count_df <- subset(abs_count_df, select = -query_name)
 otu <- otu_table(as.matrix(t(abs_count_df)), taxa_are_rows = TRUE)
@@ -238,14 +244,6 @@ abund_df <- abund_df[order(abund_df$host.age, decreasing = FALSE), ]
 abund_plot <-
   ggplot(abund_df, aes(x = Sam_rep, y = Abundance, fill = pick_Phylum)) +
   geom_bar(position = "fill", stat = "identity") +
-  # scale_fill_manual(values = c("p__Bacteroidota" = "#6388B4",
-  #                              "p__Firmicutes_A" = "#FFAE34",
-  #                              "p__Proteobacteria" = "#EF6F6A",
-  #                              "p__Firmicutes_C" = "#8CC2CA",
-  #                              "p__Actinobacteriota" = "#F1FAEE",
-  #                              "Others" = "grey75"),
-  #   breaks = c(top_phyla, "Others"),
-  # ) +
   theme_classic() +
   scale_y_continuous(expand = c(0, 0)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
@@ -293,14 +291,6 @@ abund_df <- abund_df[order(abund_df$host.age, decreasing = FALSE), ]
 abund_plot <-
   ggplot(abund_df, aes(x = Sam_rep, y = Abundance, fill = pick_Phylum)) +
   geom_bar(position = "fill", stat = "identity") +
-  # scale_fill_manual(values = c("p__Bacteroidota" = "#6388B4",
-  #                              "p__Firmicutes_A" = "#FFAE34",
-  #                              "p__Proteobacteria" = "#EF6F6A",
-  #                              "p__Firmicutes_C" = "#8CC2CA",
-  #                              "p__Actinobacteriota" = "#F1FAEE",
-  #                              "Others" = "grey75"),
-  #   breaks = c(top_phyla, "Others"),
-  # ) +
   theme_classic() +
   scale_y_continuous(expand = c(0, 0)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
@@ -308,96 +298,49 @@ abund_plot <-
 
 ```{r}
 ## update on heatmap plot functions
-make_hcb <- function(data, var, name = NULL, fillScale = NULL, ...) {
-      hcb <- ggplot(data=data, aes_string(x="index", y=1, fill=var)) + 
-            geom_raster(show.legend = T) +
-            scale_y_continuous(expand=c(0,0), breaks=1, labels=name) + 
-            scale_x_continuous(expand=c(0,0)) +
-            xlab(NULL) + ylab(NULL) +
-            theme(axis.title=element_blank(), axis.ticks=element_blank()) +
-            theme(axis.text.x=element_blank()) +
-            theme(axis.text.y=element_text(size=12, face="bold")) +
-            theme(plot.margin=unit(c(0,0,0,0),"lines")) +  
-            #axis.ticks.margin =unit(0,"null"), ...) +
-            guides(fill=F)
-      if(!is.null(fillScale)) hcb <- hcb + fillScale
-      return(hcb)
+make_hcb <- function(data, var, name = NULL, fill_scale = NULL, ...) {
+  hcb <- ggplot(data = data, aes_string(x = "index", y = 1, fill = var)) +
+    geom_raster(show.legend = TRUE) +
+    scale_y_continuous(expand = c(0, 0), breaks = 1, labels = name) +
+    scale_x_continuous(expand = c(0, 0)) +
+    xlab(NULL) + ylab(NULL) +
+    theme(axis.title = element_blank(), axis.ticks = element_blank()) +
+    theme(axis.text.x = element_blank()) +
+    theme(axis.text.y = element_text(size = 12, face = "bold")) +
+    theme(plot.margin = unit(c(0, 0, 0, 0), "lines")) +
+    guides(fill = FALSE)
+  if (!is.null(fill_scale)) hcb <- hcb + fill_scale
+  return(hcb)
 }
 
 mush <- function(hmap, hcbs) {
-      require(gtable)
-      require(grid)
+  require(gtable)
+  require(grid)
   require(gridExtra)
-      cbgs <- lapply(hcbs, ggplotGrob)
-      hmg <- ggplotGrob(hmap)
-      
-      # Make sure both plots have the same dimensions in grob objects
-      for (i in seq_along(cbgs)) {
-            cbgs[[i]] <- gtable_add_cols(cbgs[[i]], widths=unit(1,"null"), pos=8)
-            cbgs[[i]] <- gtable_add_cols(cbgs[[i]], widths=unit(1,"null"), pos=8)
-      }
-      ## Make sure that both plots have the same widths
-      cbWidths <- lapply(cbgs, function(x) x$widths)
-      maxWidth <- do.call(unit.pmax, cbWidths)
-      maxWidth <- unit.pmax(hmg$widths, maxWidth)
-      ## replace widths in each grob object with maxWidth
-      hmg$widths <- maxWidth
-      for (i in seq_along(cbgs)){
-            cbgs[[i]]$widths <- maxWidth
-      }
-      heights <- unit.c(unit(rep(1,length(cbgs)), "lines"), unit(1, "null"))
-      rval <- do.call(arrangeGrob, args = c(cbgs, list(hmg), ncol=1, heights=list(heights)))
-      return(rval)
+  cbgs <- lapply(hcbs, ggplotGrob)
+  hmg <- ggplotGrob(hmap)
+  # Make sure both plots have the same dimensions in grob objects
+  for (i in seq_along(cbgs)) {
+    cbgs[[i]] <- gtable_add_cols(cbgs[[i]], widths = unit(1, "null"), pos = 8)
+    cbgs[[i]] <- gtable_add_cols(cbgs[[i]], widths = unit(1, "null"), pos = 8)
+  }
+  ## Make sure that both plots have the same widths
+  cbwidths <- lapply(cbgs, function(x) x$widths)
+  maxwidth <- do.call(unit.pmax, cbwidths)
+  maxwidth <- unit.pmax(hmg$widths, maxwidth)
+  ## replace widths in each grob object with maxWidth
+  hmg$widths <- maxwidth
+  for (i in seq_along(cbgs)){
+    cbgs[[i]]$widths <- maxwidth
+  }
+  heights <- unit.c(unit(rep(1, length(cbgs)), "lines"), unit(1, "null"))
+  rval <- do.call(arrangeGrob,
+                  args = c(cbgs,
+                           list(hmg),
+                           ncol = 1,
+                           heights = list(heights)))
+  return(rval)
 }
-```
-
-```{r}
-#top.genus
-genus.ps <- tax_glom(all.fil, "Genus")
-genus.abund <- transform_sample_counts(genus.ps, function(OTU) OTU/sum(OTU))
-top.genus <- top_taxa(genus.abund, 20)
-top.genus.ps <- prune_taxa(top.genus, genus.abund)
-
-taxa.order <- names(sort(taxa_sums(top.genus.ps)))
-sample.order <- rownames(sample_data(top.genus.ps)[order(sample_data(top.genus.ps)$antibiotic_trt, sample_data(top.genus.ps)$day)])
-
-#phylum_cols <- c("Actinobacteria" = "#EEDD88", "Bacteroidetes" = "#77AADD", "Firmicutes" = "#EE8866", "Proteobacteria" = "#FFAABB",  "Fusobacteria" = "grey90")
-
-(hm <- plot_heatmap(top.genus.ps, 
-                    taxa.label="Species", 
-                    sample.order=sample.order,
-                    taxa.order=taxa.order) +
-    geom_tile(color = "grey10", size = 0.05) +
-    scale_fill_gradientn(colors = c("grey10", "#457B9D", "#A8DADC", "#F1FAEE", "#E63946"), 
-                         values=c(0, 0.25, 0.5, 0.75, 1),
-                         na.value = NA, 
-                         guide="colourbar", 
-                         name="Relative\nproportion") +
-  theme(axis.text.x = element_blank(),
-        axis.text.y = element_text(face = "italic", size = 15, color = "grey10"),
-        axis.title = element_blank(),
-        axis.ticks.x = element_blank(),
-        plot.margin = unit(c(0.1, 0.1, 0.1, 0.1),"in")
-        )
-)
-
-hcbdf <- data.frame(sample_data(top.genus.ps))[sample.order,]
-hcbdf$index <- seq(1,phyloseq::nsamples(top.genus.ps))
-hcb <- make_hcb(hcbdf, "day", name="Day", fillScale = scale_fill_manual(values = c("#ef476f", "#ffd166", "#26547c")))
-hcb <- hcb + annotate("text", x=tapply(hcbdf$index, hcbdf[,"day",drop=T], mean), y=1, label=levels(hcbdf[,"day",drop=T]), size=4, color = "white")
-
-#Age component
-hcbage <- make_hcb(hcbdf, "age_month", name="age_month", fillScale=scale_fill_gradientn(colours=c("#fff8ab",  "#b6c670", "#6c973c", "#0d690e"), values=rescale(c(0, 16,  25, 60)), na.value="black"))
-
-##Day component
-hcbday <- make_hcb(hcbdf, "day", name="Day",fillScale = scale_fill_manual(values=day_cols))
-
-
-#Antibiotic treatment
-hcbabt <- make_hcb(hcbdf, "antibiotic_trt", name="antibiotic_trt",fillScale = scale_fill_manual(values= c("yes" = "#087e8b", "no" =  "#ff5a5f", "NA" = "grey75")))
-
-big.hm <- mush(hm, list(hcbday, hcbabt))
-big.heatmap <- plot(ggarrange(big.hm))
 ```
 
 # Filter phyloseq
@@ -430,8 +373,7 @@ mas_1 <- Maaslin2(
 
 dfmas_res_1 <- mas_1$results
 
-fdr_mas_1 <- dfmas_res_1 %>%
-  dplyr::filter(qval < 0.05)
+fdr_mas_1 <- dfmas_res_1
 
 fdr_mas_1$Species <-  phyloseq::tax_table(ps_1)[fdr_mas_1$feature, "Species"]
 
@@ -503,18 +445,21 @@ output <- ancombc2(data = ps_1, assay_name = "counts", tax_level = "Family",
 volcano_1 <- ggplot(fdr_mas_1, aes(x = log2FoldChange,
                                    y = -log10(qval),
                                    Species = Species)) +
-  geom_hline(aes(yintercept = max(-log10(qval))), 
+  geom_hline(aes(yintercept = max(-log10(qval))),
              linetype = "dashed",
              color = "grey30") +
-  geom_point(data = subset(fdr_mas_1, qval > 0.05), size = 3, color = "grey30") +
-  geom_point(data = subset(fdr_mas_1, qval <= 0.05 & log2FoldChange < 0), size = 3, color = "#457b9d") +
-  geom_point(data = subset(fdr_mas_1, qval <= 0.05 & log2FoldChange > 0), size = 3, color = "#d62828") +
+  geom_point(data = subset(fdr_mas_1, qval > 0.05),
+             size = 3, color = "grey30") +
+  geom_point(data = subset(fdr_mas_1, qval <= 0.05 & log2FoldChange < 0),
+             size = 3, color = "#457b9d") +
+  geom_point(data = subset(fdr_mas_1, qval <= 0.05 & log2FoldChange > 0),
+             size = 3, color = "#d62828") +
   geom_hline(yintercept = -log10(0.05), col = "grey30",
              linetype = 1) +
   geom_vline(xintercept = 0, col = "grey30",
              linetype = 1) +
-  geom_text(aes(x = 3, y = -log10(0.03), label = "q-value = 0.05"), 
-            hjust = 1, vjust = 0, 
+  geom_text(aes(x = 3, y = -log10(0.03), label = "q-value = 0.05"),
+            hjust = 1, vjust = 0,
             color = "grey30",
             size = 5) +
   # scale_y_continuous(expand = c(0, 0), limits = c(0, 15)) +
@@ -522,20 +467,27 @@ volcano_1 <- ggplot(fdr_mas_1, aes(x = log2FoldChange,
   theme_classic() +
   labs(title = "Differential abundance",
        subtitle = "Healthy (left) vs CRC (right)") +
-#     guides(fill=guide_legend(override.aes=list(shape=21))) +
- theme(plot.title = element_text(size = 10, face = "bold", vjust = 0, hjust =0),
-       plot.subtitle = element_text(size = 10, color = "grey50", vjust = 0, hjust = 0),
-        #plot.margin = unit(c(0.5,0.5,0.5,1.5),"in"),
-       axis.title.x = element_text(vjust = 0, hjust = 0.5, size = 10),
-       axis.text.x = element_text( size = 10),
+  theme(plot.title = element_text(size = 10, face = "bold",
+                                  vjust = 0, hjust = 0),
+        plot.subtitle = element_text(size = 10,
+                                     color = "grey50",
+                                     vjust = 0, hjust = 0),
+        axis.title.x = element_text(vjust = 0, hjust = 0.5, size = 10),
+        axis.text.x = element_text(size = 10),
         axis.title.y = element_text(size = 10),
         axis.text.y = element_text(size = 10),
         axis.line.y.left = element_blank()) +
-  geom_segment(aes(x = -4, y = -Inf, xend = -4, yend = max(-log10(qval))), size = 1, linetype = "solid") +
-  geom_segment(aes(x = -4, y = max(-log10(qval)), xend = -4, yend = Inf), size = 1, linetype = "dotted")
-# )
-
+  geom_segment(aes(x = -4, y = -Inf,
+                   xend = -4, yend = max(-log10(qval))),
+               size = 1, linetype = "solid") +
+  geom_segment(aes(x = -4, y = max(-log10(qval)),
+                   xend = -4, yend = Inf),
+               size = 1, linetype = "dotted")
 
 ggplotly(volcano_1, tooltip = c("log2FoldChange", "-log10(qval)", "Species"))
-saveWidget(ggplotly(volcano_1, tooltip = c("log2FoldChange", "-log10(qval)", "Species")), file = "maaslin2.html")
+saveWidget(ggplotly(volcano_1,
+                    tooltip = c("log2FoldChange",
+                                "-log10(qval)",
+                                "Species")),
+           file = "maaslin2.html")
 ```
