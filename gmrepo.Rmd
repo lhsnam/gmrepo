@@ -4,26 +4,39 @@ library(ggplot2)
 library(microbiome)
 library(microbiomeutilities)
 library(ranacapa)
+library(plotly)
+
+library(microViz)
+
+library(ANCOMBC)
+library(Maaslin2)
 ```
 
 ```{r}
 # metadata
-meta_df <- read.csv("sample_data/total.csv", sep = ",", header = TRUE)
-rownames(meta_df) <- meta.df$run.ID
+meta_df <- read.csv("data/alternative/total.csv", sep = ",", header = TRUE)
+rownames(meta_df) <- meta_df$run.ID
+meta_df$associated.phenotype <- as.factor(meta_df$associated.phenotype)
+meta_df$host.age <- as.integer(meta_df$host.age)
+meta_df$BMI <- as.integer(meta_df$BMI)
 head(meta.df)
+
+summary(meta_df$associated.phenotype)
+summary(meta_df$host.age)
+summary(meta_df$BMI)
 
 sampledata <- sample_data(meta_df)
 sample_names(sampledata) <- meta_df$run.ID
 head(sampledata)
 
 # count table
-abs_count_df <- read.csv("absolute_count_raw.csv", sep = "\t", header = TRUE)
+abs_count_df <- read.csv("data/alternative/absolute_count_raw.csv", sep = "\t", header = TRUE)
 rownames(abs_count_df) <- abs_count_df$query_name
 abs_count_df <- subset(abs_count_df, select = -query_name)
 otu <- otu_table(as.matrix(t(abs_count_df)), taxa_are_rows = TRUE)
 
 # asv table
-taxa_df <- read.csv("tax_table.csv", sep = "\t", header = TRUE)
+taxa_df <- read.csv("data/alternative/tax_table.csv", sep = "\t", header = TRUE)
 rownames(taxa_df) <- taxa_df$Ident
 taxa_df <- subset(taxa_df, select = -c(Ident, X, Gtdb_representative))
 head(taxa_df)
@@ -31,7 +44,13 @@ head(taxa_df)
 tax <- tax_table(as.matrix(taxa_df))
 ```
 
+```{r}
+meta_df
 
+ggplot(meta_df, aes(associated.phenotype, host.age)) +
+  geom_boxplot(aes(fill = sex)) +
+  geom_jitter()
+```
 ```{r}
 physeq <- phyloseq(otu, tax, sampledata)
 ```
@@ -199,11 +218,7 @@ top_phylum <- abund_df %>%
 
 top_phylum <- top_phylum %>% arrange(desc(mean_abundance))
 top_phylum <- as.data.frame(top_phylum)
-top_phyla <- c("p__Bacillota_A",
-               "p__Firmicutes_A",
-               "p__Proteobacteria",
-               "p__Firmicutes_C",
-               "p__Actinobacteriota")
+top_phyla <- head(top_phylum$Phylum, n = 10)
 
 
 abund_df <- abund_df %>%
@@ -223,14 +238,14 @@ abund_df <- abund_df[order(abund_df$host.age, decreasing = FALSE), ]
 abund_plot <-
   ggplot(abund_df, aes(x = Sam_rep, y = Abundance, fill = pick_Phylum)) +
   geom_bar(position = "fill", stat = "identity") +
-  scale_fill_manual(values = c("p__Bacteroidota" = "#6388B4",
-                               "p__Firmicutes_A" = "#FFAE34",
-                               "p__Proteobacteria" = "#EF6F6A",
-                               "p__Firmicutes_C" = "#8CC2CA",
-                               "p__Actinobacteriota" = "#F1FAEE",
-                               "Others" = "grey75"),
-    breaks = c(top_phyla, "Others"),
-  ) +
+  # scale_fill_manual(values = c("p__Bacteroidota" = "#6388B4",
+  #                              "p__Firmicutes_A" = "#FFAE34",
+  #                              "p__Proteobacteria" = "#EF6F6A",
+  #                              "p__Firmicutes_C" = "#8CC2CA",
+  #                              "p__Actinobacteriota" = "#F1FAEE",
+  #                              "Others" = "grey75"),
+  #   breaks = c(top_phyla, "Others"),
+  # ) +
   theme_classic() +
   scale_y_continuous(expand = c(0, 0)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
@@ -278,15 +293,249 @@ abund_df <- abund_df[order(abund_df$host.age, decreasing = FALSE), ]
 abund_plot <-
   ggplot(abund_df, aes(x = Sam_rep, y = Abundance, fill = pick_Phylum)) +
   geom_bar(position = "fill", stat = "identity") +
-  scale_fill_manual(values = c("p__Bacteroidota" = "#6388B4",
-                               "p__Firmicutes_A" = "#FFAE34",
-                               "p__Proteobacteria" = "#EF6F6A",
-                               "p__Firmicutes_C" = "#8CC2CA",
-                               "p__Actinobacteriota" = "#F1FAEE",
-                               "Others" = "grey75"),
-    breaks = c(top_phyla, "Others"),
-  ) +
+  # scale_fill_manual(values = c("p__Bacteroidota" = "#6388B4",
+  #                              "p__Firmicutes_A" = "#FFAE34",
+  #                              "p__Proteobacteria" = "#EF6F6A",
+  #                              "p__Firmicutes_C" = "#8CC2CA",
+  #                              "p__Actinobacteriota" = "#F1FAEE",
+  #                              "Others" = "grey75"),
+  #   breaks = c(top_phyla, "Others"),
+  # ) +
   theme_classic() +
   scale_y_continuous(expand = c(0, 0)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+```
+
+```{r}
+## update on heatmap plot functions
+make_hcb <- function(data, var, name = NULL, fillScale = NULL, ...) {
+      hcb <- ggplot(data=data, aes_string(x="index", y=1, fill=var)) + 
+            geom_raster(show.legend = T) +
+            scale_y_continuous(expand=c(0,0), breaks=1, labels=name) + 
+            scale_x_continuous(expand=c(0,0)) +
+            xlab(NULL) + ylab(NULL) +
+            theme(axis.title=element_blank(), axis.ticks=element_blank()) +
+            theme(axis.text.x=element_blank()) +
+            theme(axis.text.y=element_text(size=12, face="bold")) +
+            theme(plot.margin=unit(c(0,0,0,0),"lines")) +  
+            #axis.ticks.margin =unit(0,"null"), ...) +
+            guides(fill=F)
+      if(!is.null(fillScale)) hcb <- hcb + fillScale
+      return(hcb)
+}
+
+mush <- function(hmap, hcbs) {
+      require(gtable)
+      require(grid)
+  require(gridExtra)
+      cbgs <- lapply(hcbs, ggplotGrob)
+      hmg <- ggplotGrob(hmap)
+      
+      # Make sure both plots have the same dimensions in grob objects
+      for (i in seq_along(cbgs)) {
+            cbgs[[i]] <- gtable_add_cols(cbgs[[i]], widths=unit(1,"null"), pos=8)
+            cbgs[[i]] <- gtable_add_cols(cbgs[[i]], widths=unit(1,"null"), pos=8)
+      }
+      ## Make sure that both plots have the same widths
+      cbWidths <- lapply(cbgs, function(x) x$widths)
+      maxWidth <- do.call(unit.pmax, cbWidths)
+      maxWidth <- unit.pmax(hmg$widths, maxWidth)
+      ## replace widths in each grob object with maxWidth
+      hmg$widths <- maxWidth
+      for (i in seq_along(cbgs)){
+            cbgs[[i]]$widths <- maxWidth
+      }
+      heights <- unit.c(unit(rep(1,length(cbgs)), "lines"), unit(1, "null"))
+      rval <- do.call(arrangeGrob, args = c(cbgs, list(hmg), ncol=1, heights=list(heights)))
+      return(rval)
+}
+```
+
+```{r}
+#top.genus
+genus.ps <- tax_glom(all.fil, "Genus")
+genus.abund <- transform_sample_counts(genus.ps, function(OTU) OTU/sum(OTU))
+top.genus <- top_taxa(genus.abund, 20)
+top.genus.ps <- prune_taxa(top.genus, genus.abund)
+
+taxa.order <- names(sort(taxa_sums(top.genus.ps)))
+sample.order <- rownames(sample_data(top.genus.ps)[order(sample_data(top.genus.ps)$antibiotic_trt, sample_data(top.genus.ps)$day)])
+
+#phylum_cols <- c("Actinobacteria" = "#EEDD88", "Bacteroidetes" = "#77AADD", "Firmicutes" = "#EE8866", "Proteobacteria" = "#FFAABB",  "Fusobacteria" = "grey90")
+
+(hm <- plot_heatmap(top.genus.ps, 
+                    taxa.label="Species", 
+                    sample.order=sample.order,
+                    taxa.order=taxa.order) +
+    geom_tile(color = "grey10", size = 0.05) +
+    scale_fill_gradientn(colors = c("grey10", "#457B9D", "#A8DADC", "#F1FAEE", "#E63946"), 
+                         values=c(0, 0.25, 0.5, 0.75, 1),
+                         na.value = NA, 
+                         guide="colourbar", 
+                         name="Relative\nproportion") +
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_text(face = "italic", size = 15, color = "grey10"),
+        axis.title = element_blank(),
+        axis.ticks.x = element_blank(),
+        plot.margin = unit(c(0.1, 0.1, 0.1, 0.1),"in")
+        )
+)
+
+hcbdf <- data.frame(sample_data(top.genus.ps))[sample.order,]
+hcbdf$index <- seq(1,phyloseq::nsamples(top.genus.ps))
+hcb <- make_hcb(hcbdf, "day", name="Day", fillScale = scale_fill_manual(values = c("#ef476f", "#ffd166", "#26547c")))
+hcb <- hcb + annotate("text", x=tapply(hcbdf$index, hcbdf[,"day",drop=T], mean), y=1, label=levels(hcbdf[,"day",drop=T]), size=4, color = "white")
+
+#Age component
+hcbage <- make_hcb(hcbdf, "age_month", name="age_month", fillScale=scale_fill_gradientn(colours=c("#fff8ab",  "#b6c670", "#6c973c", "#0d690e"), values=rescale(c(0, 16,  25, 60)), na.value="black"))
+
+##Day component
+hcbday <- make_hcb(hcbdf, "day", name="Day",fillScale = scale_fill_manual(values=day_cols))
+
+
+#Antibiotic treatment
+hcbabt <- make_hcb(hcbdf, "antibiotic_trt", name="antibiotic_trt",fillScale = scale_fill_manual(values= c("yes" = "#087e8b", "no" =  "#ff5a5f", "NA" = "grey75")))
+
+big.hm <- mush(hm, list(hcbday, hcbabt))
+big.heatmap <- plot(ggarrange(big.hm))
+```
+
+# Filter phyloseq
+```{r}
+ps_1 <- ps_filter(all.fil, associated.phenotype != "D000236") # Health vs CRC
+ps_2 <- ps_filter(all.fil, associated.phenotype != "D015179") # Health vs Ad
+ps_3 <- ps_filter(all.fil, associated.phenotype != "D006262") # CRC vs Ad
+```
+
+# Differential abundance
+
+```{r}
+mas_1 <- Maaslin2(
+  input_data = data.frame(otu_table(ps_1)),
+  input_metadata = data.frame(sample_data(ps_1)),
+  output = "output/",
+  min_abundance = 0,
+  min_prevalence = 0,
+  normalization = "NONE",
+  transform = "LOG",
+  analysis_method = "LM",
+  fixed_effects = "associated.phenotype",
+  random_effects = c("host.age", "sex", "BMI"),
+  reference = "run.ID",
+  plot_heatmap = FALSE,
+  plot_scatter = FALSE,
+  standardize = FALSE,
+  cores = 22
+)
+
+dfmas_res_1 <- mas_1$results
+
+fdr_mas_1 <- dfmas_res_1 %>%
+  dplyr::filter(qval < 0.05)
+
+fdr_mas_1$Species <-  phyloseq::tax_table(ps_1)[fdr_mas_1$feature, "Species"]
+
+dim(fdr_mas_1) #307 species
+head(fdr_mas_1[order(fdr_mas_1$coef, decreasing = TRUE), ], n = 50)
+
+fc_mas_1 <- exp(fdr_mas_1$coef) ## Antilog coef
+fdr_mas_1$log2FoldChange <- log2(fc_mas_1)
+rownames(fdr_mas_1) <- fdr_mas_1$feature
+
+fdr_mas_1$Species <- as.character(unclass(fdr_mas_1$Species))
+```
+
+# ANCOMBC
+```{r}
+ps_1
+ps_1_keep <- prune_taxa(rowSums(abundances(ps_1) > 0) >= 17,
+  ps_1
+) #at least 17 samples = 10% of the pool
+patient.17.keep #134 samples and 222 taxa
+summary(sample_sums(ps_1_keep) / sample_sums(ps_1)) #98.19% data is covered
+
+#----------#
+#ANCOMBC
+ancom_1 <- ancombc(data = ps_1_keep,
+                   formula = "run.ID + associated.phenotype",
+                   tax_level = NULL,
+                   p_adj_method = "fdr",
+                   lib_cut = 1000,
+                   prv_cut = 0.001,
+                   group = "associated.phenotype",
+                   struc_zero = TRUE,
+                   neg_lb = TRUE,
+                   tol = 1e-05,
+                   alpha = 0.05,
+                   global = FALSE)
+
+output <- ancombc2(data = ps_1, assay_name = "counts", tax_level = "Family",
+                   fix_formula = "run.ID + associated.phenotype",
+                   rand_formula = NULL,
+                   p_adj_method = "holm", pseudo_sens = TRUE,
+                   prv_cut = 0.10, lib_cut = 1000, s0_perc = 0.05,
+                   group = "associated.phenotype",
+                   struc_zero = TRUE, neg_lb = TRUE,
+                   alpha = 0.05, n_cl = 2, verbose = TRUE,
+                   global = TRUE, pairwise = TRUE, dunnet = TRUE, trend = TRUE,
+                   iter_control = list(tol = 1e-2, max_iter = 20,
+                                       verbose = TRUE),
+                   em_control = list(tol = 1e-5, max_iter = 100),
+                   lme_control = lme4::lmerControl(),
+                   mdfdr_control = list(fwer_ctrl_method = "holm", B = 100),
+                   trend_control = list(contrast = list(matrix(c(1, 0, -1, 1),
+                                                               nrow = 2,
+                                                               byrow = TRUE),
+                                                        matrix(c(-1, 0, 1, -1),
+                                                               nrow = 2,
+                                                               byrow = TRUE),
+                                                        matrix(c(1, 0, 1, -1),
+                                                               nrow = 2,
+                                                               byrow = TRUE)),
+                                        node = list(2, 2, 1),
+                                        solver = "ECOS",
+                                        B = 10))
+## consider conserve=TRUE -> "sample size > 30" = large
+```
+
+# Visualization
+```{r}
+volcano_1 <- ggplot(fdr_mas_1, aes(x = log2FoldChange,
+                                   y = -log10(qval),
+                                   Species = Species)) +
+  geom_hline(aes(yintercept = max(-log10(qval))), 
+             linetype = "dashed",
+             color = "grey30") +
+  geom_point(data = subset(fdr_mas_1, qval > 0.05), size = 3, color = "grey30") +
+  geom_point(data = subset(fdr_mas_1, qval <= 0.05 & log2FoldChange < 0), size = 3, color = "#457b9d") +
+  geom_point(data = subset(fdr_mas_1, qval <= 0.05 & log2FoldChange > 0), size = 3, color = "#d62828") +
+  geom_hline(yintercept = -log10(0.05), col = "grey30",
+             linetype = 1) +
+  geom_vline(xintercept = 0, col = "grey30",
+             linetype = 1) +
+  geom_text(aes(x = 3, y = -log10(0.03), label = "q-value = 0.05"), 
+            hjust = 1, vjust = 0, 
+            color = "grey30",
+            size = 5) +
+  # scale_y_continuous(expand = c(0, 0), limits = c(0, 15)) +
+  scale_x_continuous(expand = c(0, 0), limits = c(-4, 4))  +
+  theme_classic() +
+  labs(title = "Differential abundance",
+       subtitle = "Healthy (left) vs CRC (right)") +
+#     guides(fill=guide_legend(override.aes=list(shape=21))) +
+ theme(plot.title = element_text(size = 10, face = "bold", vjust = 0, hjust =0),
+       plot.subtitle = element_text(size = 10, color = "grey50", vjust = 0, hjust = 0),
+        #plot.margin = unit(c(0.5,0.5,0.5,1.5),"in"),
+       axis.title.x = element_text(vjust = 0, hjust = 0.5, size = 10),
+       axis.text.x = element_text( size = 10),
+        axis.title.y = element_text(size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.line.y.left = element_blank()) +
+  geom_segment(aes(x = -4, y = -Inf, xend = -4, yend = max(-log10(qval))), size = 1, linetype = "solid") +
+  geom_segment(aes(x = -4, y = max(-log10(qval)), xend = -4, yend = Inf), size = 1, linetype = "dotted")
+# )
+
+
+ggplotly(volcano_1, tooltip = c("log2FoldChange", "-log10(qval)", "Species"))
+saveWidget(ggplotly(volcano_1, tooltip = c("log2FoldChange", "-log10(qval)", "Species")), file = "maaslin2.html")
 ```
