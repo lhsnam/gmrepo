@@ -363,7 +363,7 @@ mas_1 <- Maaslin2(
   transform = "LOG",
   analysis_method = "LM",
   fixed_effects = "associated.phenotype",
-  random_effects = c("host.age", "sex", "BMI"),
+  random_effects = c("host.age", "BMI"),
   reference = "run.ID",
   plot_heatmap = FALSE,
   plot_scatter = FALSE,
@@ -490,4 +490,543 @@ saveWidget(ggplotly(volcano_1,
                                 "-log10(qval)",
                                 "Species")),
            file = "maaslin2.html")
+```
+# Filter by studyID
+
+## PRJEB6070
+```{r}
+ps_6070 <- ps_filter(ps_1, project.ID == "PRJEB6070")
+
+# maaslin2
+
+mas_6070 <- Maaslin2(
+  input_data = data.frame(otu_table(ps_6070)),
+  input_metadata = data.frame(sample_data(ps_6070)),
+  output = "output_PRJEB6070/",
+  min_abundance = 0,
+  min_prevalence = 0,
+  normalization = "NONE",
+  transform = "LOG",
+  analysis_method = "LM",
+  max_significance = 0.05,
+  fixed_effects = "associated.phenotype",
+  random_effects = c("host.age", "BMI"),
+  reference = "run.ID",
+  plot_heatmap = TRUE,
+  plot_scatter = TRUE,
+  standardize = FALSE,
+  cores = 22
+)
+
+dfmas_res_6070 <- mas_6070$results
+fdr_mas_6070 <- dfmas_res_6070
+
+fdr_mas_6070$Species <- tax_table(ps_6070)[fdr_mas_6070$feature, "Species"]
+fdr_mas_6070$Genus <- tax_table(ps_6070)[fdr_mas_6070$feature, "Genus"]
+
+dim(fdr_mas_6070) #2842 species
+head(fdr_mas_6070[order(fdr_mas_6070$coef, decreasing = FALSE), ], n = 50)
+
+fc_mas_6070 <- exp(fdr_mas_6070$coef) ## Antilog coef
+fdr_mas_6070$log2FoldChange <- log2(fc_mas_6070)
+rownames(fdr_mas_6070) <- fdr_mas_6070$feature
+
+fdr_mas_6070$Species <- as.character(unclass(fdr_mas_6070$Species))
+write.csv(fdr_mas_6070, "output_PRJEB6070/species.csv")
+
+volcano_6070 <- ggplot(fdr_mas_6070, aes(x = log2FoldChange,
+                                         y = -log10(qval),
+                                         Species = Species)) +
+  geom_hline(aes(yintercept = max(-log10(qval))),
+             linetype = "dashed",
+             color = "grey30") +
+  geom_point(data = subset(fdr_mas_6070, qval > 0.05),
+             size = 3, color = "grey30") +
+  geom_point(data = subset(fdr_mas_6070, qval <= 0.05 & log2FoldChange < 0),
+             size = 3, color = "#457b9d") +
+  geom_point(data = subset(fdr_mas_6070, qval <= 0.05 & log2FoldChange > 0),
+             size = 3, color = "#d62828") +
+  geom_hline(yintercept = -log10(0.05), col = "grey30",
+             linetype = 1) +
+  geom_vline(xintercept = 0, col = "grey30",
+             linetype = 1) +
+  geom_text(aes(x = 3, y = -log10(0.03), label = "q-value = 0.05"),
+            hjust = 1, vjust = 0,
+            color = "grey30",
+            size = 5) +
+  # scale_y_continuous(expand = c(0, 0), limits = c(0, 15)) +
+  scale_x_continuous(expand = c(0, 0), limits = c(-4, 4))  +
+  theme_classic() +
+  labs(title = "Differential abundance",
+       subtitle = "Healthy (left) vs CRC (right)") +
+  theme(plot.title = element_text(size = 10, face = "bold",
+                                  vjust = 0, hjust = 0),
+        plot.subtitle = element_text(size = 10,
+                                     color = "grey50",
+                                     vjust = 0, hjust = 0),
+        axis.title.x = element_text(vjust = 0, hjust = 0.5, size = 10),
+        axis.text.x = element_text(size = 10),
+        axis.title.y = element_text(size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.line.y.left = element_blank()) +
+  geom_segment(aes(x = -4, y = -Inf,
+                   xend = -4, yend = max(-log10(qval))),
+               size = 1, linetype = "solid") +
+  geom_segment(aes(x = -4, y = max(-log10(qval)),
+                   xend = -4, yend = Inf),
+               size = 1, linetype = "dotted")
+
+ggplotly(volcano_6070, tooltip = c("log2FoldChange", "-log10(qval)", "Species"))
+saveWidget(ggplotly(volcano_6070,
+                    tooltip = c("log2FoldChange",
+                                "-log10(qval)",
+                                "Species")),
+           file = "maaslin2_6070.html")
+```
+
+# plot network
+```{r}
+##################################################################
+#-----------------------------------------------------------------
+## Taken from CCLASSO methodology
+# The CCLasso function from github
+################################################################################
+# File: cclasso.R
+# Aim : Correlation inference for compositional data through lasso
+#-------------------------------------------------------------------------------
+# Author : Fang Huaying (Peking University)
+# Email  : hyfang@pku.edu.cn
+# Date   : 2016-01-08
+# Version: 2.0
+#-------------------------------------------------------------------------------
+# Main function: cclasso(x, counts = FALSE, pseudo = 0.5, k_cv = 3,
+#                        lam_int = c(1e-4, 1), k_max = 20, n_boot = 20)
+#
+#  Input:
+#           x ------ n x p data matrix (row/column is sample/variable)
+#                    n samples & p compositional variables
+#      counts ------ Is the compositional data matrix a count matrix?
+#                    Default: FALSE
+#      pseudo ------ pseudo count if counts = TRUE
+#                    Default: 0.5
+#        k_cv ------ folds of cross validation
+#                    Default: 3
+#     lam_int ------ tuning parameter interval
+#                    Default: [1e-4, 1]
+#       k_max ------ maximum iterations for golden section method
+#                    Default: 20
+#      n_boot ------ Bootstrap times
+#                    Default: 20
+#  Output:
+#      A list structure contains:
+#       var_w ------ variance estimation
+#       cor_w ------ correlation estimation
+#      p_vals ------ p-values for elements of cor_w equal 0 or not
+#      lambda ------ final tuning parameter
+#     info_cv ------ information for cross validation
+#-------------------------------------------------------------------------------
+#CClasso function
+cclasso <- function(x, counts = FALSE, pseudo = 0.5, k_cv = 3,
+                    lam_int = c(1e-4, 1), k_max = 20, n_boot = 20) {
+  p <- ncol(x)
+
+  if (counts) {
+    x <- x + pseudo
+    x <- x / rowSums(x)
+  }
+  x <- log(x)
+  vx2 <- stats::var(x)
+
+  # Diagonal weight for loss function
+  rmean_vx2 <- rowMeans(vx2)
+  wd <- 1 / diag(vx2 - rmean_vx2 - rep(rmean_vx2, each = p) + mean(rmean_vx2))
+  wd2 <- sqrt(wd)
+  # Some global parameters for optimization with single lambda
+  rho <- 1
+  u_f <- eigen(diag(p) - 1 / p)$vectors
+  wd_u <- (t(u_f) %*% (wd * u_f))[-p, -p]
+  wd_u_eig <- eigen(wd_u)
+  d0_wd <- 1 / ((rep(wd_u_eig$values, each = p - 1) + wd_u_eig$values) /
+                  (2 * rho) + 1)
+  u0_wd <- wd_u_eig$vectors
+
+  # Golden section method for the selection of lambda (log10 scale)
+  sigma <- vx2
+  lam_int2 <- log10(range(lam_int))
+  a1 <- lam_int2[1]
+  b1 <- lam_int2[2]
+  # Store lambda and corresponding cross validation's loss
+  lams <- NULL
+  fvals <- NULL
+  # Two trial points in first
+  a2 <- a1 + 0.382 * (b1 - a1)
+  b2 <- a1 + 0.618 * (b1 - a1)
+  fb2 <- cv_loss_cclasso(lambda2 = 10^b2 / rho, x = x, k_cv = k_cv,
+                         sigma = sigma,
+                         wd = wd,
+                         u_f = u_f,
+                         u0_wd = u0_wd,
+                         d0_wd = d0_wd,
+                         wd2 = wd2)
+  lams <- c(lams, b2)
+  fvals <- c(fvals, fb2$cv_loss)
+  fa2 <- cv_loss_cclasso(lambda2 = 10^a2 / rho, x = x, k_cv = k_cv,
+                         sigma = fb2$sigma,
+                         wd = wd,
+                         u_f = u_f,
+                         u0_wd = u0_wd,
+                         d0_wd = d0_wd,
+                         wd2 = wd2)
+  lams <- c(lams, a2)
+  fvals <- c(fvals, fa2$cv_loss)
+  # Error tolerance for convergence
+  err_lam2 <- 1e-1 * max(1, lam_int2)
+  err_fval <- 1e-4
+  err <- b1 - a1
+  k <- 0
+  while (err > err_lam2 && k < k_max) {
+    fval_max <- max(fa2$cv_loss, fb2$cv_loss)
+
+    if (fa2$cv_loss > fb2$cv_loss) {
+      a1 <- a2
+      a2 <- b2
+      fa2 <- fb2
+      b2 <- a1 + 0.618 * (b1 - a1)
+      fb2 <- cv_loss_cclasso(lambda2 = 10^b2 / rho, x = x, k_cv = k_cv,
+                             sigma = fa2$sigma,
+                             wd = wd,
+                             u_f = u_f,
+                             u0_wd = u0_wd,
+                             d0_wd = d0_wd,
+                             wd2 = wd2)
+      lams <- c(lams, b2)
+      fvals <- c(fvals, fb2$cv_loss)
+    } else {
+      b1 <- b2
+      b2 <- a2
+      fb2 <- fa2
+      a2 <- a1 + 0.382 * (b1 - a1)
+      fa2 <- cv_loss_cclasso(lambda2 = 10^a2 / rho, x = x, k_cv = k_cv,
+                             sigma = fb2$sigma,
+                             wd = wd,
+                             u_f = u_f,
+                             u0_wd = u0_wd,
+                             d0_wd = d0_wd,
+                             wd2 = wd2)
+
+      lams <- c(lams, a2)
+      fvals <- c(fvals, fa2$cv_loss)
+    }
+    fval_min <- min(fa2$cv_loss, fb2$cv_loss)
+
+    k <- k + 1
+    err <- b1 - a1
+    if (abs(fval_max - fval_min) / (1 + fval_min) <= err_fval) {
+      break
+    }
+  }
+  info_cv <- list(lams = lams, fvals = fvals, k = k + 2,
+                  lam_int = 10^c(a1, b1))
+  if (a1 == lam_int2[1] || b1 == lam_int2[2]) {
+    cat("WARNING:\n", "\tOptimal lambda is near boundary! ([", 10^a1, ",",
+        10^b1, "])\n", sep = "")
+  }
+
+  lambda <- 10^((a2 + b2) / 2)
+  # Bootstrap for cclasso
+  lambda2 <- lambda / rho
+  info_boot <- boot_cclasso(x = x, sigma = fb2$sigma, lambda2 = lambda2,
+                            n_boot = n_boot,
+                            wd = wd,
+                            u_f = u_f,
+                            u0_wd = u0_wd,
+                            d0_wd = d0_wd)
+
+  return(list(var_w = info_boot$var_w, cor_w = info_boot$cor_w,
+              p_vals = info_boot$p_vals,
+              lambda = lambda,
+              info_cv = info_cv))
+}
+
+## Bootstrap for cclasso
+boot_cclasso <- function(x, sigma, lambda2, n_boot = 20,
+                         wd, u_f, u0_wd, d0_wd) {
+  n <- nrow(x)
+  p <- ncol(x)
+
+  # Store the result of bootstrap
+  cors_boot <- matrix(0, nrow = p * (p - 1) / 2, ncol = n_boot + 1)
+  vars_boot <- matrix(0, nrow = p, ncol = n_boot + 1)
+  cors_mat <- matrix(0, p, p)
+  ind_low <- lower.tri(cors_mat)
+
+  # Bootstrap procedure
+  sam_boot <- matrix(sample(1:n, size = n * n_boot, replace = TRUE),
+                     ncol = n_boot)
+  for (k in 1:n_boot) {
+    ind_samp <- sam_boot[, k]
+    sigma2 <- cclasso_sub(sigma = sigma, vx = var(x[ind_samp, ]),
+                          lambda2 = lambda2,
+                          wd = wd,
+                          u_f = u_f,
+                          u0_wd = u0_wd,
+                          d0_wd = d0_wd)
+    vars_boot[, k] <- diag(sigma2)
+    Is <- 1 / sqrt(vars_boot[, k])
+    cors_mat <- Is * sigma2 * rep(Is, each = p)
+    cors_boot[, k] <- cors_mat[ind_low]
+  }
+  Is <- 1 / sqrt(diag(sigma));
+  cors_mat <- sigma * Is * rep(Is, each = p)
+  cors_boot[, n_boot + 1] <- cors_mat[ind_low]
+  vars_boot[, n_boot + 1] <- diag(sigma)
+
+  #----------------------------------------
+  # Variance estimation via bootstrap
+  vars2 <- rowMeans(vars_boot)
+  #----------------------------------------
+  # Correlations' relationship for artificial null sample
+  tol_cor <- 1e-3
+  sam_art0 <- matrix(rnorm(n * p), nrow = n) * rep(sqrt(vars2), each = n)
+  cors_art0 <- cor(sam_art0)[ind_low]
+  sam_art <- sam_art0 - log(rowSums(exp(sam_art0)))
+  sigma_art <- cclasso_sub(sigma = sigma, vx = var(sam_art),
+                           lambda2 = lambda2,
+                           wd = wd,
+                           u_f = u_f,
+                           u0_wd = u0_wd,
+                           d0_wd = d0_wd)
+  Is <- 1 / sqrt(diag(sigma_art))
+  cors_mat <- Is * sigma_art * rep(Is, each = p)
+  cors_art2 <- cors_mat[ind_low]
+  # Bias of estimation between absolute data and cclasso of compositional data
+  cors0m2 <- log(((1 + cors_art0) * (1 - cors_art2)) /
+                   ((1 + cors_art2) * (1 - cors_art0)))
+  tmp <- abs(cors_art2) >= tol_cor
+  bias02 <- ifelse(sum(tmp), median(abs(cors0m2)[tmp]), 0)
+  # Modification of estimation for cclasso
+  cors2 <- log((1 + cors_boot) / (1 - cors_boot))
+  cors2mod <- (cors_boot >= tol_cor) * (cors2 + bias02) +
+    (cors_boot <= -tol_cor) * (cors2 - bias02)
+  cors2mod <- 1 - rowMeans(2 / (exp(cors2mod) + 1))
+  cors2_mat <- diag(p)
+  cors2_mat[ind_low] <- cors2mod
+  cors2_mat <- t(cors2_mat)
+  cors2_mat[ind_low] <- cors2mod
+  # P-values with null distribution of correlation estimations of absolute data
+  p_vals <- pt(cors2mod * sqrt((n - 2) / (1 - cors2mod^2)), df = n - 2)
+  p_vals <- ifelse(p_vals <= 0.5, p_vals, 1 - p_vals)
+  pval_mat <- diag(p)
+  pval_mat[ind_low] <- p_vals
+  pval_mat <- t(pval_mat)
+  pval_mat[ind_low] <- p_vals
+  #----------------------------------------
+
+  return(list(var_w = vars2, cor_w = cors2_mat, p_vals = pval_mat))
+}
+
+# cross validation's loss of cclasso for single lambda
+cv_loss_cclasso <- function(lambda2, x, k_cv, sigma,
+                            wd, u_f, u0_wd, d0_wd, wd2) {
+  n <- nrow(x)
+  p <- ncol(x)
+
+  n_b <- floor(n / k_cv)
+  cv_loss <- 0
+  for (k in 1:k_cv) {
+    itest <- (n_b * (k - 1) + 1):(n_b * k)
+    vxk <- stats::var(x[itest, ])
+    vx2k <- stats::var(x[-itest, ])
+
+    sigma <- cclasso_sub(sigma = sigma, vx = vx2k, lambda2 = lambda2,
+                         wd = wd,
+                         u_f = u_f,
+                         u0_wd = u0_wd,
+                         d0_wd = d0_wd)
+    dsig <- sigma - vxk
+    tmp <- rowMeans(dsig)
+    dsig <- dsig - tmp - rep(tmp, each = p) + mean(tmp)
+    cv_loss <- cv_loss + base::norm(wd2 * dsig, "F")^2
+  }
+
+  return(list(cv_loss = cv_loss, sigma = sigma))
+}
+#-------------------------------------------------------------------------------
+# cclasso for single lambda
+cclasso_sub <- function(sigma, vx, lambda2,
+                        wd, u_f, u0_wd, d0_wd,
+                        k_max = 200, x_tol = 1e-4) {
+  p <- ncol(sigma)
+  sigma2 <- sigma
+  LAMBDA <- matrix(0, p, p)
+  lambda2 <- matrix(lambda2, p, p)
+  diag(lambda2) <- 0
+
+  k <- 0
+  err <- 1
+  while (err > x_tol && k < k_max) {
+    # Update sigma
+    x_sigma <- t(u_f) %*% ((sigma2 - vx) - LAMBDA) %*% u_f
+    x_sigma[-p, -p] <- u0_wd %*% ((t(u0_wd) %*% x_sigma[-p, -p] %*% u0_wd) *
+                                    d0_wd) %*% t(u0_wd)
+    sigma_new <- vx + u_f %*% x_sigma %*% t(u_f)
+    # Update sigma2
+    A <- LAMBDA + sigma_new
+    sigma2_new <- (A > lambda2) * (A - lambda2) +
+      (A < -lambda2) * (A + lambda2)
+    # Update Lambda
+    LAMBDA <- LAMBDA + (sigma_new - sigma2_new)
+
+    err <- max(abs(sigma_new - sigma) / (abs(sigma) + 1),
+               abs(sigma2_new - sigma2) / (abs(sigma2) + 1))
+    k <- k + 1
+    sigma <- sigma_new
+    sigma2 <- sigma2_new
+  }
+
+  if (k >= k_max) {
+    cat("WARNING of cclasso_sub:\n", "\tMaximum Iteration:", k_max,
+        "&& Relative error:", err, "!\n")
+  }
+  return(sigma)
+}
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
+plot_cclasso <- function(cor.map, adj.matrix, phyloseq) {
+  # Loading library
+  require(igraph)
+  require(plyr)
+  require(RColorBrewer)
+  require(cols4all)
+  # create a graph object from the adjacency matrix
+  g <- graph.adjacency(adj.matrix)
+  # get the edges as well as the original
+  edgelist <- get.edgelist(g)
+  edge.cor <- apply(edgelist,
+                    MARGIN = 1,
+                    FUN = function(x) {
+                      cor.map[x[1], x[2]]
+                    })
+  edgelist <- data.frame(edgelist, edge.cor)
+  colnames(edgelist) <- c("from", "to", "cor")
+  # filter edges that link the same node
+  filt <- edgelist$from == edgelist$to
+  print("There are some edges that link the same node... now deleting...")
+  edgelist <- edgelist[!filt, ]
+  edgelist[, 1:2] <- t(apply(edgelist,
+                             MARGIN = 1,
+                             FUN = function(x) {
+                               sortEdges(x[1:2])
+                             }))
+  dupl <- duplicated(paste(edgelist$from, edgelist$to))
+  sum(dupl)
+  edgelist <- edgelist[!dupl, ]
+  # Take only one direction
+
+  # get the annotation for the nodes that are implicated in the network.
+  all.nodes <- unique(c(as.character(edgelist$from), as.character(edgelist$to)))
+  # Get the taxonomic classification and abundance of OTUs from original data.
+  feat_annot <- taxa_names(phyloseq)[as.numeric(all.nodes)] #OTU names
+  feat_annot <- as.data.frame(feat_annot)
+  rownames(feat_annot) <- feat_annot$feat_annot
+  feat_annot$name <- all.nodes
+  feat_annot <- feat_annot[, c(2, 1)]
+  feat_annot$size <- as.vector(taxa_sums(phyloseq)[as.numeric(all.nodes)]) # abundance
+  feat_annot$Family <- as.vector(tax_table(phyloseq)[as.numeric(all.nodes),"Family"]) #Assign taxonomy of the Family level
+  print("Finished first part")
+
+  # create the igraph object
+  gD <- graph.data.frame(d = edgelist, directed = FALSE, vertices = feat_annot)
+  degAll <- igraph::degree(gD, v = V(gD), mode = "all")
+  V(gD)$name.origin <- tax_table(phyloseq)[as.numeric(all.nodes), "Species"]
+  V(gD)$name <- tax_table(phyloseq)[as.numeric(all.nodes), "Species"]
+  V(gD)$otu <- rownames(tax_table(phyloseq)[as.numeric(all.nodes),])
+  gD <- set.vertex.attribute(gD, "degree", index = V(gD)$name, value = degAll)
+  #gD <- set.vertex.attribute(gD, "degree", index = V(gD)$otu, value = degAll)
+
+  # Calculate betweenness for all nodes
+  betAll <- igraph::betweenness(gD,
+                                v = V(gD),
+                                directed = FALSE) /
+                                (((vcount(gD) - 1) *
+                                (vcount(gD)-2)) / 2)
+  betAll.norm <- (betAll - min(betAll)) /
+                  (max(betAll) - min(betAll))
+  rm(betAll)
+
+  # Add new node/edge attributes based on the calculated node properties/similarities
+  gD <- set.vertex.attribute(gD, "betweenness", index = V(gD)$name, value = betAll.norm)
+
+  ##Calculate edge properties and add to the network
+  #Calculate Dice similarities between all pairs of nodes
+  dsAll <- similarity.dice(gD, vids = V(gD), mode = "all")
+  # The following function will transform a square matrix to an edge driven one and add 
+  # values to each edge
+  F1 <- function(x) {data.frame(dice = dsAll[which(V(gD)$name == as.character(x$from)), 
+                                           which(V(gD)$name == as.character(x$to))])}
+      edgelist.ext <- ddply(edgelist, .variables=c("from", "to"), 
+                      function(x) data.frame(F1(x))); dim(edgelist.ext)
+      gD <- set.edge.attribute(gD, "similarity", index = E(gD), value = 0)
+      E(gD)[as.character(edgelist.ext$from) %--% as.character(edgelist.ext$to)]$similarity <- as.numeric(edgelist.ext$dice)
+      
+      # Edge color based on type of correlations
+      E(gD)$color <- ifelse(E(gD)$cor < 0, "#EE6677", "#4477AA") # Red for Negative, Blue for Positive
+      # Vertex color based on the Order of the OTU
+      V(gD)$color <- c(c4a("classic20", 19),
+                       c4a("okabe", 7),
+                       c4a("rainbow", 23))[as.factor(V(gD)$Family)]
+
+  # resume the network
+      print(paste("There are", vcount(gD),
+                  "nodes and", ecount(gD), "edges"))
+      summary(gD)
+
+      # compute the layout
+      l <- layout.auto(gD)
+      par(oma=c(2,0.2,0.2,0.2))
+
+      pl <- plot(gD,
+            vertex.label = V(gD)$name, 
+            vertex.label.cex=1.2,
+            #vertex.size=(log10(V(gD)$size))^1.5/2,
+            vertex.size= 5,
+            vertex.label.dist=0.75, vertex.label.color='black',
+            vertex.label.font=3,
+            edge.arrow.size=2, asp=TRUE, 
+            #edge.width = abs(E(gD)$cor)*7,
+            edge.width = 4,
+            rescale=TRUE, layout=l*1.2
+           )
+      par(mfrow=c(1,1), fig=c(0,1,0,1), oma=c(0,0,0,0), mar=c(0,0,0,0), new=TRUE)
+      ## legend 
+      legend(1.5, 1, legend = levels(factor(tax_table(phyloseq)[as.numeric(all.nodes),"Family"])), 
+       fill = c(c4a("classic20", 19), c4a("okabe", 7), c4a("rainbow", 23)), xpd=TRUE,
+      bty='n', cex= 1, xjust = 0, ncol=1, text.width = 0.5 ,x.intersp = 0.1, title = "Family")
+      return(pl)
+}
+
+## To beautify the cclasso plot
+sortEdges <- function(var.name = c(node1, node2)) {
+  if (length(var.name) != 2) stop("Two variable names are needed")
+  if (var.name[2] < var.name[1]) {
+    b <- var.name[1]
+    var.name[1] <- var.name[2]
+    var.name[2] <- b
+  }
+  return(var.name)
+}
+#----------------------------------------------------------#
+```
+```{r}
+ps_6070
+
+#NetCoMi
+net_6070 <- netConstruct(data = ps_6070,
+                         measure = "spieceasi",
+                         normMethod = "none",
+                         zeroMethod = "multRepl",
+                         sparsMethod = "t-test",
+                         dissFunc = "signed",
+                         verbose = 3,
+                         cores = 16L)
 ```
