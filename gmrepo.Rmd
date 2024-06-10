@@ -772,12 +772,12 @@ boot_cclasso <- function(x, sigma, lambda2, n_boot = 20,
                           u0_wd = u0_wd,
                           d0_wd = d0_wd)
     vars_boot[, k] <- diag(sigma2)
-    Is <- 1 / sqrt(vars_boot[, k])
-    cors_mat <- Is * sigma2 * rep(Is, each = p)
+    is <- 1 / sqrt(vars_boot[, k])
+    cors_mat <- is * sigma2 * rep(is, each = p)
     cors_boot[, k] <- cors_mat[ind_low]
   }
-  Is <- 1 / sqrt(diag(sigma));
-  cors_mat <- sigma * Is * rep(Is, each = p)
+  is <- 1 / sqrt(diag(sigma))
+  cors_mat <- sigma * is * rep(is, each = p)
   cors_boot[, n_boot + 1] <- cors_mat[ind_low]
   vars_boot[, n_boot + 1] <- diag(sigma)
 
@@ -796,8 +796,8 @@ boot_cclasso <- function(x, sigma, lambda2, n_boot = 20,
                            u_f = u_f,
                            u0_wd = u0_wd,
                            d0_wd = d0_wd)
-  Is <- 1 / sqrt(diag(sigma_art))
-  cors_mat <- Is * sigma_art * rep(Is, each = p)
+  is <- 1 / sqrt(diag(sigma_art))
+  cors_mat <- is * sigma_art * rep(is, each = p)
   cors_art2 <- cors_mat[ind_low]
   # Bias of estimation between absolute data and cclasso of compositional data
   cors0m2 <- log(((1 + cors_art0) * (1 - cors_art2)) /
@@ -858,7 +858,7 @@ cclasso_sub <- function(sigma, vx, lambda2,
                         k_max = 200, x_tol = 1e-4) {
   p <- ncol(sigma)
   sigma2 <- sigma
-  LAMBDA <- matrix(0, p, p)
+  lamb_mat <- matrix(0, p, p)
   lambda2 <- matrix(lambda2, p, p)
   diag(lambda2) <- 0
 
@@ -866,16 +866,16 @@ cclasso_sub <- function(sigma, vx, lambda2,
   err <- 1
   while (err > x_tol && k < k_max) {
     # Update sigma
-    x_sigma <- t(u_f) %*% ((sigma2 - vx) - LAMBDA) %*% u_f
+    x_sigma <- t(u_f) %*% ((sigma2 - vx) - lamb_mat) %*% u_f
     x_sigma[-p, -p] <- u0_wd %*% ((t(u0_wd) %*% x_sigma[-p, -p] %*% u0_wd) *
                                     d0_wd) %*% t(u0_wd)
     sigma_new <- vx + u_f %*% x_sigma %*% t(u_f)
     # Update sigma2
-    A <- LAMBDA + sigma_new
+    A <- lamb_mat + sigma_new
     sigma2_new <- (A > lambda2) * (A - lambda2) +
       (A < -lambda2) * (A + lambda2)
     # Update Lambda
-    LAMBDA <- LAMBDA + (sigma_new - sigma2_new)
+    lamb_mat <- lamb_mat + (sigma_new - sigma2_new)
 
     err <- max(abs(sigma_new - sigma) / (abs(sigma) + 1),
                abs(sigma2_new - sigma2) / (abs(sigma2) + 1))
@@ -885,29 +885,30 @@ cclasso_sub <- function(sigma, vx, lambda2,
   }
 
   if (k >= k_max) {
-    cat("WARNING of cclasso_sub:\n", "\tMaximum Iteration:", k_max,
+    cat("WARNING of cclasso_sub:\n", "\tMaximum Iteration:",
+        k_max,
         "&& Relative error:", err, "!\n")
   }
   return(sigma)
 }
-#-------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------
-plot_cclasso <- function(cor.map, adj.matrix, phyloseq) {
+#------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
+plot_cclasso <- function(cor_map, adj_mat, phyloseq) {
   # Loading library
   require(igraph)
   require(plyr)
   require(RColorBrewer)
   require(cols4all)
   # create a graph object from the adjacency matrix
-  g <- graph.adjacency(adj.matrix)
+  g <- graph.adjacency(adj_mat)
   # get the edges as well as the original
   edgelist <- get.edgelist(g)
-  edge.cor <- apply(edgelist,
+  edge_cor <- apply(edgelist,
                     MARGIN = 1,
                     FUN = function(x) {
-                      cor.map[x[1], x[2]]
+                      cor_map[x[1], x[2]]
                     })
-  edgelist <- data.frame(edgelist, edge.cor)
+  edgelist <- data.frame(edgelist, edge_cor)
   colnames(edgelist) <- c("from", "to", "cor")
   # filter edges that link the same node
   filt <- edgelist$from == edgelist$to
@@ -931,78 +932,108 @@ plot_cclasso <- function(cor.map, adj.matrix, phyloseq) {
   rownames(feat_annot) <- feat_annot$feat_annot
   feat_annot$name <- all.nodes
   feat_annot <- feat_annot[, c(2, 1)]
-  feat_annot$size <- as.vector(taxa_sums(phyloseq)[as.numeric(all.nodes)]) # abundance
-  feat_annot$Family <- as.vector(tax_table(phyloseq)[as.numeric(all.nodes),"Family"]) #Assign taxonomy of the Family level
+  feat_annot$size <- as.vector(
+    taxa_sums(phyloseq)[as.numeric(all.nodes)]
+  ) # abundance
+  feat_annot$Family <- as.vector(
+    tax_table(phyloseq)[as.numeric(all.nodes), "Family"]
+  ) #Assign taxonomy of the Family level
   print("Finished first part")
 
   # create the igraph object
-  gD <- graph.data.frame(d = edgelist, directed = FALSE, vertices = feat_annot)
-  degAll <- igraph::degree(gD, v = V(gD), mode = "all")
-  V(gD)$name.origin <- tax_table(phyloseq)[as.numeric(all.nodes), "Species"]
-  V(gD)$name <- tax_table(phyloseq)[as.numeric(all.nodes), "Species"]
-  V(gD)$otu <- rownames(tax_table(phyloseq)[as.numeric(all.nodes),])
-  gD <- set.vertex.attribute(gD, "degree", index = V(gD)$name, value = degAll)
-  #gD <- set.vertex.attribute(gD, "degree", index = V(gD)$otu, value = degAll)
+  gd <- graph.data.frame(d = edgelist, directed = FALSE, vertices = feat_annot)
+  degall <- igraph::degree(gd, v = V(gd), mode = "all")
+  V(gd)$name.origin <- tax_table(phyloseq)[as.numeric(all.nodes), "Species"]
+  V(gd)$name <- tax_table(phyloseq)[as.numeric(all.nodes), "Species"]
+  V(gd)$otu <- rownames(tax_table(phyloseq)[as.numeric(all.nodes), ])
+  gd <- set.vertex.attribute(gd, "degree", index = V(gd)$name, value = degall)
+  #gd <- set.vertex.attribute(gd, "degree", index = V(gd)$otu, value = degall)
 
   # Calculate betweenness for all nodes
-  betAll <- igraph::betweenness(gD,
-                                v = V(gD),
+  betall <- igraph::betweenness(gd,
+                                v = V(gd),
                                 directed = FALSE) /
-                                (((vcount(gD) - 1) *
-                                (vcount(gD)-2)) / 2)
-  betAll.norm <- (betAll - min(betAll)) /
-                  (max(betAll) - min(betAll))
-  rm(betAll)
+    (((vcount(gd) - 1) * (vcount(gd) - 2)) / 2)
+  betall_norm <- (betall - min(betall)) /
+    (max(betall) - min(betall))
+  rm(betall)
 
-  # Add new node/edge attributes based on the calculated node properties/similarities
-  gD <- set.vertex.attribute(gD, "betweenness", index = V(gD)$name, value = betAll.norm)
+  # Add new node/edge attributes based on
+  # the calculated node properties/similarities
+  gd <- set.vertex.attribute(gd,
+                             "betweenness",
+                             index = V(gd)$name,
+                             value = betall_norm)
 
   ##Calculate edge properties and add to the network
   #Calculate Dice similarities between all pairs of nodes
-  dsAll <- similarity.dice(gD, vids = V(gD), mode = "all")
-  # The following function will transform a square matrix to an edge driven one and add 
-  # values to each edge
-  F1 <- function(x) {data.frame(dice = dsAll[which(V(gD)$name == as.character(x$from)), 
-                                           which(V(gD)$name == as.character(x$to))])}
-      edgelist.ext <- ddply(edgelist, .variables=c("from", "to"), 
-                      function(x) data.frame(F1(x))); dim(edgelist.ext)
-      gD <- set.edge.attribute(gD, "similarity", index = E(gD), value = 0)
-      E(gD)[as.character(edgelist.ext$from) %--% as.character(edgelist.ext$to)]$similarity <- as.numeric(edgelist.ext$dice)
-      
-      # Edge color based on type of correlations
-      E(gD)$color <- ifelse(E(gD)$cor < 0, "#EE6677", "#4477AA") # Red for Negative, Blue for Positive
-      # Vertex color based on the Order of the OTU
-      V(gD)$color <- c(c4a("classic20", 19),
-                       c4a("okabe", 7),
-                       c4a("rainbow", 23))[as.factor(V(gD)$Family)]
+  dsall <- similarity.dice(gd, vids = V(gd), mode = "all")
+  # The following function will transform a square matrix
+  # to an edge driven one and add values to each edge
+  f1 <- function(x) {
+    data.frame(dice = dsall[which(V(gd)$name == as.character(x$from)),
+                            which(V(gd)$name == as.character(x$to))])
+  }
+  edgelist_ext <- ddply(edgelist, .variables = c("from", "to"),
+                        function(x) data.frame(f1(x)))
+  dim(edgelist_ext)
+  gd <- set.edge.attribute(gd, "similarity", index = E(gd), value = 0)
+  E(gd)[as.character(edgelist_ext$from) %--%
+          as.character(edgelist_ext$to)]$similarity <- as.numeric(
+    edgelist_ext$dice
+  )
+  # Edge color based on type of correlations
+  E(gd)$color <- ifelse(E(gd)$cor < 0,
+                        "#EE6677",
+                        "#4477AA") # Red for Negative, Blue for Positive
+  # Vertex color based on the Order of the OTU
+  V(gd)$color <- c(c4a("classic20", 19),
+                   c4a("okabe", 7),
+                   c4a("rainbow", 23))[as.factor(V(gd)$Family)]
 
   # resume the network
-      print(paste("There are", vcount(gD),
-                  "nodes and", ecount(gD), "edges"))
-      summary(gD)
+  print(paste("There are", vcount(gd),
+              "nodes and", ecount(gd), "edges"))
+  summary(gd)
 
-      # compute the layout
-      l <- layout.auto(gD)
-      par(oma=c(2,0.2,0.2,0.2))
+  # compute the layout
+  l <- layout.auto(gd)
+  par(oma = c(2, 0.2, 0.2, 0.2))
 
-      pl <- plot(gD,
-            vertex.label = V(gD)$name, 
-            vertex.label.cex=1.2,
-            #vertex.size=(log10(V(gD)$size))^1.5/2,
-            vertex.size= 5,
-            vertex.label.dist=0.75, vertex.label.color='black',
-            vertex.label.font=3,
-            edge.arrow.size=2, asp=TRUE, 
-            #edge.width = abs(E(gD)$cor)*7,
-            edge.width = 4,
-            rescale=TRUE, layout=l*1.2
-           )
-      par(mfrow=c(1,1), fig=c(0,1,0,1), oma=c(0,0,0,0), mar=c(0,0,0,0), new=TRUE)
-      ## legend 
-      legend(1.5, 1, legend = levels(factor(tax_table(phyloseq)[as.numeric(all.nodes),"Family"])), 
-       fill = c(c4a("classic20", 19), c4a("okabe", 7), c4a("rainbow", 23)), xpd=TRUE,
-      bty='n', cex= 1, xjust = 0, ncol=1, text.width = 0.5 ,x.intersp = 0.1, title = "Family")
-      return(pl)
+  pl <- plot(gd,
+    vertex.label = V(gd)$name,
+    vertex.label.cex = 1.2,
+    #vertex.size=(log10(V(gd)$size))^1.5/2,
+    vertex.size = 5,
+    vertex.label.dist = 0.75, vertex.label.color = "black",
+    vertex.label.font = 3,
+    edge.arrow.size = 2, asp = TRUE,
+    #edge.width = abs(E(gd)$cor)*7,
+    edge.width = 4,
+    rescale = TRUE, layout = l * 1.2
+  )
+  par(mfrow = c(1, 1),
+      fig = c(0, 1, 0, 1),
+      oma = c(0, 0, 0, 0),
+      mar = c(0, 0, 0, 0),
+      new = TRUE)
+  ## legend
+  legend(1.5,
+         1,
+         legend = levels(factor(tax_table(phyloseq)[as.numeric(all.nodes),
+                                                    "Family"])),
+         fill = c(c4a("classic20", 19),
+                  c4a("okabe", 7),
+                  c4a("rainbow", 23)), 
+         xpd = TRUE,
+         bty='n',
+         cex= 1,
+         xjust = 0,
+         ncol=1,
+         text.width = 0.5,
+         x.intersp = 0.1,
+         title = "Family")
+  return(pl)
 }
 
 ## To beautify the cclasso plot
