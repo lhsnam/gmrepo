@@ -871,9 +871,9 @@ cclasso_sub <- function(sigma, vx, lambda2,
                                     d0_wd) %*% t(u0_wd)
     sigma_new <- vx + u_f %*% x_sigma %*% t(u_f)
     # Update sigma2
-    A <- lamb_mat + sigma_new
-    sigma2_new <- (A > lambda2) * (A - lambda2) +
-      (A < -lambda2) * (A + lambda2)
+    a <- lamb_mat + sigma_new
+    sigma2_new <- (a > lambda2) * (a - lambda2) +
+      (a < -lambda2) * (a + lambda2)
     # Update Lambda
     lamb_mat <- lamb_mat + (sigma_new - sigma2_new)
 
@@ -917,7 +917,7 @@ plot_cclasso <- function(cor_map, adj_mat, phyloseq) {
   edgelist[, 1:2] <- t(apply(edgelist,
                              MARGIN = 1,
                              FUN = function(x) {
-                               sortEdges(x[1:2])
+                               sortedges(x[1:2])
                              }))
   dupl <- duplicated(paste(edgelist$from, edgelist$to))
   sum(dupl)
@@ -1024,12 +1024,12 @@ plot_cclasso <- function(cor_map, adj_mat, phyloseq) {
                                                     "Family"])),
          fill = c(c4a("classic20", 19),
                   c4a("okabe", 7),
-                  c4a("rainbow", 23)), 
+                  c4a("rainbow", 23)),
          xpd = TRUE,
-         bty='n',
-         cex= 1,
+         bty = "n",
+         cex = 1,
          xjust = 0,
-         ncol=1,
+         ncol = 1,
          text.width = 0.5,
          x.intersp = 0.1,
          title = "Family")
@@ -1037,14 +1037,14 @@ plot_cclasso <- function(cor_map, adj_mat, phyloseq) {
 }
 
 ## To beautify the cclasso plot
-sortEdges <- function(var.name = c(node1, node2)) {
-  if (length(var.name) != 2) stop("Two variable names are needed")
-  if (var.name[2] < var.name[1]) {
-    b <- var.name[1]
-    var.name[1] <- var.name[2]
-    var.name[2] <- b
+sortedges <- function(var_name = c(node1, node2)) { # nolint
+  if (length(var_name) != 2) stop("Two variable names are needed")
+  if (var_name[2] < var_name[1]) {
+    b <- var_name[1]
+    var_name[1] <- var_name[2]
+    var_name[2] <- b
   }
-  return(var.name)
+  return(var_name)
 }
 #----------------------------------------------------------#
 ```
