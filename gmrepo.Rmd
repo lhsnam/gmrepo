@@ -989,7 +989,7 @@ plot_cclasso <- function(cor_map, adj_mat, phyloseq) {
                         "#EE6677",
                         "#4477AA") # Red for Negative, Blue for Positive
   # Vertex color based on the Order of the OTU
-  V(gd)$color <- c(c4a("classic20", 19),
+  V(gd)$color <- c(cols4all::c4a("classic20", 19),
                    c4a("okabe", 7),
                    c4a("rainbow", 23))[as.factor(V(gd)$Family)]
 
