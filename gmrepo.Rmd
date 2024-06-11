@@ -12,6 +12,8 @@ library(htmlwidgets)
 
 library(ANCOMBC)
 library(Maaslin2)
+
+library(cols4all)
 ```
 
 ```{r}
@@ -1060,4 +1062,18 @@ net_6070 <- netConstruct(data = ps_6070,
                          dissFunc = "signed",
                          verbose = 3,
                          cores = 16L)
+
+props_net_6070 <- netAnalyze(net_6070,
+                             centrLCC = FALSE,
+                             clustMethod = "cluster_fast_greedy",
+                             hubPar = "eigenvector",
+                             normDeg = FALSE,
+                             weightDeg = FALSE)
+
+#summary
+summary(props.props.net_6070)
+
+tax_table(ps_6070)[names(sort(props.net_6070$centralities$eigenv1,
+                              decreasing = TRUE)[1:10]), ]
+tax_table(ps_6070)[props.net_714$hubs$hubs1, ]
 ```
