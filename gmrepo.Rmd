@@ -514,8 +514,8 @@ mas_6070 <- Maaslin2(
   fixed_effects = "associated.phenotype",
   random_effects = c("host.age", "BMI"),
   reference = "run.ID",
-  plot_heatmap = TRUE,
-  plot_scatter = TRUE,
+  plot_heatmap = FALSE,
+  plot_scatter = FALSE,
   standardize = FALSE,
   cores = 22
 )
@@ -526,7 +526,7 @@ fdr_mas_6070 <- dfmas_res_6070
 fdr_mas_6070$Species <- tax_table(ps_6070)[fdr_mas_6070$feature, "Species"]
 fdr_mas_6070$Genus <- tax_table(ps_6070)[fdr_mas_6070$feature, "Genus"]
 
-dim(fdr_mas_6070) #2842 species
+dim(fdr_mas_6070) #591 species
 head(fdr_mas_6070[order(fdr_mas_6070$coef, decreasing = FALSE), ], n = 50)
 
 fc_mas_6070 <- exp(fdr_mas_6070$coef) ## Antilog coef
@@ -584,6 +584,421 @@ saveWidget(ggplotly(volcano_6070,
                                 "-log10(qval)",
                                 "Species")),
            file = "maaslin2_6070.html")
+```
+## PRJEB27928
+```{r}
+ps_7928 <- ps_filter(ps_1, project.ID == "PRJEB27928")
+
+# maaslin2
+
+mas_7928 <- Maaslin2(
+  input_data = data.frame(otu_table(ps_7928)),
+  input_metadata = data.frame(sample_data(ps_7928)),
+  output = "output_PRJEB27928/",
+  min_abundance = 0,
+  min_prevalence = 0,
+  normalization = "NONE",
+  transform = "LOG",
+  analysis_method = "LM",
+  max_significance = 0.05,
+  fixed_effects = "associated.phenotype",
+  random_effects = c("host.age", "BMI"),
+  reference = "run.ID",
+  plot_heatmap = FALSE,
+  plot_scatter = FALSE,
+  standardize = FALSE,
+  cores = 22
+)
+
+dfmas_res_7928 <- mas_7928$results
+fdr_mas_7928 <- dfmas_res_7928
+
+fdr_mas_7928$Species <- tax_table(ps_7928)[fdr_mas_7928$feature, "Species"]
+fdr_mas_7928$Genus <- tax_table(ps_7928)[fdr_mas_7928$feature, "Genus"]
+
+dim(fdr_mas_7928) #879 species
+head(fdr_mas_7928[order(fdr_mas_7928$coef, decreasing = FALSE), ], n = 50)
+
+fc_mas_7928 <- exp(fdr_mas_7928$coef) ## Antilog coef
+fdr_mas_7928$log2FoldChange <- log2(fc_mas_7928)
+rownames(fdr_mas_7928) <- fdr_mas_7928$feature
+
+fdr_mas_7928$Species <- as.character(unclass(fdr_mas_7928$Species))
+write.csv(fdr_mas_7928, "output_PRJEB27928/species.csv")
+
+volcano_7928 <- ggplot(fdr_mas_7928, aes(x = log2FoldChange,
+                                         y = -log10(qval),
+                                         Species = Species)) +
+  geom_hline(aes(yintercept = max(-log10(qval))),
+             linetype = "dashed",
+             color = "grey30") +
+  geom_point(data = subset(fdr_mas_7928, qval > 0.05),
+             size = 3, color = "grey30") +
+  geom_point(data = subset(fdr_mas_7928, qval <= 0.05 & log2FoldChange < 0),
+             size = 3, color = "#457b9d") +
+  geom_point(data = subset(fdr_mas_7928, qval <= 0.05 & log2FoldChange > 0),
+             size = 3, color = "#d62828") +
+  geom_hline(yintercept = -log10(0.05), col = "grey30",
+             linetype = 1) +
+  geom_vline(xintercept = 0, col = "grey30",
+             linetype = 1) +
+  geom_text(aes(x = 3, y = -log10(0.03), label = "q-value = 0.05"),
+            hjust = 1, vjust = 0,
+            color = "grey30",
+            size = 5) +
+  # scale_y_continuous(expand = c(0, 0), limits = c(0, 15)) +
+  scale_x_continuous(expand = c(0, 0), limits = c(-4, 4))  +
+  theme_classic() +
+  labs(title = "Differential abundance",
+       subtitle = "Healthy (left) vs CRC (right)") +
+  theme(plot.title = element_text(size = 10, face = "bold",
+                                  vjust = 0, hjust = 0),
+        plot.subtitle = element_text(size = 10,
+                                     color = "grey50",
+                                     vjust = 0, hjust = 0),
+        axis.title.x = element_text(vjust = 0, hjust = 0.5, size = 10),
+        axis.text.x = element_text(size = 10),
+        axis.title.y = element_text(size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.line.y.left = element_blank()) +
+  geom_segment(aes(x = -4, y = -Inf,
+                   xend = -4, yend = max(-log10(qval))),
+               size = 1, linetype = "solid") +
+  geom_segment(aes(x = -4, y = max(-log10(qval)),
+                   xend = -4, yend = Inf),
+               size = 1, linetype = "dotted")
+
+ggplotly(volcano_7928, tooltip = c("log2FoldChange", "-log10(qval)", "Species"))
+saveWidget(ggplotly(volcano_7928,
+                    tooltip = c("log2FoldChange",
+                                "-log10(qval)",
+                                "Species")),
+           file = "maaslin2_7928.html")
+```
+
+## PRJEB7774
+```{r}
+ps_7774 <- ps_filter(ps_1, project.ID == "PRJEB7774")
+
+# maaslin2
+
+mas_7774 <- Maaslin2(
+  input_data = data.frame(otu_table(ps_7774)),
+  input_metadata = data.frame(sample_data(ps_7774)),
+  output = "output_PRJEB7774/",
+  min_abundance = 0,
+  min_prevalence = 0,
+  normalization = "NONE",
+  transform = "LOG",
+  analysis_method = "LM",
+  max_significance = 0.05,
+  fixed_effects = "associated.phenotype",
+  random_effects = c("host.age", "BMI"),
+  reference = "run.ID",
+  plot_heatmap = FALSE,
+  plot_scatter = FALSE,
+  standardize = FALSE,
+  cores = 22
+)
+
+dfmas_res_7774 <- mas_7774$results
+fdr_mas_7774 <- dfmas_res_7774
+
+fdr_mas_7774$Species <- tax_table(ps_7774)[fdr_mas_7774$feature, "Species"]
+fdr_mas_7774$Genus <- tax_table(ps_7774)[fdr_mas_7774$feature, "Genus"]
+
+dim(fdr_mas_7774) #883 species
+head(fdr_mas_7774[order(fdr_mas_7774$coef, decreasing = FALSE), ], n = 50)
+
+fc_mas_7774 <- exp(fdr_mas_7774$coef) ## Antilog coef
+fdr_mas_7774$log2FoldChange <- log2(fc_mas_7774)
+rownames(fdr_mas_7774) <- fdr_mas_7774$feature
+
+fdr_mas_7774$Species <- as.character(unclass(fdr_mas_7774$Species))
+write.csv(fdr_mas_7774, "output_PRJEB7774/species.csv")
+
+volcano_7774 <- ggplot(fdr_mas_7774, aes(x = log2FoldChange,
+                                         y = -log10(qval),
+                                         Species = Species)) +
+  geom_hline(aes(yintercept = max(-log10(qval))),
+             linetype = "dashed",
+             color = "grey30") +
+  geom_point(data = subset(fdr_mas_7774, qval > 0.05),
+             size = 3, color = "grey30") +
+  geom_point(data = subset(fdr_mas_7774, qval <= 0.05 & log2FoldChange < 0),
+             size = 3, color = "#457b9d") +
+  geom_point(data = subset(fdr_mas_7774, qval <= 0.05 & log2FoldChange > 0),
+             size = 3, color = "#d62828") +
+  geom_hline(yintercept = -log10(0.05), col = "grey30",
+             linetype = 1) +
+  geom_vline(xintercept = 0, col = "grey30",
+             linetype = 1) +
+  geom_text(aes(x = 3, y = -log10(0.03), label = "q-value = 0.05"),
+            hjust = 1, vjust = 0,
+            color = "grey30",
+            size = 5) +
+  # scale_y_continuous(expand = c(0, 0), limits = c(0, 15)) +
+  scale_x_continuous(expand = c(0, 0), limits = c(-4, 4))  +
+  theme_classic() +
+  labs(title = "Differential abundance",
+       subtitle = "Healthy (left) vs CRC (right)") +
+  theme(plot.title = element_text(size = 10, face = "bold",
+                                  vjust = 0, hjust = 0),
+        plot.subtitle = element_text(size = 10,
+                                     color = "grey50",
+                                     vjust = 0, hjust = 0),
+        axis.title.x = element_text(vjust = 0, hjust = 0.5, size = 10),
+        axis.text.x = element_text(size = 10),
+        axis.title.y = element_text(size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.line.y.left = element_blank()) +
+  geom_segment(aes(x = -4, y = -Inf,
+                   xend = -4, yend = max(-log10(qval))),
+               size = 1, linetype = "solid") +
+  geom_segment(aes(x = -4, y = max(-log10(qval)),
+                   xend = -4, yend = Inf),
+               size = 1, linetype = "dotted")
+
+ggplotly(volcano_7774, tooltip = c("log2FoldChange", "-log10(qval)", "Species"))
+saveWidget(ggplotly(volcano_7774,
+                    tooltip = c("log2FoldChange",
+                                "-log10(qval)",
+                                "Species")),
+           file = "maaslin2_7774.html")
+```
+## PRJEB10878
+```{r}
+ps_0878 <- ps_filter(ps_1, project.ID == "PRJEB10878")
+
+# maaslin2
+
+mas_0878 <- Maaslin2(
+  input_data = data.frame(otu_table(ps_0878)),
+  input_metadata = data.frame(sample_data(ps_0878)),
+  output = "output_PRJEB10878/",
+  min_abundance = 0,
+  min_prevalence = 0,
+  normalization = "NONE",
+  transform = "LOG",
+  analysis_method = "LM",
+  max_significance = 0.05,
+  fixed_effects = "associated.phenotype",
+  random_effects = c("host.age", "BMI"),
+  reference = "run.ID",
+  plot_heatmap = FALSE,
+  plot_scatter = FALSE,
+  standardize = FALSE,
+  cores = 22
+)
+
+dfmas_res_0878 <- mas_0878$results
+fdr_mas_0878 <- dfmas_res_0878
+
+fdr_mas_0878$Species <- tax_table(ps_0878)[fdr_mas_0878$feature, "Species"]
+fdr_mas_0878$Genus <- tax_table(ps_0878)[fdr_mas_0878$feature, "Genus"]
+
+dim(fdr_mas_0878) #883 species
+head(fdr_mas_0878[order(fdr_mas_0878$coef, decreasing = FALSE), ], n = 50)
+
+fc_mas_0878 <- exp(fdr_mas_0878$coef) ## Antilog coef
+fdr_mas_0878$log2FoldChange <- log2(fc_mas_0878)
+rownames(fdr_mas_0878) <- fdr_mas_0878$feature
+
+fdr_mas_0878$Species <- as.character(unclass(fdr_mas_0878$Species))
+write.csv(fdr_mas_0878, "output_PRJEB10878/species.csv")
+
+volcano_0878 <- ggplot(fdr_mas_0878, aes(x = log2FoldChange,
+                                         y = -log10(qval),
+                                         Species = Species)) +
+  geom_hline(aes(yintercept = max(-log10(qval))),
+             linetype = "dashed",
+             color = "grey30") +
+  geom_point(data = subset(fdr_mas_0878, qval > 0.05),
+             size = 3, color = "grey30") +
+  geom_point(data = subset(fdr_mas_0878, qval <= 0.05 & log2FoldChange < 0),
+             size = 3, color = "#457b9d") +
+  geom_point(data = subset(fdr_mas_0878, qval <= 0.05 & log2FoldChange > 0),
+             size = 3, color = "#d62828") +
+  geom_hline(yintercept = -log10(0.05), col = "grey30",
+             linetype = 1) +
+  geom_vline(xintercept = 0, col = "grey30",
+             linetype = 1) +
+  geom_text(aes(x = 3, y = -log10(0.03), label = "q-value = 0.05"),
+            hjust = 1, vjust = 0,
+            color = "grey30",
+            size = 5) +
+  # scale_y_continuous(expand = c(0, 0), limits = c(0, 15)) +
+  scale_x_continuous(expand = c(0, 0), limits = c(-4, 4))  +
+  theme_classic() +
+  labs(title = "Differential abundance",
+       subtitle = "Healthy (left) vs CRC (right)") +
+  theme(plot.title = element_text(size = 10, face = "bold",
+                                  vjust = 0, hjust = 0),
+        plot.subtitle = element_text(size = 10,
+                                     color = "grey50",
+                                     vjust = 0, hjust = 0),
+        axis.title.x = element_text(vjust = 0, hjust = 0.5, size = 10),
+        axis.text.x = element_text(size = 10),
+        axis.title.y = element_text(size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.line.y.left = element_blank()) +
+  geom_segment(aes(x = -4, y = -Inf,
+                   xend = -4, yend = max(-log10(qval))),
+               size = 1, linetype = "solid") +
+  geom_segment(aes(x = -4, y = max(-log10(qval)),
+                   xend = -4, yend = Inf),
+               size = 1, linetype = "dotted")
+
+ggplotly(volcano_0878, tooltip = c("log2FoldChange", "-log10(qval)", "Species"))
+saveWidget(ggplotly(volcano_0878,
+                    tooltip = c("log2FoldChange",
+                                "-log10(qval)",
+                                "Species")),
+           file = "maaslin2_0878.html")
+```
+## PRJDB4176
+```{r}
+ps_4176 <- ps_filter(ps_1, project.ID == "PRJDB4176")
+
+# maaslin2
+
+mas_4176 <- Maaslin2(
+  input_data = data.frame(otu_table(ps_4176)),
+  input_metadata = data.frame(sample_data(ps_4176)),
+  output = "output_PRJDB4176/",
+  min_abundance = 0,
+  min_prevalence = 0,
+  normalization = "NONE",
+  transform = "LOG",
+  analysis_method = "LM",
+  max_significance = 0.05,
+  fixed_effects = "associated.phenotype",
+  random_effects = c("host.age", "BMI"),
+  reference = "run.ID",
+  plot_heatmap = FALSE,
+  plot_scatter = FALSE,
+  standardize = FALSE,
+  cores = 22
+)
+
+dfmas_res_4176 <- mas_4176$results
+fdr_mas_4176 <- dfmas_res_4176
+
+fdr_mas_4176$Species <- tax_table(ps_4176)[fdr_mas_4176$feature, "Species"]
+fdr_mas_4176$Genus <- tax_table(ps_4176)[fdr_mas_4176$feature, "Genus"]
+
+dim(fdr_mas_4176) #883 species
+head(fdr_mas_4176[order(fdr_mas_4176$coef, decreasing = FALSE), ], n = 50)
+
+fc_mas_4176 <- exp(fdr_mas_4176$coef) ## Antilog coef
+fdr_mas_4176$log2FoldChange <- log2(fc_mas_4176)
+rownames(fdr_mas_4176) <- fdr_mas_4176$feature
+
+fdr_mas_4176$Species <- as.character(unclass(fdr_mas_4176$Species))
+write.csv(fdr_mas_4176, "output_PRJEB4176/species.csv")
+
+volcano_4176 <- ggplot(fdr_mas_4176, aes(x = log2FoldChange,
+                                         y = -log10(qval),
+                                         Species = Species)) +
+  geom_hline(aes(yintercept = max(-log10(qval))),
+             linetype = "dashed",
+             color = "grey30") +
+  geom_point(data = subset(fdr_mas_4176, qval > 0.05),
+             size = 3, color = "grey30") +
+  geom_point(data = subset(fdr_mas_4176, qval <= 0.05 & log2FoldChange < 0),
+             size = 3, color = "#457b9d") +
+  geom_point(data = subset(fdr_mas_4176, qval <= 0.05 & log2FoldChange > 0),
+             size = 3, color = "#d62828") +
+  geom_hline(yintercept = -log10(0.05), col = "grey30",
+             linetype = 1) +
+  geom_vline(xintercept = 0, col = "grey30",
+             linetype = 1) +
+  geom_text(aes(x = 3, y = -log10(0.03), label = "q-value = 0.05"),
+            hjust = 1, vjust = 0,
+            color = "grey30",
+            size = 5) +
+  # scale_y_continuous(expand = c(0, 0), limits = c(0, 15)) +
+  scale_x_continuous(expand = c(0, 0), limits = c(-4, 4))  +
+  theme_classic() +
+  labs(title = "Differential abundance",
+       subtitle = "Healthy (left) vs CRC (right)") +
+  theme(plot.title = element_text(size = 10, face = "bold",
+                                  vjust = 0, hjust = 0),
+        plot.subtitle = element_text(size = 10,
+                                     color = "grey50",
+                                     vjust = 0, hjust = 0),
+        axis.title.x = element_text(vjust = 0, hjust = 0.5, size = 10),
+        axis.text.x = element_text(size = 10),
+        axis.title.y = element_text(size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.line.y.left = element_blank()) +
+  geom_segment(aes(x = -4, y = -Inf,
+                   xend = -4, yend = max(-log10(qval))),
+               size = 1, linetype = "solid") +
+  geom_segment(aes(x = -4, y = max(-log10(qval)),
+                   xend = -4, yend = Inf),
+               size = 1, linetype = "dotted")
+
+ggplotly(volcano_4176, tooltip = c("log2FoldChange", "-log10(qval)", "Species"))
+saveWidget(ggplotly(volcano_4176,
+                    tooltip = c("log2FoldChange",
+                                "-log10(qval)",
+                                "Species")),
+           file = "maaslin2_4176.html")
+```
+## Summary DA:
+```{r}
+fdr_mas_6070
+fdr_mas_7928
+fdr_mas_7774
+fdr_mas_4176
+
+fdr_mas_6070$study_ID <- "PRJEB6070"
+fdr_mas_7928$study_ID <- "PRJEB27928"
+fdr_mas_7774$study_ID <- "PRJEB7774"
+fdr_mas_0878$study_ID <- "PRJEB10878"
+fdr_mas_4176$study_ID <- "PRJEB4176"
+
+rownames(fdr_mas_6070) <- NULL
+rownames(fdr_mas_7928) <- NULL
+rownames(fdr_mas_7774) <- NULL
+rownames(fdr_mas_0878) <- NULL
+rownames(fdr_mas_4176) <- NULL
+
+combine_df <- rbind(fdr_mas_6070, fdr_mas_7928, fdr_mas_7774, fdr_mas_0878, fdr_mas_4176)
+# combine_df$study_ID <- as.factor(combine_df$study_ID)
+
+# filter significant biomarker
+significant_df <- subset(combine_df, qval <= 0.05)
+
+
+# Create a new variable for binned log2FoldChange values
+significant_df$log2FoldChange_binned <- cut(significant_df$log2FoldChange,
+                                            breaks = c(-6, -3, 0, 3, 6))
+
+# Create the plot
+biomarker_plot <- ggplot(significant_df,
+                         aes(x = Species,
+                             y = study_ID,
+                             fill = log2FoldChange_binned,
+                             log2FoldChange = log2FoldChange,
+                             qval = qval)) +
+  geom_tile(linejoin = "round") +
+  scale_fill_manual(values = c("#003049",
+                               "#669bbc",
+                               "#c1121f",
+                               "#780000"),
+                    breaks = levels(significant_df$log2FoldChange_binned)) +
+  coord_fixed(1) +
+  theme_classic() +
+  theme(axis.text.x = element_text(face = "italic",
+                                   angle = 45))
+ggplotly(biomarker_plot)
+saveWidget((ggplotly(biomarker_plot,
+                     tooltip = c("Species",
+                                 "log2FoldChange",
+                                 "qval"))),
+           file = "biomarker.html")
 ```
 
 # plot network
@@ -1071,9 +1486,40 @@ props_net_6070 <- netAnalyze(net_6070,
                              weightDeg = FALSE)
 
 #summary
-summary(props.props.net_6070)
+summary(props_net_6070)
 
-tax_table(ps_6070)[names(sort(props.net_6070$centralities$eigenv1,
+tax_table(ps_6070)[names(sort(props_net_6070$centralities$eigenv1,
                               decreasing = TRUE)[1:10]), ]
-tax_table(ps_6070)[props.net_714$hubs$hubs1, ]
+tax_table(ps_6070)[props_net_6070$hubs$hubs1, ]
+
+#plot network
+net_6070_cormap <- net_6070$assoEst1
+colnames(net_6070_cormap) <- NULL
+rownames(net_6070_cormap) <- NULL
+net_6070_cormap<- as.matrix(net_6070_cormap)
+
+diag(net_6070_cormap) <- 0 ## all self-interactions are set to 0
+
+#Exploration
+plot(density(as.numeric(net_6070_cormap)), main="All interactions") ## most interaction has strength centering zero
+plot(density(as.numeric(net_6070_cormap[abs(net_6070_cormap)>0.5])), main="filtered")
+
+net_6070_adjmat <- (net_6070_cormap >= 0.9 | net_6070_cormap <= -0.2) + 0
+
+length(which(net_6070_adjmat == 1))
+
+ggplotly(plot_cclasso(net_6070_cormap, net_6070_adjmat, ps_6070))
+
+ggplot2::ggsave(filename = "6070_net.png",
+                plot = plot_cclasso(net_6070_cormap,
+                                    net_6070_adjmat,
+                                    ps_6070),
+                device = "png",
+                path = "Network/",
+                width = 60,
+                height = 36,
+                units = "in",
+                dpi = 400,
+                limitsize = FALSE,
+                bg = "white")
 ```
