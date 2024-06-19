@@ -28,7 +28,7 @@ head(meta.df)
 summary(meta_df$associated.phenotype)
 summary(meta_df$host.age)
 summary(meta_df$BMI)
-meta_df <- meta_df[,c("project.ID", "run.ID", "associated.phenotype")]
+meta_df <- meta_df[, c("project.ID", "run.ID", "associated.phenotype")]
 
 sampledata <- sample_data(meta_df)
 sample_names(sampledata) <- meta_df$run.ID
@@ -504,15 +504,15 @@ ancom_6070 <- ancombc2(data = ps_6070, assay_name = "counts",
                        em_control = list(tol = 1e-5, max_iter = 100),
                        lme_control = lme4::lmerControl(),
                        mdfdr_control = list(fwer_ctrl_method = "fdr", B = 100),
-                       trend_control = list(contrast = list(matrix(c(1, 0, -1, 1),
+                       trend_control = list(contrast = list(matrix(c(1, 0, -1, 1), # nolint
                                                                    nrow = 2,
-                                                                   byrow = TRUE),
-                                                             matrix(c(-1, 0, 1, -1),
+                                                                   byrow = TRUE), # nolint
+                                                             matrix(c(-1, 0, 1, -1), # nolint
                                                                     nrow = 2,
-                                                                    byrow = TRUE),
-                                                             matrix(c(1, 0, 1, -1),
+                                                                    byrow = TRUE), # nolint
+                                                             matrix(c(1, 0, 1, -1), # nolint
                                                                     nrow = 2,
-                                                                    byrow = TRUE)),
+                                                                    byrow = TRUE)), # nolint
                                             node = list(2, 2, 1),
                                             solver = "ECOS",
                                             B = 10))
@@ -620,7 +620,8 @@ mas_7928 <- Maaslin2(
 )
 
 # Ancombc2
-ancom_7928 <- ancombc2(data = ps_7928, assay_name = "counts", tax_level = "Species",
+ancom_7928 <- ancombc2(data = ps_7928, assay_name = "counts",
+                       tax_level = "Species",
                        fix_formula = "associated.phenotype",
                        rand_formula = NULL,
                        p_adj_method = "fdr", pseudo_sens = TRUE,
@@ -628,28 +629,29 @@ ancom_7928 <- ancombc2(data = ps_7928, assay_name = "counts", tax_level = "Speci
                        group = "associated.phenotype",
                        struc_zero = TRUE, neg_lb = TRUE,
                        alpha = 0.05, n_cl = 2, verbose = TRUE,
-                       global = TRUE, pairwise = TRUE, dunnet = TRUE, trend = TRUE,
+                       global = FALSE, pairwise = FALSE,
+                       dunnet = FALSE, trend = FALSE,
                        iter_control = list(tol = 1e-2, max_iter = 20,
                                            verbose = TRUE),
                        em_control = list(tol = 1e-5, max_iter = 100),
                        lme_control = lme4::lmerControl(),
                        mdfdr_control = list(fwer_ctrl_method = "holm", B = 100),
-                       trend_control = list(contrast = list(matrix(c(1, 0, -1, 1),
+                       trend_control = list(contrast = list(matrix(c(1, 0, -1, 1), # nolint
                                                                    nrow = 2,
-                                                                   byrow = TRUE),
-                                                             matrix(c(-1, 0, 1, -1),
-                                                                  nrow = 2,
-                                                                   byrow = TRUE),
-                                                             matrix(c(1, 0, 1, -1),
-                                                                  nrow = 2,
-                                                                   byrow = TRUE)),
+                                                                   byrow = TRUE), # nolint
+                                                             matrix(c(-1, 0, 1, -1), # nolint
+                                                                    nrow = 2,
+                                                                    byrow = TRUE), # nolint
+                                                             matrix(c(1, 0, 1, -1), # nolint
+                                                                    nrow = 2,
+                                                                    byrow = TRUE)), # nolint
                                             node = list(2, 2, 1),
                                             solver = "ECOS",
                                             B = 10))
 
 tab_zero <- ancom_6070$zero_ind
 tab_zero %>%
-datatable(caption = "The detection of structural zeros")
+  datatable(caption = "The detection of structural zeros")
 
 res_prim <- output$res
 res_prim %>%
@@ -1615,7 +1617,7 @@ plot_cclasso <- function(cor_map, adj_mat, phyloseq) {
   V(gd)$name <- tax_table(phyloseq)[as.numeric(all.nodes), "Species"]
   V(gd)$otu <- rownames(tax_table(phyloseq)[as.numeric(all.nodes), ])
   gd <- set.vertex.attribute(gd, "degree", index = V(gd)$name, value = degall)
-  #gd <- set.vertex.attribute(gd, "degree", index = V(gd)$otu, value = degall)
+  #gd <- set.vertex.attribute(gd, "degree", index = V(gd)$otu, value = degall)  # nolint
 
   # Calculate betweenness for all nodes
   betall <- igraph::betweenness(gd,
@@ -1671,12 +1673,12 @@ plot_cclasso <- function(cor_map, adj_mat, phyloseq) {
   pl <- plot(gd,
     vertex.label = V(gd)$name,
     vertex.label.cex = 1.2,
-    #vertex.size=(log10(V(gd)$size))^1.5/2,
+    #vertex.size=(log10(V(gd)$size))^1.5/2, # nolint: commented_code_linter.
     vertex.size = 5,
     vertex.label.dist = 0.75, vertex.label.color = "black",
     vertex.label.font = 3,
     edge.arrow.size = 2, asp = TRUE,
-    #edge.width = abs(E(gd)$cor)*7,
+    #edge.width = abs(E(gd)$cor)*7, # nolint: commented_code_linter.
     edge.width = 4,
     rescale = TRUE, layout = l * 1.2
   )
@@ -1747,13 +1749,15 @@ tax_table(ps_6070)[props_net_6070$hubs$hubs1, ]
 net_6070_cormap <- net_6070$assoEst1
 colnames(net_6070_cormap) <- NULL
 rownames(net_6070_cormap) <- NULL
-net_6070_cormap<- as.matrix(net_6070_cormap)
+net_6070_cormap <- as.matrix(net_6070_cormap)
 
 diag(net_6070_cormap) <- 0 ## all self-interactions are set to 0
 
 #Exploration
-plot(density(as.numeric(net_6070_cormap)), main="All interactions") ## most interaction has strength centering zero
-plot(density(as.numeric(net_6070_cormap[abs(net_6070_cormap)>0.5])), main="filtered")
+plot(density(as.numeric(net_6070_cormap)),
+     main = "All interactions") ## most interaction has strength centering zero
+plot(density(as.numeric(net_6070_cormap[abs(net_6070_cormap) > 0.5])),
+     main = "filtered")
 
 net_6070_adjmat <- (net_6070_cormap >= 0.9 | net_6070_cormap <= -0.2) + 0
 
