@@ -389,7 +389,7 @@ ps_1
 ps_1_keep <- prune_taxa(rowSums(abundances(ps_1) > 0) >= 17,
   ps_1
 ) #at least 17 samples = 10% of the pool
-summary(sample_sums(ps_1_keep) / sample_sums(ps_1)) #98.19% data is covered
+summary(sample_sums(ps_1_keep) / sample_sums(ps_1)) #99.73% data is covered
 
 #----------#
 #ANCOMBC
@@ -404,34 +404,8 @@ ancom_1 <- ancombc(data = ps_1_keep,
                    neg_lb = TRUE,
                    tol = 1e-05,
                    alpha = 0.05,
-                   global = FALSE)
+                   global = TRUE)
 
-output <- ancombc2(data = ps_1, assay_name = "counts", tax_level = "Family",
-                   fix_formula = "run.ID + associated.phenotype",
-                   rand_formula = NULL,
-                   p_adj_method = "holm", pseudo_sens = TRUE,
-                   prv_cut = 0.10, lib_cut = 1000, s0_perc = 0.05,
-                   group = "associated.phenotype",
-                   struc_zero = TRUE, neg_lb = TRUE,
-                   alpha = 0.05, n_cl = 2, verbose = TRUE,
-                   global = TRUE, pairwise = TRUE, dunnet = TRUE, trend = TRUE,
-                   iter_control = list(tol = 1e-2, max_iter = 20,
-                                       verbose = TRUE),
-                   em_control = list(tol = 1e-5, max_iter = 100),
-                   lme_control = lme4::lmerControl(),
-                   mdfdr_control = list(fwer_ctrl_method = "holm", B = 100),
-                   trend_control = list(contrast = list(matrix(c(1, 0, -1, 1),
-                                                               nrow = 2,
-                                                               byrow = TRUE),
-                                                        matrix(c(-1, 0, 1, -1),
-                                                               nrow = 2,
-                                                               byrow = TRUE),
-                                                        matrix(c(1, 0, 1, -1),
-                                                               nrow = 2,
-                                                               byrow = TRUE)),
-                                        node = list(2, 2, 1),
-                                        solver = "ECOS",
-                                        B = 10))
 ## consider conserve=TRUE -> "sample size > 30" = large
 ```
 
@@ -512,6 +486,47 @@ mas_6070 <- Maaslin2(
   standardize = FALSE,
   cores = 22
 )
+
+# Ancombc2
+ancom_6070 <- ancombc2(data = ps_6070, assay_name = "counts",
+                       tax_level = "ASV",
+                       fix_formula = "associated.phenotype",
+                       rand_formula = NULL,
+                       p_adj_method = "fdr", pseudo_sens = TRUE,
+                       prv_cut = 0.001, lib_cut = 100, s0_perc = 0.05,
+                       group = "associated.phenotype",
+                       struc_zero = TRUE, neg_lb = TRUE,
+                       alpha = 0.05, n_cl = 10, verbose = TRUE,
+                       global = FALSE, pairwise = FALSE,
+                       dunnet = FALSE, trend = FALSE,
+                       iter_control = list(tol = 1e-2, max_iter = 100,
+                                           verbose = TRUE),
+                       em_control = list(tol = 1e-5, max_iter = 100),
+                       lme_control = lme4::lmerControl(),
+                       mdfdr_control = list(fwer_ctrl_method = "fdr", B = 100),
+                       trend_control = list(contrast = list(matrix(c(1, 0, -1, 1),
+                                                                   nrow = 2,
+                                                                   byrow = TRUE),
+                                                             matrix(c(-1, 0, 1, -1),
+                                                                    nrow = 2,
+                                                                    byrow = TRUE),
+                                                             matrix(c(1, 0, 1, -1),
+                                                                    nrow = 2,
+                                                                    byrow = TRUE)),
+                                            node = list(2, 2, 1),
+                                            solver = "ECOS",
+                                            B = 10))
+
+tab_zero <- ancom_6070$zero_ind
+tab_zero %>%
+  datatable(caption = "The detection of structural zeros")
+
+res_prim <- ancom_6070$res
+res_prim %>%
+  datatable(caption = "Result ANCOMBC2")
+write.csv(res_prim, file = "ancombc.csv")
+
+###
 
 dfmas_res_6070 <- mas_6070$results
 fdr_mas_6070 <- dfmas_res_6070
@@ -603,6 +618,43 @@ mas_7928 <- Maaslin2(
   standardize = FALSE,
   cores = 22
 )
+
+# Ancombc2
+ancom_7928 <- ancombc2(data = ps_7928, assay_name = "counts", tax_level = "Species",
+                       fix_formula = "associated.phenotype",
+                       rand_formula = NULL,
+                       p_adj_method = "fdr", pseudo_sens = TRUE,
+                       prv_cut = 0.001, lib_cut = 1000, s0_perc = 0.05,
+                       group = "associated.phenotype",
+                       struc_zero = TRUE, neg_lb = TRUE,
+                       alpha = 0.05, n_cl = 2, verbose = TRUE,
+                       global = TRUE, pairwise = TRUE, dunnet = TRUE, trend = TRUE,
+                       iter_control = list(tol = 1e-2, max_iter = 20,
+                                           verbose = TRUE),
+                       em_control = list(tol = 1e-5, max_iter = 100),
+                       lme_control = lme4::lmerControl(),
+                       mdfdr_control = list(fwer_ctrl_method = "holm", B = 100),
+                       trend_control = list(contrast = list(matrix(c(1, 0, -1, 1),
+                                                                   nrow = 2,
+                                                                   byrow = TRUE),
+                                                             matrix(c(-1, 0, 1, -1),
+                                                                  nrow = 2,
+                                                                   byrow = TRUE),
+                                                             matrix(c(1, 0, 1, -1),
+                                                                  nrow = 2,
+                                                                   byrow = TRUE)),
+                                            node = list(2, 2, 1),
+                                            solver = "ECOS",
+                                            B = 10))
+
+tab_zero <- ancom_6070$zero_ind
+tab_zero %>%
+datatable(caption = "The detection of structural zeros")
+
+res_prim <- output$res
+res_prim %>%
+  datatable(caption = "Result ANCOMBC2")
+write.csv(res_prim, file = "ancombc.csv")
 
 dfmas_res_7928 <- mas_7928$results
 fdr_mas_7928 <- dfmas_res_7928
