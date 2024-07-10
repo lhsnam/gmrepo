@@ -1,0 +1,367 @@
+```{r}
+library(phyloseq)
+library(microbiome)
+library(microbiomeutilities)
+library(microViz)
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(ggpubr)
+library(ggbreak)
+```
+
+```{r}
+# metadata
+meta_df <- read.csv("data/alternative/total.csv", sep = ",", header = TRUE)
+rownames(meta_df) <- meta_df$run.ID
+meta_df$associated.phenotype <- as.factor(meta_df$associated.phenotype)
+meta_df$host.age <- as.integer(meta_df$host.age)
+meta_df$BMI <- as.integer(meta_df$BMI)
+head(meta.df)
+
+summary(meta_df$associated.phenotype)
+summary(meta_df$host.age)
+summary(meta_df$BMI)
+meta_df <- meta_df[, c("project.ID", "run.ID", "associated.phenotype")]
+
+sampledata <- sample_data(meta_df)
+sample_names(sampledata) <- meta_df$run.ID
+head(sampledata)
+
+# count table
+abs_count_df <- read.csv(
+  "data/alternative/absolute_count_raw.csv",
+  sep = "\t",
+  header = TRUE
+)
+rownames(abs_count_df) <- abs_count_df$query_name
+abs_count_df <- subset(abs_count_df, select = -query_name)
+otu <- otu_table(as.matrix(t(abs_count_df)), taxa_are_rows = TRUE)
+
+# asv table
+taxa_df <- read.csv("data/alternative/tax_table.csv", sep = "\t", header = TRUE)
+rownames(taxa_df) <- taxa_df$Ident
+taxa_df <- subset(taxa_df, select = -c(Ident, X, Gtdb_representative))
+head(taxa_df)
+
+tax <- tax_table(as.matrix(taxa_df))
+```
+
+```{r}
+physeq <- phyloseq(otu, tax, sampledata)
+```
+
+# Remove singleton
+```{r}
+#sort sample total reads, prune taxa
+all.ps <- phyloseq::prune_taxa(phyloseq::taxa_sums(physeq) > 0, physeq)
+
+#explore singleton
+all.tx.pres <- rowSums(abundances(all.ps) > 0)
+all.singleton <- as.vector(
+  as.matrix(
+    tax_table(all.ps)[names(which(all.tx.pres == 1)), "Genus"]
+  )
+)
+all.singleton
+
+names(all.singleton) <- rownames(
+  tax_table(all.ps)[names(which(all.tx.pres == 1)), "Genus"]
+)
+sort(table(all.singleton),
+     decreasing = TRUE)
+
+## most common singleton taxa are
+
+#counts of each singleton taxa
+sort(taxa_sums(all.ps)[names(all.singleton)], decreasing = TRUE)
+summary(taxa_sums(all.ps)[names(all.singleton)]) #median 227 // 3rd quartile 642
+
+table(
+  all.singleton[names(which(taxa_sums(all.ps)[names(all.singleton)] < 642))]
+)
+all.taxa.rm <- names(which(taxa_sums(all.ps)[names(all.singleton)] < 642))
+
+## Remove singleton taxa that have read abundance < 515 reads
+all.fil <- prune_taxa(!(taxa_names(all.ps) %in% all.taxa.rm), all.ps)
+all.fil #4326 taxa
+summary(sample_sums(all.fil) / sample_sums(all.ps)) #median 100%
+```
+# Check input_metadata
+
+```{r}
+head(sampledata)
+summary(sampledata$associated.phenotype)
+# 1324 Control - 1479 CRC
+
+# focus on Control and CRC
+all.cc <- ps_filter(all.fil,
+                    associated.phenotype %in% c("D006262",
+                                                "D015179"))
+
+```
+# merge taxa
+```{r}
+# fuso_spp <- c("GCA_000007325.1",
+#               "GCF_000493815.1",
+#               "GCF_008633215.1",
+#               "GCF_002573625.1")
+
+# #merge fusobacterium nucleatum spp
+# all.merged <- merge_taxa2(all.cc, fuso_spp,
+#                           name = "GCA_000007325.1")
+```
+
+```{r}
+# standard error
+se <- function(x) sd(x) / sqrt(length(x))
+```
+
+# Species - Biomarkers
+```{r}
+# transform to relative abundance
+abund_df <- microbiomeutilities::phy_to_ldf(
+  all.cc,
+  transform.counts = "compositional"
+)
+```
+# Fusobacterium nucleatum
+```{r}
+#filter genus fusobacterium
+
+fuso_df <- subset(abund_df, Genus == "g__Fusobacterium")
+
+#filter species Fusobacterium nucleatum
+fn_df <- fuso_df[grepl("s__Fusobacterium nu", fuso_df$Species), ]
+
+#count the number of zeros in the "Abundance" column
+sum(fn_df$Abundance == 0)
+
+comps <- make_pairs(fn_df$associated.phenotype)
+
+(fn_abund_plot <- ggplot(fn_df,
+                         aes(associated.phenotype,
+                             Abundance)) +
+    geom_point() +
+    coord_flip() +
+    stat_compare_means(comparisons = comps,
+                       method = "wilcox.test",
+                       paired = FALSE)
+)
+
+fn_df_short <- fn_df %>%
+  group_by(run.ID) %>%
+  summarize(Abundance = sum(Abundance),
+            Species = "s__Fusobacterium nucleatum",
+            associated.phenotype = associated.phenotype) %>%
+  unique()
+```
+
+# others Biomarkers
+```{r}
+#filter genus fusobacterium
+genus_markers_df <- subset(abund_df,
+  Genus %in% c("g__Parvimonas",
+               "g__Eubacterium",
+               "g__Peptostreptococcus")
+)
+# Create a list of keywords to search for
+keywords <- c("micra", "ventrosium", "stomatis")
+
+# Filter rows containing any of the keywords in the "Species" column
+sp_mark_df <- genus_markers_df[grepl(paste(keywords,
+                                           collapse = "|"),
+                                     genus_markers_df$Species), ]
+
+sp_mark_df_short <- sp_mark_df[c("run.ID",
+                                 "Abundance",
+                                 "Species",
+                                 "associated.phenotype")]
+
+merge_marker_df <- rbind(fn_df_short, sp_mark_df_short)
+
+#count the number of zeros in the "Abundance" column
+sum(merge_marker_df$Abundance == 0)
+
+(markers_abund_plot <- ggplot(merge_marker_df,
+                              aes(associated.phenotype,
+                                  Abundance)) +
+    geom_point() +
+    # coord_flip() +
+    stat_compare_means(comparisons = comps,
+                       method = "wilcox.test",
+                       paired = FALSE) +
+    facet_wrap(. ~ Species,
+               scales = "free")
+)
+```
+
+```{r}
+# Pivot the data
+pivoted_df <- pivot_wider(merge_marker_df[c("Species",
+                                            "run.ID",
+                                            "Abundance",
+                                            "associated.phenotype")],
+                          names_from = Species,
+                          values_from = Abundance)
+
+pivoted_df$count_positive <- rowSums(pivoted_df[, c("s__Fusobacterium nucleatum",
+                                                    "s__Parvimonas micra",
+                                                    "s__Peptostreptococcus stomatis")] > 0)
+
+
+pivoted_df$count_positive <- as.factor(pivoted_df$count_positive)
+
+write.csv(pivoted_df, "biomarker.csv", row.names = FALSE)
+
+# CRC samples
+crc_df <- pivoted_df %>%
+  filter(associated.phenotype == "D015179")
+
+sum(crc_df$`s__Fusobacterium nucleatum` > 0) # 36 CRC have Fn
+sum(crc_df$`s__Parvimonas micra` > 0) # 201 CRC have Pm
+sum(crc_df$`s__Peptostreptococcus stomatis` > 0) # 121 CRC have Ps
+
+summary(CRC_df$count_positive)
+# 0 Path: 1163,
+# 1 Path: 125,
+# 2 Path: 91,
+# 3 Path: 17
+
+# Control samples
+ctr_df <- pivoted_df %>%
+  filter(associated.phenotype == "D006262")
+
+sum(ctr_df$`s__Fusobacterium nucleatum` > 0) # 1 Ctr have Fn
+sum(ctr_df$`s__Parvimonas micra` > 0) # 11 Ctr have Pm
+sum(ctr_df$`s__Peptostreptococcus stomatis` > 0) # 2 Ctr have Ps
+
+summary(ctr_df$count_positive)
+# 0 Path: 1241,
+# 1 Path: 11,
+# 2 Path: 0
+# 3 Path: 1
+```
+
+
+# Data visualization
+## Prepare dataframe
+```{r}
+pivoted_df
+
+# create 3 columns that check samples have only one factor
+pivoted_df$count_positive <- rowSums(pivoted_df[, c("s__Fusobacterium nucleatum",
+                                                    "s__Parvimonas micra",
+                                                    "s__Peptostreptococcus stomatis")] > 0)
+
+sum(crc_df$`s__Fusobacterium nucleatum` > 0 &
+      crc_df$`s__Parvimonas micra` == 0 &
+      crc_df$`s__Peptostreptococcus stomatis` > 0)
+
+sum(ctr_df$`s__Fusobacterium nucleatum` > 0 &
+      ctr_df$`s__Parvimonas micra` > 0 &
+      ctr_df$`s__Peptostreptococcus stomatis` > 0)
+
+sum(crc_df$`s__Fusobacterium nucleatum` == 0 &
+      crc_df$`s__Parvimonas micra` == 0 &
+      crc_df$`s__Peptostreptococcus stomatis` > 0)
+```
+
+```{r}
+count_markers <- read.csv("/data/namlhs/gmrepo/data/results/biomarker_counts.csv")
+
+count_markers_df <- count_markers %>%
+  pivot_longer(cols = colnames(count_markers)[-1],
+               names_to = "biomarkers",
+               values_to = "counts") %>%
+  as.data.frame()
+
+count_markers_df$biomarkers <- factor(count_markers_df$biomarkers,
+                                      levels = c("none",
+                                                 "fn", "pm", "ps",
+                                                 "fn.pm",
+                                                 "fn.ps",
+                                                 "pm.ps",
+                                                 "fn.pm.ps"))
+
+count_markers_df$associated.phenotype <- factor(count_markers_df$associated.phenotype,
+                                                levels = c("CRC",
+                                                           "Control"))
+
+(biomarker_count_plot <- ggplot(count_markers_df,
+                                aes(biomarkers,
+                                    counts,
+                                    label = counts)) +
+    geom_col(aes(fill = associated.phenotype),
+             position = position_dodge2(),
+             width = 0.7) +
+    geom_text(aes(color = associated.phenotype),
+              position = position_dodge2(width = 0.7),
+              vjust = -0.5, hjust = 0.5) +
+    scale_y_break(c(115, 1100),
+                  ticklabels = c(1100, 1200),
+                  scales = 1 / 5,
+                  space = 0.1,
+                  expand = FALSE) +
+    scale_y_continuous(expand = c(0, 1),
+                       limits = c(0, 1300),
+                       breaks = seq(0, 1300, 20)) +
+    scale_fill_manual(values = c("CRC" = "#bc4749",
+                                 "Control" = "grey70"),
+                      guide = "none") +
+    scale_color_manual(values = c("CRC" = "#bc4749",
+                                  "Control" = "grey40"),
+                       guide = "none") +
+    theme_void() +
+    theme(axis.line.x = element_line(),
+          axis.text.x = element_text(),
+          # axis.ticks.y.left = element_line(),
+          # axis.text.y.left = element_text(),
+          panel.grid.major.y = element_line(linewidth = 0.5,
+                                            color = "grey85"))
+)
+
+#create index for the chart
+label <- read.csv("/data/namlhs/gmrepo/data/results/labels.csv")
+label_df <- label %>%
+  pivot_longer(cols = colnames(label)[-1],
+               names_to = "combination",
+               values_to = "appear") %>%
+  as.data.frame()
+
+
+label_df$combination <- factor(label_df$combination,
+                               levels = c("none",
+                                          "fn", "pm", "ps",
+                                          "fn.pm",
+                                          "fn.ps",
+                                          "pm.ps",
+                                          "fn.pm.ps"))
+label_df$appear <- factor(label_df$appear)
+label_df$markers <- factor(label_df$markers,
+                           levels = c("Peptostreptococcus stomatis",
+                                      "Parvimonas micra",
+                                      "Fusobacterium nucleatum"))
+
+ggplot(label_df, aes(combination, markers)) +
+  geom_point(aes(color = appear),
+             size = 5) +
+  scale_color_manual(values = c("grey80",
+                                "grey10"),
+                     guide = "none") +
+  theme_void() +
+  theme(axis.text.y.left = element_text(face = "italic",
+                                        hjust = 1),
+        aspect.ratio = 1 / 7)
+
+
+```
+
+```{r}
+markers_abund_plot
+
+(p <- markers_abund_plot +
+    theme_classic2()
+)
+```
