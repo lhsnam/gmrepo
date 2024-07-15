@@ -187,7 +187,10 @@ sum(merge_marker_df$Abundance == 0)
 (markers_abund_plot <- ggplot(merge_marker_df,
                               aes(associated.phenotype,
                                   Abundance)) +
-    geom_point() +
+    geom_jitter(aes(color = associated.phenotype)) +
+    scale_color_manual(values = c("D015179" = "#bc4749",
+                                  "D006262" = "grey40"),
+                       guide = "none") +
     # coord_flip() +
     stat_compare_means(comparisons = comps,
                        method = "wilcox.test",
@@ -301,12 +304,12 @@ count_markers_df$associated.phenotype <- factor(count_markers_df$associated.phen
               vjust = -0.5, hjust = 0.5) +
     scale_y_break(c(115, 1100),
                   ticklabels = c(1100, 1200),
-                  scales = 1 / 5,
-                  space = 0.1,
+                  scales = "free",
+                  space = 0,
                   expand = FALSE) +
     scale_y_continuous(expand = c(0, 1),
                        limits = c(0, 1300),
-                       breaks = seq(0, 1300, 20)) +
+                       breaks = seq(0, 1300, 50)) +
     scale_fill_manual(values = c("CRC" = "#bc4749",
                                  "Control" = "grey70"),
                       guide = "none") +
@@ -316,10 +319,11 @@ count_markers_df$associated.phenotype <- factor(count_markers_df$associated.phen
     theme_void() +
     theme(axis.line.x = element_line(),
           axis.text.x = element_text(),
-          # axis.ticks.y.left = element_line(),
-          # axis.text.y.left = element_text(),
+          axis.ticks.y.left = element_line(),
+          axis.text.y.left = element_text(),
           panel.grid.major.y = element_line(linewidth = 0.5,
-                                            color = "grey85"))
+                                            color = "grey85"),
+          aspect.ratio = 1/7)
 )
 
 #create index for the chart
@@ -344,17 +348,17 @@ label_df$markers <- factor(label_df$markers,
                                       "Parvimonas micra",
                                       "Fusobacterium nucleatum"))
 
-ggplot(label_df, aes(combination, markers)) +
-  geom_point(aes(color = appear),
-             size = 5) +
-  scale_color_manual(values = c("grey80",
-                                "grey10"),
-                     guide = "none") +
-  theme_void() +
-  theme(axis.text.y.left = element_text(face = "italic",
-                                        hjust = 1),
-        aspect.ratio = 1 / 7)
-
+(index <- ggplot(label_df, aes(combination, markers)) +
+    geom_point(aes(color = appear),
+               size = 5) +
+    scale_color_manual(values = c("grey80",
+                                  "grey10"),
+                       guide = "none") +
+    theme_void() +
+    theme(axis.text.y.left = element_text(face = "italic",
+                                          hjust = 1),
+          aspect.ratio = 1 / 7)
+)
 
 ```
 
@@ -364,4 +368,39 @@ markers_abund_plot
 (p <- markers_abund_plot +
     theme_classic2()
 )
+```
+
+```{r}
+ggplot2::ggsave(filename = "biomarker_count.pdf",
+                plot = biomarker_count_plot,
+                device = "pdf",
+                path = "/data/namlhs/gmrepo/data/figures",
+                width = 10,
+                height = 5,
+                units = "in",
+                dpi = "retina",
+                limitsize = TRUE,
+                bg = NULL)
+
+ggplot2::ggsave(filename = "index.pdf",
+                plot = index,
+                device = "pdf",
+                path = "/data/namlhs/gmrepo/data/figures",
+                width = 13,
+                height = 2,
+                units = "in",
+                dpi = "retina",
+                limitsize = TRUE,
+                bg = NULL)
+
+ggplot2::ggsave(filename = "abundance.pdf",
+                plot = p,
+                device = "pdf",
+                path = "/data/namlhs/gmrepo/data/figures",
+                width = 5,
+                height = 5,
+                units = "in",
+                dpi = "retina",
+                limitsize = TRUE,
+                bg = NULL)
 ```
