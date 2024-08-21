@@ -78,5 +78,5 @@ print(f'# The count table is created by {len(df2)} samples #')
 print('#' * len(f'# The count table is created by {len(df2)} samples #'))
 print(df2.head())
 
-df2.to_csv('/data/namlhs/gmrepo/data/alternative/absolute_count_raw.csv',
+df2.to_csv('absolute_count_raw.csv',
            sep='\t')

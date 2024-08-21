@@ -38,5 +38,5 @@ tax_data = tax_data.drop(columns=['ASV_cluster'])
 
 display(tax_data)
 
-tax_data.to_csv('/data/namlhs/nextflow-sourmash/tax_table.csv',
+tax_data.to_csv('tax_table.csv',
                 sep='\t')

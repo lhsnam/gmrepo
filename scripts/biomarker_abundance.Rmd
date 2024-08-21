@@ -25,6 +25,8 @@ summary(meta_df$host.age)
 summary(meta_df$BMI)
 meta_df <- meta_df[, c("project.ID", "run.ID", "associated.phenotype")]
 
+meta_df[meta_df$associated.phenotype == "D018256","associated.phenotype"] <- "D000236"
+
 sampledata <- sample_data(meta_df)
 sample_names(sampledata) <- meta_df$run.ID
 head(sampledata)
@@ -79,9 +81,9 @@ sort(taxa_sums(all.ps)[names(all.singleton)], decreasing = TRUE)
 summary(taxa_sums(all.ps)[names(all.singleton)]) #median 227 // 3rd quartile 642
 
 table(
-  all.singleton[names(which(taxa_sums(all.ps)[names(all.singleton)] < 642))]
+  all.singleton[names(which(taxa_sums(all.ps)[names(all.singleton)] < 163))]
 )
-all.taxa.rm <- names(which(taxa_sums(all.ps)[names(all.singleton)] < 642))
+all.taxa.rm <- names(which(taxa_sums(all.ps)[names(all.singleton)] < 163))
 
 ## Remove singleton taxa that have read abundance < 515 reads
 all.fil <- prune_taxa(!(taxa_names(all.ps) %in% all.taxa.rm), all.ps)
@@ -99,6 +101,12 @@ summary(sampledata$associated.phenotype)
 all.cc <- ps_filter(all.fil,
                     associated.phenotype %in% c("D006262",
                                                 "D015179"))
+
+all.ca <- ps_filter(all.fil,
+                    associated.phenotype %in% c("D006262",
+                                                "D000236"))
+
+all.fil <- ps_filter(all.fil, project.ID == "PRJEB27928")
 
 ```
 # merge taxa
@@ -122,10 +130,28 @@ se <- function(x) sd(x) / sqrt(length(x))
 ```{r}
 # transform to relative abundance
 abund_df <- microbiomeutilities::phy_to_ldf(
-  all.cc,
+  all.fil,
   transform.counts = "compositional"
 )
 ```
+
+#sub group for testing database effects
+```{r}
+sub_sample <- c("ERR2726540", #
+                "ERR2726410", #
+                "ERR2726578",
+                "ERR2726448",
+                "ERR2726484",
+                "ERR2726614", #
+                "ERR2726618", #
+                "ERR2726488",
+                "ERR2726501", #
+                "ERR2726631", #
+                "ERR2726633", #
+                "ERR2726503") #
+
+```
+
 # Fusobacterium nucleatum
 ```{r}
 #filter genus fusobacterium
@@ -135,6 +161,7 @@ fuso_df <- subset(abund_df, Genus == "g__Fusobacterium")
 #filter species Fusobacterium nucleatum
 fn_df <- fuso_df[grepl("s__Fusobacterium nu", fuso_df$Species), ]
 
+# sub_fn_df <- subset(fn_df, run.ID %in% sub_sample)
 #count the number of zeros in the "Abundance" column
 sum(fn_df$Abundance == 0)
 
@@ -143,60 +170,113 @@ comps <- make_pairs(fn_df$associated.phenotype)
 (fn_abund_plot <- ggplot(fn_df,
                          aes(associated.phenotype,
                              Abundance)) +
-    geom_point() +
-    coord_flip() +
-    stat_compare_means(comparisons = comps,
-                       method = "wilcox.test",
-                       paired = FALSE)
+    geom_point()
+    # coord_flip() +
+    # stat_compare_means(comparisons = comps,
+    #                    method = "wilcox.test",
+    #                    paired = FALSE)
 )
 
 fn_df_short <- fn_df %>%
   group_by(run.ID) %>%
   summarize(Abundance = sum(Abundance),
-            Species = "s__Fusobacterium nucleatum",
+            Species = "s__Fusobacterium nucleatum spp",
             associated.phenotype = associated.phenotype) %>%
-  unique()
+  unique() %>%
+  as.data.frame()
 ```
 
 # others Biomarkers
 ```{r}
-#filter genus fusobacterium
+# filter genus
 genus_markers_df <- subset(abund_df,
   Genus %in% c("g__Parvimonas",
                "g__Eubacterium",
                "g__Peptostreptococcus")
 )
 # Create a list of keywords to search for
-keywords <- c("micra", "ventrosium", "stomatis")
+keywords <- c("micra", "ventriosum", "stomatis")
 
 # Filter rows containing any of the keywords in the "Species" column
 sp_mark_df <- genus_markers_df[grepl(paste(keywords,
                                            collapse = "|"),
                                      genus_markers_df$Species), ]
 
-sp_mark_df_short <- sp_mark_df[c("run.ID",
-                                 "Abundance",
-                                 "Species",
-                                 "associated.phenotype")]
+sp_mark_df_short <- sp_mark_df %>%
+  group_by(run.ID, Species) %>%
+  summarize(Abundance = sum(Abundance),
+            associated.phenotype = associated.phenotype) %>%
+  unique() %>%
+  as.data.frame()
 
-merge_marker_df <- rbind(fn_df_short, sp_mark_df_short)
+sp_mark_df_short <- sp_mark_df_short[c("run.ID",
+                                       "Abundance",
+                                       "Species",
+                                       "associated.phenotype")]
+```
+## Parvimonas micra
+```{r}
+# #filter genus parvimonas
+
+# parv_df <- subset(abund_df, Genus == "g__Parvimonas")
+
+# #filter species Parvimonas micra
+# pm_df <- parv_df[grepl("s__Parvimonas mi", parv_df$Species), ]
+
+# #count the number of zeros in the "Abundance" column
+# sum(pm_df$Abundance == 0)
+
+# # comps <- make_pairs(pm_df$associated.phenotype)
+
+# (pm_abund_plot <- ggplot(pm_df,
+#                          aes(associated.phenotype,
+#                              Abundance)) +
+#     geom_point()
+#     # coord_flip() +
+#     # stat_compare_means(comparisons = comps,
+#     #                    method = "wilcox.test",
+#     #                    paired = FALSE)
+# )
+
+# pm_df_short <- pm_df %>%
+#   group_by(run.ID) %>%
+#   summarize(Abundance = sum(Abundance),
+#             Species = "s__Parvimonas micra",
+#             associated.phenotype = associated.phenotype) %>%
+#   unique() %>%
+#   as.data.frame()
+```
+
+```{r}
+merge_marker_df <- rbind(fn_df_short,
+                         sp_mark_df_short)
+
+levels(merge_marker_df$associated.phenotype) <- c("D006262",
+                                                  # "D000236",
+                                                  "D015179")
 
 #count the number of zeros in the "Abundance" column
 sum(merge_marker_df$Abundance == 0)
 
 (markers_abund_plot <- ggplot(merge_marker_df,
-                              aes(associated.phenotype,
+                              aes(factor(associated.phenotype,
+                                         level = c("D015179",
+                                                  #  "D000236",
+                                                   "D006262")),
                                   Abundance)) +
     geom_jitter(aes(color = associated.phenotype)) +
     scale_color_manual(values = c("D015179" = "#bc4749",
-                                  "D006262" = "grey40"),
+                                  # "D000236" = "grey40",
+                                  "D006262" = "grey60"),
                        guide = "none") +
-    # coord_flip() +
-    stat_compare_means(comparisons = comps,
-                       method = "wilcox.test",
-                       paired = FALSE) +
+    coord_flip() +
+    # stat_compare_means(comparisons = comps,
+    #                    method = "wilcox.test",
+    #                    paired = FALSE) +
     facet_wrap(. ~ Species,
-               scales = "free")
+               nrow = 3,
+               scales = "free") +
+    theme_classic2()
 )
 ```
 
@@ -209,7 +289,7 @@ pivoted_df <- pivot_wider(merge_marker_df[c("Species",
                           names_from = Species,
                           values_from = Abundance)
 
-pivoted_df$count_positive <- rowSums(pivoted_df[, c("s__Fusobacterium nucleatum",
+pivoted_df$count_positive <- rowSums(pivoted_df[, c("s__Fusobacterium nucleatum spp",
                                                     "s__Parvimonas micra",
                                                     "s__Peptostreptococcus stomatis")] > 0)
 
@@ -222,29 +302,29 @@ write.csv(pivoted_df, "biomarker.csv", row.names = FALSE)
 crc_df <- pivoted_df %>%
   filter(associated.phenotype == "D015179")
 
-sum(crc_df$`s__Fusobacterium nucleatum` > 0) # 36 CRC have Fn
-sum(crc_df$`s__Parvimonas micra` > 0) # 201 CRC have Pm
-sum(crc_df$`s__Peptostreptococcus stomatis` > 0) # 121 CRC have Ps
+sum(crc_df$`s__Fusobacterium nucleatum spp` > 0) # 22 CRC have Fn
+sum(crc_df$`s__Parvimonas micra` > 0) # 21 CRC have Pm
+sum(crc_df$`s__Peptostreptococcus stomatis` > 0) # 9 CRC have Ps
 
-summary(CRC_df$count_positive)
-# 0 Path: 1163,
-# 1 Path: 125,
-# 2 Path: 91,
-# 3 Path: 17
+summary(crc_df$count_positive)
+# 0 Path: 113
+# 1 Path: 6
+# 2 Path: 17
+# 3 Path: 4
 
 # Control samples
 ctr_df <- pivoted_df %>%
   filter(associated.phenotype == "D006262")
 
-sum(ctr_df$`s__Fusobacterium nucleatum` > 0) # 1 Ctr have Fn
-sum(ctr_df$`s__Parvimonas micra` > 0) # 11 Ctr have Pm
-sum(ctr_df$`s__Peptostreptococcus stomatis` > 0) # 2 Ctr have Ps
+sum(ctr_df$`s__Fusobacterium nucleatum spp` > 0) # 0 Ctr have Fn
+sum(ctr_df$`s__Parvimonas micra` > 0) # 0 Ctr have Pm
+sum(ctr_df$`s__Peptostreptococcus stomatis` > 0) # 0 Ctr have Ps
 
 summary(ctr_df$count_positive)
-# 0 Path: 1241,
-# 1 Path: 11,
+# 0 Path: 0
+# 1 Path: 0
 # 2 Path: 0
-# 3 Path: 1
+# 3 Path: 0
 ```
 
 
@@ -254,21 +334,31 @@ summary(ctr_df$count_positive)
 pivoted_df
 
 # create 3 columns that check samples have only one factor
-pivoted_df$count_positive <- rowSums(pivoted_df[, c("s__Fusobacterium nucleatum",
-                                                    "s__Parvimonas micra",
-                                                    "s__Peptostreptococcus stomatis")] > 0)
+pivoted_df$count_positive <- rowSums(pivoted_df[,
+                                                c("s__Fusobacterium nucleatum spp",
+                                                  "s__Parvimonas micra",
+                                                  "s__Peptostreptococcus stomatis")] > 0)
 
-sum(crc_df$`s__Fusobacterium nucleatum` > 0 &
-      crc_df$`s__Parvimonas micra` == 0 &
+
+head(ctr_df)
+head(crc_df)
+
+ctr_df <- pivoted_df %>%
+  filter(associated.phenotype == "D006262")
+
+summary(pivoted_df$associated.phenotype)
+
+sum(crc_df$`s__Fusobacterium nucleatum spp` == 0 &
+      crc_df$`s__Parvimonas micra` > 0 &
       crc_df$`s__Peptostreptococcus stomatis` > 0)
 
-sum(ctr_df$`s__Fusobacterium nucleatum` > 0 &
+sum(ctr_df$`s__Fusobacterium nucleatum spp` > 0 &
       ctr_df$`s__Parvimonas micra` > 0 &
-      ctr_df$`s__Peptostreptococcus stomatis` > 0)
+      ctr_df$`s__Peptostreptococcus stomatis` == 0)
 
-sum(crc_df$`s__Fusobacterium nucleatum` == 0 &
-      crc_df$`s__Parvimonas micra` == 0 &
-      crc_df$`s__Peptostreptococcus stomatis` > 0)
+sum(ctr_df$`s__Fusobacterium nucleatum spp` == 0 &
+      ctr_df$`s__Parvimonas micra` == 0 &
+      ctr_df$`s__Peptostreptococcus stomatis` == 0)
 ```
 
 ```{r}
@@ -288,27 +378,40 @@ count_markers_df$biomarkers <- factor(count_markers_df$biomarkers,
                                                  "pm.ps",
                                                  "fn.pm.ps"))
 
-count_markers_df$associated.phenotype <- factor(count_markers_df$associated.phenotype,
-                                                levels = c("CRC",
-                                                           "Control"))
+count_markers_df$associated.phenotype <-
+  factor(
+    count_markers_df$associated.phenotype,
+    levels = c("CRC",
+               "Adenoma",
+               "Control")
+  )
+
+count_markers_df <- count_markers_df %>%
+  group_by(associated.phenotype) %>%
+  mutate(percentage = (counts / sum(counts)) * 100,
+         percentage_rounded = round((counts / sum(counts)) * 100, 0)) %>%
+  mutate(percentage_rounded = round((percentage_rounded / sum(percentage_rounded)) * 100, 0)) %>%
+  as.data.frame()
+
+count_markers_df
 
 (biomarker_count_plot <- ggplot(count_markers_df,
                                 aes(biomarkers,
-                                    counts,
-                                    label = counts)) +
+                                    percentage_rounded,
+                                    label = percentage_rounded)) +
     geom_col(aes(fill = associated.phenotype),
              position = position_dodge2(),
              width = 0.7) +
     geom_text(aes(color = associated.phenotype),
               position = position_dodge2(width = 0.7),
               vjust = -0.5, hjust = 0.5) +
-    scale_y_break(c(115, 1100),
-                  ticklabels = c(1100, 1200),
-                  scales = "free",
-                  space = 0,
-                  expand = FALSE) +
-    scale_y_continuous(expand = c(0, 1),
-                       limits = c(0, 1300),
+    # scale_y_break(c(110, 250),
+    #               ticklabels = c(1100, 1200),
+    #               scales = "free",
+    #               space = 0.01,
+    #               expand = FALSE) +
+    scale_y_continuous(expand = c(0.2, 0),
+                      #  limits = c(0, 150),
                        breaks = seq(0, 1300, 50)) +
     scale_fill_manual(values = c("CRC" = "#bc4749",
                                  "Control" = "grey70"),
@@ -323,7 +426,7 @@ count_markers_df$associated.phenotype <- factor(count_markers_df$associated.phen
           axis.text.y.left = element_text(),
           panel.grid.major.y = element_line(linewidth = 0.5,
                                             color = "grey85"),
-          aspect.ratio = 1/7)
+          aspect.ratio = 1 / 5)
 )
 
 #create index for the chart
@@ -366,7 +469,12 @@ label_df$markers <- factor(label_df$markers,
 markers_abund_plot
 
 (p <- markers_abund_plot +
-    theme_classic2()
+    # theme_classic2() +
+    theme(axis.line.y.left = element_blank(),
+          axis.line.y.right = element_line(color = "black",
+                                           linewidth = 1,
+                                           linetype = 1)
+    )
 )
 ```
 
@@ -393,12 +501,12 @@ ggplot2::ggsave(filename = "index.pdf",
                 limitsize = TRUE,
                 bg = NULL)
 
-ggplot2::ggsave(filename = "abundance.pdf",
+ggplot2::ggsave(filename = "abundance_2.pdf",
                 plot = p,
                 device = "pdf",
                 path = "/data/namlhs/gmrepo/data/figures",
                 width = 5,
-                height = 5,
+                height = 8,
                 units = "in",
                 dpi = "retina",
                 limitsize = TRUE,
